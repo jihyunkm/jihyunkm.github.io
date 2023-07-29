@@ -215,16 +215,20 @@
         <h3 class="red">UNEXPECTED COMPLICATIONS...</h3>
         <h2>🎨 As some ShopSmiles products are offered in multiple colors, the business team also wanted a color picker to be accessible on the cards.</h2>
         <p>However, most ShopSmiles products are only offered in a single color and these would <b>instead</b> either show:</p>
-        <div class="column-2">
-            <ol>
-                <li>A single color selection</li>
-                <li>An empty gap with a fixed card height</li>
-                <li>Have no gap with a variable height</li>
-            </ol>
-            <img src="assets/img/shopsmiles/color picker spacing.svg" style="max-width: 60%;">
+        <div style="display: grid; grid-auto-flow: column; column-gap: 16px; align-items: end; margin-top: 32px;">
+            <div class="grid-column center-text">
+                <img src="assets/img/shopsmiles/color picker spacing 1.svg">
+                <p>1. A single color selection</p>
+            </div>
+            <div class="grid-column center-text">
+                <img src="assets/img/shopsmiles/color picker spacing 2.svg">
+                <p>2. An empty gap with a fixed card height</p>
+            </div>
+            <div class="grid-column center-text">
+                <img src="assets/img/shopsmiles/color picker spacing 3.svg">
+                <p>3. Have no gap with a variable height</p>
+            </div>
         </div>
-        
-        
     </div>
 </section>
 
@@ -267,7 +271,7 @@
         <ol>
             <li><s>A single color selection</s></li>
             <li><s>An empty gap with a fixed card height</s></li>
-            <li>Have no gap with a variable height</li>
+            <li><b>Have no gap with a variable height</b></li>
         </ol>
     </div>
 </section>
@@ -275,7 +279,53 @@
 <section class="padding">
     <div class="container-small">
         <h2>3. An accessible color picker</h2>
+        <div class="column-2">
+            <div>
+                <p>However, as we still weren't satisfied with the problem of variable heights, I also came up with a <b>fourth idea</b>: nesting the color selections in a separate button that would prompt to an overlay.</p>
+                <p>This button would be always docked, solving the problems of an empty gap or misalignment.</p>
+            </div>
+            <img src="assets/img/shopsmiles/overlay options.gif" style="max-width: 320px;" class="img">
+        </div>
+        <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.</p>
+        <p>The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
+            (2) feel <b>intrusive</b>, causing frequent UX frustrations.</p>
+    </div>
+</section>
 
+<section class="gray-section">
+    <div class="container-small">
+        <h3>Final Designs</h3>
+        <h2>🤳 And now, introducing the new cleaner and smaller product cards: easier on the eyes and an easier browsing experience.</h2>
+        <p>After many deliberations with not only the UX team, but with developers, product managers, and business teams (legal and marketing), we ultimately landed on the final design:</p>
+    </div>
+</section>
+
+<section class="padding">
+    <div class="container-wide">
+        <span class="caption">Final design for the mobile product card</span>
+        <img src="assets/img/shopsmiles/final design.svg" class="img">
+    </div>
+</section>
+
+<section class="padding">
+    <div class="container-wide">
+        <div style="display: grid; grid-auto-flow: column; column-gap: 60px;">
+            <div class="grid-column">
+                <span class="caption">Before (Top Picks list)</span>
+                <img src="assets/img/shopsmiles/final design-before.svg" style="max-height: 630px;">
+            </div>
+            <div class="grid-column">
+                <span class="caption">After (Top Picks carousel)</span>
+                <img src="assets/img/shopsmiles/final design-after.svg" style="max-height: 630px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="padding">
+    <div class="container-wide">
+        <span class="caption">Mobile card placed within a carousel</span>
+        <img src="assets/img/shopsmiles/final design-carousel.svg" class="img">
     </div>
 </section>
 
