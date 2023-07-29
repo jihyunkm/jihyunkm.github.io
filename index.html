@@ -1,43 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Karla">
-        <link rel = "stylesheet" href = "DONOTTOUCH/css/main-page.css">
-    </head>
-    <body>
-        <div id = "overall-container">
-            <div class = "home-page-folder">
-                <h1>
-                    Homeworks
-                </h1>
-                <a href = "homeworks/index.html">
-                    <img src = "DONOTTOUCH/images/folder.png">
-                </a>
-            </div>
-            <div class = "home-page-folder">
-                <h1>
-                    Labs
-                </h1>
-                <a href = "labs/index.html">
-                    <img src = "DONOTTOUCH/images/folder.png">
-                </a>
-            </div>
-            <div class = "home-page-folder">
-                <h1>
-                    Midterm
-                </h1>
-                <a href = "midterm/index.html">
-                    <img src = "DONOTTOUCH/images/folder.png">
-                </a>
-            </div>
-            <div class = "home-page-folder">
-                <h1>
-                    Final
-                </h1>
-                <a href = "final/index.html">
-                    <img src = "DONOTTOUCH/images/folder.png">
-                </a>
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+    <title>Jihyun Kim</title>
+</head>
+<body>
+
+<!--nav-->
+
+<div id="caution">
+    <b>⚠️ Caution:</b> the site is still being hand-developed; apologies for any inconveniences! From, your self-taught coder...
+</div>
+
+<nav>
+    <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
+        <div id="top">
+                <a id="nav-item" href="index.html">Work</a>
+                <a id="nav-item" href="about.html">About</a>
+        </div>
+</nav>
+
+<!--content-->
+
+<!--hero-->
+<section id="hero-wrap">
+    <img class="hover-img" id="watercolor" src="assets/img/still-life.svg">
+    <img class="hover-img" id="california" src="assets/img/california.svg">
+    <img class="hover-img" id="hcd" src="assets/img/hcd.svg">
+    <div id="hero">
+        <h1>
+            Hey<i>!</i> I’m <span class="turquoise"><b>Jihyun</b></span>,
+        </h1>
+        <h2 class="no-top-margin">
+            <span class="darkgray">
+                an <span class="herohover" id="artist-turned">artist-turned</span> 
+                <span class="herohover" id="product-designer">product designer</span> based in 
+                <span class="herohover" id="based-in">California ☀</span>.
+            </span>
+        </h2>
+        <div id="hero-description">
+            <p>
+                Recently <span class="darkgray">graduated UC Berkeley in B.A. Psychology, B.A. Media Studies &</span>
+                previously<span class="darkgray"> @ Colgate-Palmolive</span> 
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--projects-->
+<a href="#projects" id="scroll-down">⌵</a>
+<section id="projects">
+    <div class="container-wide">
+        <!--project 1-->
+        <div class="project">
+            <a href="cp product card.html">
+                <img class= "project-thumbnail" src="assets/img/cp-pdp.png">
+            </a>
+            <div class="project-card-text">
+                <h3>01</h3>
+                <h2>ShopSmiles</h2>
+                <p>Redesigning product cards for a streamlined browsing experience.</p>
+                <p>2022 / UX Intern</p>
+                <h4>Design Systems • Web & Mobile Design</h4>
             </div>
         </div>
-    </body>
-</html>
+        <!--project 2-->
+        <div class="project">
+            <a href="">
+                <img class= "project-thumbnail" src="assets/img/food52.svg">
+            </a>
+            <div class="project-card-text">
+                <h3>02</h3>
+                <h2>Food52</h2>
+                <p>Reimagining an engaging community in a newly designed 0-to-1 mobile interface.</p>
+                <p>2021 / Design Consultant</p>
+                <h4>Mobile Design • UX/UI</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+
+<footer>
+    <div id="footer-nav">
+        <a href="#top" id="footer-item">Back to Top</a>
+        • 
+        <a href="index.html" id="footer-item">Work</a>
+        • 
+        <a href="about.html" id="footer-item">About</a>
+        • 
+        <a id="footer-item">🐱☔️</a>
+    </div>
+    <p>Copyright © 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️</p>
+</footer>
+</body>
+
+<script src="assets/script.js"></script>
