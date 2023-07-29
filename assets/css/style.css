@@ -108,10 +108,16 @@ a:hover{
     transition: 150ms;
 }
 
+.external-link::after{
+    content: " ↗";
+    font-family: system-ui
+}
+
 .herohover{
     color: #2e2e2e;
     text-decoration: underline;
-    /* background-image: linear-gradient(180deg, rgba(255,0,0,0) 40%, #CFEFE4 40%, 
+    /* HIGHLIGHT on hover
+    background-image: linear-gradient(180deg, rgba(255,0,0,0) 40%, #CFEFE4 40%, 
     #CFEFE4 90%,rgba(255,0,0,0) 90%); */
     transition: 150ms;
 }
@@ -149,7 +155,6 @@ a:hover{
 #california{
     width: 200px;
 }
-
 
 #hero{
     width: 450px;
@@ -233,7 +238,7 @@ footer{
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-top: 140px;
+    margin-top: 160px;
     margin-bottom: 56px;
     color: #767676;
 }
@@ -249,10 +254,11 @@ footer{
     text-decoration: none;
 }
 
-#divider{
-    margin: auto;
+hr{
     max-width: 1000px;
+    margin: auto;
     margin-top: 100px;
+    color: #E0E0E0;
     border: 0.8px solid #E0E0E0;
     border-radius: 50px;
 }
@@ -261,6 +267,10 @@ footer{
     max-width: 100%;
     margin: 24px 0px;
     object-fit: contain;
+}
+
+.rounded-border{
+    border-radius: 16px;
 }
 
 .highlight-red{
@@ -338,6 +348,11 @@ footer{
     border-radius: 16px;
     margin: 32px 0px;
     column-gap: 24px;
+}
+
+.bubble-icon.yellow{
+    background-color: #FFFAEF;
+    font-size: 13px;
 }
 
 .bubble{
