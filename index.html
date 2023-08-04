@@ -6,19 +6,21 @@
 </head>
 <body>
 
-<!--nav-->
+<!--header-->
 
-<div id="caution">
-    <b>⚠️ Caution:</b> the site is still being hand-developed; apologies for any inconveniences! From, your self-taught coder...
-</div>
-
-<nav>
-    <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-        <div id="top">
+<header id="top">
+    <div id="caution">
+        <b>⚠️ Caution:</b> the site is still being hand-developed; apologies for any inconveniences! From, your self-taught coder...
+    </div>
+    
+    <nav>
+        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
+            <div>
                 <a id="nav-item" href="index.html">Work</a>
                 <a id="nav-item" href="about.html">About</a>
-        </div>
-</nav>
+            </div>
+    </nav>
+</header>
 
 <!--content-->
 
@@ -38,7 +40,7 @@
                 <span class="herohover" id="based-in">California ☀</span>.
             </span>
         </h2>
-        <div id="hero-description">
+        <div id="hero-recently">
             <p>
                 Recently <span class="darkgray">graduated UC Berkeley in B.A. Psychology, B.A. Media Studies &</span>
                 previously<span class="darkgray"> @ Colgate-Palmolive</span> 
@@ -53,28 +55,26 @@
     <div class="container-wide">
         <!--project 1-->
         <div class="project">
-            <a href="cp product card.html">
-                <img class= "project-thumbnail" src="assets/img/cp-pdp.png">
+            <a class="project-card" href="cp product card.html">
+                <img class="project-img" src="assets/img/cp-pdp.svg">
             </a>
-            <div class="project-card-text">
-                <h3>01</h3>
+            <div class="project-text">
+                <h3 class="project-number">01</h3>
                 <h2>ShopSmiles</h2>
                 <p>Redesigning product cards for a streamlined browsing experience.</p>
-                <p>2022 / UX Intern</p>
-                <h4>Design Systems • Web & Mobile Design</h4>
+                <h4 class="project-description">2022, UX Intern <br> Design Systems • Web & Mobile Design</h4>
             </div>
         </div>
         <!--project 2-->
         <div class="project">
-            <a href="">
-                <img class= "project-thumbnail" src="assets/img/food52.svg">
+            <a class="project-card" href="food52.html">
+                <img class="project-img" src="assets/img/food52.svg">
             </a>
-            <div class="project-card-text">
-                <h3>02</h3>
+            <div class="project-text">
+                <h3 class="project-number">02</h3>
                 <h2>Food52</h2>
                 <p>Reimagining an engaging community in a newly designed 0-to-1 mobile interface.</p>
-                <p>2021 / Design Consultant</p>
-                <h4>Mobile Design • UX/UI</h4>
+                <h4 class="project-description">2021, Design Consultant <br> Mobile Design • UX/UI</h4>
             </div>
         </div>
     </div>

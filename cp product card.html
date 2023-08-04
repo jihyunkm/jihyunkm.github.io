@@ -2,18 +2,20 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
-    <title>Jihyun Kim</title>
+    <title>ShopSmiles</title>
 </head>
 <body>
 
 <!--nav-->
-<nav>
-    <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-        <div id="top">
+<header id="top">
+    <nav>
+        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
+            <div>
                 <a id="nav-item" href="index.html">Work</a>
                 <a id="nav-item" href="about.html">About</a>
-        </div>
-</nav>
+            </div>
+    </nav>
+</header>
 
 <!--content-->
 
@@ -30,10 +32,10 @@
     <div class="container-wide">
         <h1>ShopSmiles</h1>
         <h4 class="no-top-margin">Design Systems • Web & Mobile Design • UI Design • Figma</h4>
-        <img class="project-img" src="assets/img/shopsmiles/card image.svg">
-        <div class="project-overview-grid">
-            <span class="project-overview">
-                <h3 class="red">overview</h3>
+        <img class="case-study-img" src="assets/img/shopsmiles/card image.svg">
+        <div class="case-study-overview-grid">
+            <span class="case-study-overview">
+                <h3>overview</h3>
                 <p>As a global oral care company, Colgate-Palmolive offers its products on its e-commerce 
                     website ShopSmiles—yet the website <b>struggles to maintain its visiting users</b>.</p>
                 <p>As a <b>UX Intern</b>, I redesigned the components of ShopSmiles’ design system in order to 
@@ -41,7 +43,7 @@
             </span>
             <div class="overview-column-grid">
                 <div class="overview-column">
-                    <h3 class="red">LOGISTICS</h3>
+                    <h3>LOGISTICS</h3>
                     <h4><i>Timeline</i><br>
                         July - August 2022
                     </h4>
@@ -56,7 +58,7 @@
                     </h4>
                 </div>
                 <div class="overview-column">
-                    <h3 class="red">PROCESS</h3>
+                    <h3>PROCESS</h3>
                     <h4>
                         Internal Audit<br>
                         Heuristic Evaluation<br>
@@ -86,7 +88,7 @@
                 <p>Thus, the Global IT Team, including myself, was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.</p>
             </div>
         </div>
-        <img src="assets/img/shopsmiles/overhaul.svg" class="img">
+        <img src="assets/img/shopsmiles/overhaul.svg" class="margin-add">
     </div>
 </section>
 
@@ -131,22 +133,26 @@
 <!-- preview of final experience -->
 <section class="padding">
     <div class="container-wide">
-        <h3 class="red">preview of final experience</h3>
-        <div class="column-2" style="align-items: center;">
-            <div style="width: 400px;">
+        <h3>preview of final experience</h3>
+        <div class="cp-preview">
+            <div class="cp-preview1-text">
                 <h2>A cleaner browsing experience with more cards.</h2>
                 <p>More products are visible at a single glance when browsing to better inform users in their purchase decisions.</p>
             </div>
-            <img style="overflow: auto;" src="assets/img/shopsmiles/preview 1.svg">
+            <div class="cp-preview1-img">
+                <img src="assets/img/shopsmiles/preview 1.svg">
+            </div>
         </div>
     </div>
 </section>
 
 <section class="padding">
     <div class="container-wide">
-        <div class="column-2" style="align-items: center;">
-            <img style="width: 520px;" src="assets/img/shopsmiles/Kapture 2023-02-16 at 17.28.26.gif">
-            <div style="margin-left: 20px;">
+        <div class="cp-preview">
+            <div class="cp-preview2-img">
+                <img src="assets/img/shopsmiles/Kapture 2023-02-16 at 17.28.26.gif">
+            </div>
+            <div class="cp-preview2-text">
                 <h2>Increased accessibility for all screens.</h2>
                 <p>Adherence to the WCAG 2.1 standards with legible colors, bigger target sizes, and fewer product card variations living in the design system.</p>
             </div>
@@ -164,7 +170,7 @@
     <div class="container-small">
         <h3 class="red">referring to research</h3>
         <h2>📌 According to past internal audits and heuristic evaluations, we discovered that users were pushed away by product cards.</h2>
-        <img src="assets/img/shopsmiles/heuristic evaluation.svg" class="img">
+        <img src="assets/img/shopsmiles/heuristic evaluation.svg" class="margin-add">
         <p>Product cards touch upon various areas of the site and act as the <b>main drivers of purchase decisions</b> by providing quick gists of information. They allow users to easily compare different products, which is a big user "want."</p>
         <p>However, ShopSmiles' product cards were <b>too large</b> and <b>hard to read</b>—undermining this value.</p>
     </div>
@@ -173,13 +179,13 @@
 <section class="padding">
     <div class="container-small">
         <div class="column-2">
-            <p style="width: 50%;">I also noted that there were too many variations of the cards throughout the site, making it:</p>
+            <p class="col-50">I also noted that there were too many variations of the cards throughout the site, making it:</p>
             <ol>
                 <li><b>Inconsistent</b> for users</li>
                 <li><b>Inconvenient</b> to develop</li>
             </ol>
         </div>
-        <img src="assets/img/shopsmiles/instances.svg" class="img" style="margin-bottom: 0;">
+        <img src="assets/img/shopsmiles/instances.svg" class="margin-add" style="margin-bottom: 0;">
     </div>
 </section>
 
@@ -203,7 +209,7 @@
             <h2 class="no-top-margin">💬</h2>
             <span>A <b>product card</b> is a container (common region) of related information regarding a product, presenting information in a visually intuitive and digestible way.</span>
         </div>
-        <img src="assets/img/shopsmiles/product cards.svg" class="img">
+        <img src="assets/img/shopsmiles/product cards.svg" class="margin-add">
         <p>A card's content depends on what information users deem most important.</p>
         <p>From a required list of elements sent by the marketing team, landscape analyses, and user interviews, 
             we concluded that ShopSmiles' users are most curious of a <b>product's image, name, ratings, and price.</b></p>
@@ -238,7 +244,7 @@
             the time it took users to reach the reviews.</p>
         <p>This meant that I had to make sure to <b>minimize</b> the number of complex <b>haptic controls</b> (i.e., nested scrolling, pop-up in a scroll),
             as the color picker would introduce more interactions.</p>
-        <img src="assets/img/shopsmiles/top picks color picker w gradient.svg" class="img">
+        <img src="assets/img/shopsmiles/top picks color picker w gradient.svg" class="margin-add">
     </div>
 </section>
 
@@ -255,7 +261,7 @@
         <div class="column-2">
             <div><p>Narrow cards allow for <b>higher comparability</b> (can view more products on a single screen), but <b>hinders the tappability</b> of elements, especially for those with small mobile screens.</p>
                 <p>Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility.</b></p></div>
-            <img src="assets/img/shopsmiles/narrow wide.svg" style="max-width: 40%;">
+            <img src="assets/img/shopsmiles/narrow wide.svg">
         </div>
         <div class="bubble-icon yellow">
             <h2 class="no-top-margin">💡</h2>
@@ -273,7 +279,7 @@
     <div class="container-small">
         <h2>2. An intuitive color picker</h2>
         <p>Due to the principles of proximity, the empty gap in place of an inactive color picker looked <b>confusing</b> when placed in a grid.</p>
-        <img src="assets/img/shopsmiles/gap confusing.svg" class="img">
+        <img src="assets/img/shopsmiles/gap confusing.svg" class="margin-add">
         <p>Thus, to avoid this possible confusion, I decided move forward with the third option despite the variable height:</p>
         <ol>
             <li><s>A single color selection</s></li>
@@ -291,7 +297,7 @@
                 <p>However, as we still weren't satisfied with the problem of variable heights, I also came up with a <b>fourth idea</b>: nesting the color selections in a separate button that would prompt to an overlay.</p>
                 <p>This button would be always docked, solving the problems of an empty gap or misalignment.</p>
             </div>
-            <img src="assets/img/shopsmiles/overlay options.gif" style="max-width: 320px;" class="img">
+            <img src="assets/img/shopsmiles/overlay options.gif" style="max-width: 320px;" class="margin-add">
         </div>
         <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.</p>
         <p>The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
@@ -319,13 +325,13 @@
 <section class="padding">
     <div class="container-wide">
         <span class="caption">Final design for the mobile product card</span>
-        <img src="assets/img/shopsmiles/final design.svg" class="img">
+        <img src="assets/img/shopsmiles/final design.svg" class="margin-add">
     </div>
 </section>
 
 <section class="padding">
     <div class="container-wide">
-        <div style="display: grid; grid-auto-flow: column; column-gap: 60px;">
+        <div style="display: grid; grid-auto-flow: column; column-gap: 3em;">
             <div class="grid-column">
                 <span class="caption">Before (Top Picks list)</span>
                 <img src="assets/img/shopsmiles/final design-before.svg" style="max-height: 630px;">
@@ -341,14 +347,14 @@
 <section class="padding">
     <div class="container-wide">
         <span class="caption">Mobile card placed within a carousel</span>
-        <img src="assets/img/shopsmiles/final design-carousel.svg" class="img rounded-border">
+        <img src="assets/img/shopsmiles/final design-carousel.svg" class="margin-add rounded-border">
     </div>
 </section>
 
 <section class="padding">
     <div class="container-wide">
         <span class="caption">Color picker variations and prototype</span>
-        <img src="assets/img/shopsmiles/final designs-color picker.gif" class="img">
+        <img src="assets/img/shopsmiles/final designs-color picker.gif" class="margin-add">
     </div>
 </section>
 
@@ -363,27 +369,27 @@
 
 <section class="padding">
     <div class="container-wide">
-        <div style="display: grid; grid-auto-flow: column; column-gap: 60px;">
-            <span class="caption" style="width: 140px;">Home Page</span>
-            <img src="assets/img/shopsmiles/Home.png" class="img rounded-border">
+        <div class="cp-final-design-grid">
+            <span class="caption cp-final-design-caption">Home Page</span>
+            <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/Home.png">
         </div>
     </div>
 </section>
 
 <section class="padding">
     <div class="container-wide">
-        <div style="display: grid; grid-auto-flow: column; column-gap: 60px;">
-            <span class="caption" style="width: 140px;">Product Listing Page</span>
-            <img src="assets/img/shopsmiles/PLP.png" class="img rounded-border">
+        <div class="cp-final-design-grid">
+            <span class="caption cp-final-design-caption">Product Listing Page</span>
+            <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/PLP.png">
         </div>
     </div>
 </section>
 
 <section class="padding">
     <div class="container-wide">
-        <div style="display: grid; grid-auto-flow: column; column-gap: 60px;">
-            <span class="caption" style="width: 140px;">Product Description Page</span>
-            <img src="assets/img/shopsmiles/PDP.png" class="img rounded-border">
+        <div class="cp-final-design-grid">
+            <span class="caption cp-final-design-caption">Product Description Page</span>
+            <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/PDP.png">
         </div>
     </div>
 </section>
@@ -391,7 +397,7 @@
 <section class="padding">
     <div class="container-small">
         <p>With the new designs, we were able to successfully <b>reduce the variation</b> of product cards (base state without the color picker) from six to three.</p>
-        <img src="assets/img/shopsmiles/reduced variation.svg" class="img">
+        <img src="assets/img/shopsmiles/reduced variation.svg" class="margin-add">
     </div>
 </section>
 
@@ -412,7 +418,7 @@
         <h3>Reflection & Takeaways</h3>
         <h2>🪴 During my time at Colgate-Palmolive, I not only grew as a designer but gained valuable work ethics and soft skills.</h2>
         <p>Hands down, my teammates at Colgate's UX team were one of the most supportive and enjoyable people to work with! Although I only was able to work with the team for 10 weeks, I learned so much not only about the design process but the cross-functional nature of UX design.</p>
-        <img src="assets/img/shopsmiles/reflection w comments.svg" class="img">
+        <img src="assets/img/shopsmiles/reflection w comments.svg" class="margin-add">
         <p>Some takeaways from my time at Colgate-Palmolive:</p>
         <h2>🙆 Good designers design for everyone.</h2>
         <p>As a company with a large user base, the UX team was especially concerned with the 
