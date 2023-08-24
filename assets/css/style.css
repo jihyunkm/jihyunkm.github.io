@@ -153,6 +153,26 @@ p{
     margin: 1.23em 0;
 }
 
+.pill{
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color:#767676;
+    padding: 0.3em 1.2em;
+    margin: 0.4em 0.3em 0.4em 0;
+    border: 1px solid #767676;
+    border-radius: 50px;
+    background-color: #F5F5F5;
+}
+
+/* button{
+   font-size: 1rem; 
+   padding: 1em 2em;
+   border-radius: 50px;
+   border: 1px solid #767676;
+   cursor: pointer;
+} */
+
 /* text color */
 
 .darkgray{
@@ -165,6 +185,14 @@ p{
 
 .turquoise{
     color: #319A87;
+}
+
+.red{
+    color: #B30000;
+}
+
+.blue{
+    color: #1A55AD;
 }
 
 /* link */
@@ -336,6 +364,12 @@ HOME PAGE
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16) ;
 }
 
+@media (max-width: 1000px) {
+    .project-img:hover{
+        transform: translateY(-8px);
+    }
+}
+
 @media (max-width: 600px) {
     .project{
         flex-direction: column;
@@ -348,10 +382,6 @@ HOME PAGE
     .project-card,
     .project-text{
         width: 100%;
-    }
-
-    .project-img:hover{
-        transform: none;
     }
 }
 
@@ -406,17 +436,17 @@ WORK (CASE STUDIES)
 }
 
 .case-study-overview{
-    width: 60%;
-}
-
-.overview-column{
-    width: 50%;
+    width: 52%;
 }
 
 .overview-column-grid{
     display: flex;
     column-gap: 2em;
-    width: 35%;
+    width: 40%;
+}
+
+.overview-column{
+    width: 50%;
 }
 
 @media (max-width: 600px) {
@@ -430,6 +460,42 @@ WORK (CASE STUDIES)
         width: 100%;
     }
 }
+
+.process-link{
+    font-style: italic;
+    /* text-decoration: none; */
+    display: block;
+    margin-top: 1em;
+}
+
+.process-link::after{
+    content: " ↩︎";
+}
+
+.crumb{
+    font-style: italic;
+    font-weight: 500;
+    display: flex;
+    column-gap: 0.5em;
+    margin-bottom: 5em;
+}
+
+.crumb::before{
+    content: "#";
+}
+
+.crumb-link{
+    text-decoration: none;
+}
+
+.crumb-link:hover{
+    color: #2e2e2e;
+}
+
+.current{
+    text-decoration: underline;
+}
+
 
 /* columns */
 
@@ -603,9 +669,7 @@ WORK (CASE STUDIES)
 
 
 
-
-
-
+/***** GOODNOTES *****/
 
 
 /* RESPONSIVE */

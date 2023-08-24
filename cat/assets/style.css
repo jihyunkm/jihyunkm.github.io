@@ -127,7 +127,9 @@ button{
     bottom: 10px;
     width: 120px;
     z-index: -1;
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    animation: rtransparent linear infinite;
+    animation-duration: 2600ms;
 }
 
 #cloud{
@@ -137,4 +139,34 @@ button{
     top: 25px;
     width: 70px;
     opacity: 0.5;
+    animation: ctransparent linear infinite;
+    animation-duration: 3000ms;
+}
+
+@keyframes rtransparent {
+    0%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.8;
+    }
+
+    100%{
+        opacity: 0.4;
+    }
+}
+
+@keyframes ctransparent {
+    0%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.25;
+    }
+
+    100%{
+        opacity: 0.4;
+    }
 }
