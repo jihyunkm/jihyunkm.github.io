@@ -249,7 +249,7 @@ HOME PAGE
 #hero-wrap{
     max-width: 1000px;
     width: 95%;
-    height: 70vh;
+    height: 72vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -263,6 +263,12 @@ HOME PAGE
     }
 }
 
+@media (min-height: 800px) {
+   #hero-wrap{
+    height: 32em;
+   }     
+}
+
 .herohover{
     color: #2e2e2e;
     text-decoration: underline;
@@ -274,9 +280,13 @@ HOME PAGE
     transition: 150ms;
 }
 
+#hero-description{
+    margin-top: -0.1em;
+}
+
 #hero-recently{
     width: 26.25em;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 /* hover image display */
@@ -297,7 +307,7 @@ HOME PAGE
 }
 
 #california{
-    width: 12.5em;
+    width: 14.375em;
 }
 
 @media (max-width: 1000px) {
@@ -319,7 +329,7 @@ HOME PAGE
     font-size: 2.5em;
     font-weight: 300;
     text-decoration: none;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     animation: transitionIn 400ms;
     transition: 150ms;
 }
@@ -338,7 +348,7 @@ HOME PAGE
 
 .project{
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
     justify-content: space-between;
 }
 
@@ -469,7 +479,7 @@ WORK (CASE STUDIES)
 }
 
 .process-link::after{
-    content: " ↩︎";
+    content: " ->";
 }   
 
 .crumb{
