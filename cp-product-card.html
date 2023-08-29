@@ -2,8 +2,11 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ShopSmiles</title>
+    
+    <title>Jihyun Kim</title>
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
 </head>
 
 <body>
@@ -30,7 +33,7 @@
 -->
 
 <!--project overview-->
-<section>
+<section id="overview">
     <div class="container-wide">
         <h1>ShopSmiles</h1>
             <span class="pill">Design Systems</span>
@@ -40,7 +43,7 @@
 
         <img class="case-study-img" src="assets/img/shopsmiles/card image.png">
         
-        <div class="case-study-overview-grid">
+        <div class="case-study-details">
 
             <span class="case-study-overview">
                 <h3>overview</h3>
@@ -50,57 +53,45 @@
                     <b>streamline the product browsing experience</b> to address the site’s high bounce rates.</p>
             </span>
             
-            <div class="overview-column-grid">
-                
-                <div class="overview-column">
-                    <h3>LOGISTICS</h3>
-                    <h4><i>Timeline</i><br>
-                        July - August 2022
-                    </h4>
-                    <h4><i>Team</i><br>
-                        2 Product Designers<br>
-                        5 Engineers<br>
-                        1 Product Manager<br>
-                        1 Marketing Lead
-                    </h4>
-                    <h4><i>Tools</i><br>
-                        Figma, Google Suite
-                    </h4>
-                </div>
-                
-                <div class="overview-column">
-                    <h3>PROCESS</h3>
-                    <h4>
-                        <a class="process-link no-top-margin" href="#scope">Scope</a>
-                        HMW Statement, Metrics<br>
-                        <a class="process-link" href="#research">Research</a>
-                        Internal Audit, Heuristic Evaluation, Landscape Analysis<br>
-                        <a class="process-link" href="#design">Design</a>
-                        Design Exploration, Considerations, Wireframe, Prototype<br>
-                        <a class="process-link" href="#implementation">Implementation</a>
-                        Design Systems, Redlining
-                    </h4>
-                </div>
+            <div class="case-study-logistics">
+                <h3>LOGISTICS</h3>
+                <h4 class="no-top-margin"><i>Timeline</i><br>
+                    July - August 2022
+                </h4>
+                <h4 class="no-top-margin"><i>Team</i><br>
+                    2 Product Designers, 5 Engineers, 1 Product Manager, 1 Marketing Lead
+                </h4>
+                <h4 class="no-top-margin"><i>Tools</i><br>
+                    Figma, Google Suite
+                </h4>
             </div>
+
         </div>
+
+
+        <h3>process</h3>
+        
     </div>
 </section>
+
+
+<div id="process-bar">
+    <a class="process-step scope" href="#scope">Scope</a>
+        ->
+    <a class="process-step research" href="#research">Research</a>
+        ->
+    <a class="process-step ideation" href="#ideation">Ideation</a>
+        ->
+    <a class="process-step final-design" href="#final-design">Final Design</a>
+        ->
+    <a class="process-step implementation" href="#implementation">Implementation</a>
+</div>
 
 <hr>
 
 <!--project content-->
-<section id="scope" class="padding">
-    <div class="container-small">
-
-        <h4 class="crumb red">
-            <a class="crumb-link current" href="#scope">Scope</a>
-                ->
-            <a class="crumb-link red" href="#research">Research</a>
-                ->
-            <a class="crumb-link red" href="#design">Design</a>
-                ->
-            <a class="crumb-link red" href="#implementation">Implementation</a>
-        </h4>
+<section id="scope">
+    <div class="padding container-small">
 
         <h3>the problem</h3>
         <h2>🛍 While ShopSmiles has high user traffic from social ads, these visits rarely translated to actual purchases.</h2>
@@ -108,19 +99,16 @@
             <p>Thus, the Global IT Team, including myself, was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.</p>
         <img src="assets/img/shopsmiles/overhaul.png" class="margin-add">
     </div>
-</section>
 
-<section class="padding gray-section">
-    <div class="container-small">
+    <div class="gray-section container-small">
         <h3>tackling the problem</h3>
         <p>With the context in mind, we landed on a core question:</p>
         <h2>💭 <b>HMW</b> improve ShopSmile's <i>product browsing experience</i> to generate more sales?</h2>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <h3>WHAT WE KEPT IN MIND...</h3>  
+
         <div class="bubble-icon">
             <h2 class="no-top-margin">🏆</h2>
             <div><b>Goals:</b>
@@ -131,6 +119,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="bubble-icon">
             <h2 class="no-top-margin">⚒️</h2>
             <div><b>Constraints:</b>
@@ -143,14 +132,16 @@
                 </ul>
             </div>
         </div>
+
     </div>
 </section>
 
 <hr>
 
 <!-- preview of final experience -->
-<section class="padding">
-    <div class="container-wide">
+<section id="preview-final-designs">
+
+    <div class="padding container-wide">
         <h3>preview of final experience</h3>
         <div class="cp-preview">
             <div class="cp-preview1-text">
@@ -162,10 +153,8 @@
             </div>
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <div class="cp-preview">
             <div class="cp-preview2-img">
                 <img src="assets/img/shopsmiles/Kapture 2023-02-16 at 17.28.26.gif">
@@ -176,26 +165,15 @@
             </div>
         </div>
     </div>
-</section>
 
-<a href="#final-design" class="jump">Jump to final designs -></a>
+</section>
 
 <hr>
 
 <!-- process -->
 
-<section id="research" class="padding">
-    <div class="container-small">
-
-        <h4 class="crumb red">
-            <a class="crumb-link red" href="#scope">Scope</a>
-                ->
-            <a class="crumb-link current" href="#research">Research</a>
-                ->
-            <a class="crumb-link red" href="#design">Design</a>
-                ->
-            <a class="crumb-link red" href="#implementation">Implementation</a>
-        </h4>
+<section id="research">
+    <div class="padding container-small">
         
         <h3>referring to past research</h3>
         <h2>📌 According to past internal audits and heuristic evaluations, we discovered that users were pushed away by product cards.</h2>
@@ -203,10 +181,8 @@
         <p>Product cards touch upon various areas of the site and act as the <b>main drivers of purchase decisions</b> by providing quick gists of information. They allow users to easily compare different products, which is a big user "want."</p>
         <p>However, ShopSmiles' product cards were <b>too large</b> and <b>hard to read</b>—undermining this value.</p>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <div class="column-2">
             <p class="col-50">I also noted that there were too many variations of the cards throughout the site, making it:</p>
             <ol>
@@ -216,10 +192,8 @@
         </div>
         <img src="assets/img/shopsmiles/instances.png" class="margin-add" style="margin-bottom: 0;">
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <p>Hence, our <b>main goals</b> for the product card redesign were to:</p>
         <ol>
             <li><b>Minimize</b> the number of cards living in the ecosystem</li>
@@ -228,10 +202,8 @@
             <li>Redline all cards for development—both the design and usage standards</li>
         </ol>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <h3>understanding the product card</h3>
         <h2>🔍 Before diving into the redesign, I first needed to understand the components and use case of a product card.</h2>
         <div class="bubble-icon">
@@ -247,20 +219,10 @@
 
 <hr>
 
-<section id="design" class="padding">
-    <div class="container-small">
+<section id="ideation">
+    <div class="padding container-small">
 
-        <h4 class="crumb red">
-            <a class="crumb-link red" href="#scope">Scope</a>
-                ->
-            <a class="crumb-link red" href="#research">Research</a>
-                ->
-            <a class="crumb-link current" href="#design">Design</a>
-                ->
-            <a class="crumb-link red" href="#implementation">Implementation</a>
-        </h4>
-
-        <h3>UNEXPECTED COMPLICATIONS...</h3>
+        <h3>Design considerations & explorations</h3>
         <h2>🎨 As some ShopSmiles products are offered in multiple colors, the business team also wanted a color picker to be accessible on the cards.</h2>
         <p>However, most ShopSmiles products are only offered in a single color and these would <b>instead</b> either show:</p>
         <div style="display: grid; grid-auto-flow: column; column-gap: 16px; margin-top: 32px;">
@@ -278,27 +240,20 @@
             </div>
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <p>Additionally, we decided to display the "Top Picks" in a <b>carousel</b> instead of a list to reduce
             the time it took users to reach the reviews.</p>
         <p>This meant that I had to make sure to <b>minimize</b> the number of complex <b>haptic controls</b> (i.e., nested scrolling, pop-up in a scroll),
             as the color picker would introduce more interactions.</p>
         <img src="assets/img/shopsmiles/top picks color picker w gradient.png" class="margin-add">
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
-        <h3>Design explorations & considerations</h3>
-        <p>And now, with the components of a product card—and some restrictions—in mind, I started exploring the different variations and designs.</p>
+    <div class="padding container-small">
+        <h2>🧑‍🎨 With all the components of a product card—and some restrictions—in mind, I started exploring different design variations.</h2>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <h2>1. Wide instead of narrow cards</h2>
         <div class="column-2">
             <div class="col-50">
@@ -317,10 +272,8 @@
             </div>
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <h2>2. An intuitive color picker</h2>
         <p>Due to the principles of proximity, the empty gap in place of an inactive color picker looked <b>confusing</b> when placed in a grid.</p>
         <img src="assets/img/shopsmiles/gap confusing.png" class="margin-add">
@@ -331,10 +284,8 @@
             <li><b>Have no gap with a variable height</b></li>
         </ol>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <h2>3. An accessible color picker</h2>
         <div class="column-2">
             <div>
@@ -358,23 +309,19 @@
     </div>
 </section>
 
-<section class="gray-section" id="final-design">
-    <div class="container-small">
+<section id="final-design">
+    <div class="gray-section container-small">
         <h3>Final Designs</h3>
         <h2>🤳 And now, introducing the new cleaner and smaller product cards: easier on the eyes and an easier browsing experience.</h2>
         <p>After many deliberations with not only the UX team, but with developers, product managers, and business teams (legal and marketing), we ultimately landed on the final design:</p>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <span class="caption">Final design for the mobile product card</span>
         <img src="assets/img/shopsmiles/final design.png" class="margin-add">
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <div id="cp-before-and-after">
             <div class="grid-column">
                 <span class="caption">Before (Top Picks list)</span>
@@ -386,17 +333,13 @@
             </div>
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <span class="caption">Mobile card placed within a carousel</span>
         <img class="margin-add rounded-border" src="assets/img/shopsmiles/final design-carousel.png">
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <span class="caption">Color picker variations and prototype</span>
         <img class="margin-add" src="assets/img/shopsmiles/final designs-color picker.gif">
     </div>
@@ -404,60 +347,40 @@
 
 <hr>
 
-<section id="implementation" class="padding">
-    <div class="container-small">
-
-        <h4 class="crumb red">
-            <a class="crumb-link red" href="#scope">Scope</a>
-                ->
-            <a class="crumb-link red" href="#research">Research</a>
-                ->
-            <a class="crumb-link red" href="#design">Design</a>
-                ->
-            <a class="crumb-link current" href="#implementation">Implementation</a>
-        </h4>
+<section id="implementation">
+    <div class="padding container-small">
 
         <h3>The new design system</h3>
         <p>While I mainly focused on designing the mobile cards and creating color picker components for the Figma library, the team and I eventually fleshed out the <b>entire design system</b> for product cards.</p>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <div class="cp-final-design-grid">
             <span class="caption cp-final-design-caption">Home Page</span>
             <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/Home.png">
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <div class="cp-final-design-grid">
             <span class="caption cp-final-design-caption">Product Listing Page</span>
             <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/PLP.png">
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-wide">
+    <div class="padding container-wide">
         <div class="cp-final-design-grid">
             <span class="caption cp-final-design-caption">Product Description Page</span>
             <img class="cp-final-design-img rounded-border" src="assets/img/shopsmiles/PDP.png">
         </div>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
+    <div class="padding container-small">
         <p>With the new designs, we were able to successfully <b>reduce the variation</b> of product cards (base state without the color picker) from six to three.</p>
         <img class="margin-add" src="assets/img/shopsmiles/reduced variation.png">
     </div>
-</section>
 
-<section class="gray-section">
-    <div class="container-small">
+    <div class="gray-section container-small">
         <h3>Impact</h3>
         <h2>🛳 Designs are live<i>!</i></h2>
         <p>The product card designs are currently <a href="https://shop.colgate.com/" target="_blank" class="external-link">live</a>, successfully marking the first of many redesigns planned to launch for ShopSmiles. 
@@ -514,3 +437,31 @@
 </footer>
 
 </body>
+
+<!-- js -->
+
+<script>
+
+// credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
+    const sections = document.querySelectorAll('section');
+    const processLi = document.querySelectorAll('.process-step');
+
+    window.addEventListener('scroll', ()=> {
+        let current = '';
+        sections.forEach( section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+                current = section.getAttribute('id');
+            }
+        })
+
+        processLi.forEach( li => {
+            li.classList.remove('active')
+            if(li.classList.contains(current)){
+                li.classList.add('active')
+            }
+        })
+    })
+
+</script>

@@ -2,8 +2,11 @@
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GoodNotes</title>
+    
+    <title>Jihyun Kim</title>
+    <link rel="icon" type="image/svg" href="assets/img/favicon.svg">
 </head>
 
 <body>
@@ -20,59 +23,65 @@
 </header>
 
 <!--project overview-->
-<section>
+
+<section id="overview">
     <div class="container-wide">
         <h1>GoodNotes</h1>
+
         <span class="pill">Mobile Tablet</span>
         <span class="pill">UX/UI</span>
         <span class="pill">Apple iOS</span>
         <span class="pill">Figma</span>
+
         <img class="case-study-img" src="assets/img/goodnotes/card image.png">
-        <div class="case-study-overview-grid">
+        
+        <div class="case-study-details">
+
             <span class="case-study-overview">
                 <h3>overview</h3>
                 <p>GoodNotes is an iOS app designed for students to streamline their note-taking process. 
                     They challenged <a href="https://www.berkeleyinnovation.org" class="external-link" target="_blank">Berkeley Innovation</a> to find a way to <b>boost students' confidence levels</b> while studying with the app.</p>
                 <p>As a <b>Project Mentor</b>, I assisted and guided four other designers to conceptualize a new feature within GoodNotes to best reassure students in their understanding of a desired academic topic.</p>
             </span>
-            <div class="overview-column-grid">
-                <div class="overview-column">
+
+            <div class="case-study-logistics">
+                
                     <h3>LOGISTICS</h3>
-                    <h4><i>Timeline</i><br>
+                    <h4 class="no-top-margin"><i>Timeline</i><br>
                         January  - May 2022
                     </h4>
-                    <h4><i>Team</i><br>
-                        4 Product Designers<br>
-                        2 Internal Stakeholders (Senior Product Designer, Design Lead)
+                    <h4 class="no-top-margin"><i>Team</i><br>
+                        4 Product Designers, 2 Internal Stakeholders (Senior Product Designer, Design Lead)
                     </h4>
-                    <h4><i>Tools</i><br>
+                    <h4 class="no-top-margin"><i>Tools</i><br>
                         Figma, Google Suite
                     </h4>
-                </div>
-                <div class="overview-column">
-                    <h3>PROCESS</h3>
-                    <h4>
-                        <a class="process-link no-top-margin" href="#understand">Understand</a>
-                        Breaking down HMW, Research plan<br>
-                        <a class="process-link" href="">Research</a>
-                        Competitive Analysis, Contextual Inquiry, User Interviews<br>
-                        <a class="process-link" href="">Synthesis</a>
-                        Affinity Map, Persona, Journey Map<br>
-                        <a class="process-link" href="">Ideation</a>
-                        2x2 Matrix, User Flow<br>
-                        <a class="process-link" href="">Design</a>
-                        Wireframe, Prototype
-                    </h4>
-                </div>
+
             </div>
+
         </div>
+
+        <h3>process</h3>
+
     </div>
 </section>
 
+<div id="process-bar">
+    <a class="process-step understand" href="#understand">Understand</a>
+        ->
+    <a class="process-step research" href="#research">Research</a>
+        ->
+    <a class="process-step ideation" href="#ideation">Ideation</a>
+        ->
+    <a class="process-step design" href="#design">Design</a>
+        ->
+    <a class="process-step final-design" href="#final-design">Final Design</a>
+</div>
+
 <hr>
 
-<section class="padding">
-    <div class="container-small">
+<section>
+    <div class="padding container-small">
         <h3>the question</h3>
         <p>GoodNotes' mission is to <b>empower people with knowledge</b> through digital paper and innovations, whilst making studying <b>efficient and enjoyable</b>.</p>
         <p>Thus, GoodNotes bases their success on the success of its users—students, and how well they understand their desired topic. With this in mind, they wanted to solve the following question:</p>
@@ -86,45 +95,30 @@
 <hr>
 
 <!-- preview of final experience -->
-<section class="padding">
-    <div class="container-wide">
+<section>
+    <div class="padding container-wide">
         <h3>preview of final experience</h3>
         <h2>asdf</h2>
         <img>
     </div>
 </section>
 
-<a href="#final-design" class="jump">Jump to final designs ↩︎</a>
-
 <hr>
 
-<section class="padding" id="understand">
-    <div class="container-small">
-
-        <h4 class="crumb blue">
-            <a class="crumb-link current" href="#understand">Understand</a>
-                >
-            <a class="crumb-link blue" href="#research">Research</a>
-                >
-            <a class="crumb-link blue" href="#synthesis">Synthesis</a>
-                >
-            <a class="crumb-link blue" href="#ideation">Ideation</a>
-                >
-            <a class="crumb-link blue" href="#design">Design</a>
-        </h4>
+<section id="understand">
+    <div class="padding container-small">
 
         <h3>Dissecting the problem</h3>
         <h2>🤔 Before getting started, we first had to break down the HMW to understand it greater depth.</h2>
         <img src="assets/img/goodnotes/hmw breakdown.png">
         <p></p>
     </div>
-</section>
 
-<section class="padding">
-    <div class="container-small">
-        <h3>research</h3>
+    <div class="padding container-small">
+        <h3>research plan</h3>
         <h2></h2>
     </div>
+
 </section>
 
 <!--footer-->
@@ -143,3 +137,31 @@
 </footer>
 
 </body>
+
+<!-- js -->
+
+<script>
+
+// credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
+    const sections = document.querySelectorAll('section');
+    const processLi = document.querySelectorAll('.process-step');
+
+    window.addEventListener('scroll', ()=> {
+        let current = '';
+        sections.forEach( section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+                current = section.getAttribute('id');
+            }
+        })
+
+        processLi.forEach( li => {
+            li.classList.remove('active')
+            if(li.classList.contains(current)){
+                li.classList.add('active')
+            }
+        })
+    })
+
+</script>

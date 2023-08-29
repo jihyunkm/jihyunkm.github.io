@@ -1,3 +1,5 @@
+// ********** INDEX **********
+
 function heroShow(imageID) {
     document.getElementById(imageID).style.display = 'block';
 }
@@ -35,3 +37,11 @@ document.getElementById('based-in').addEventListener(
 document.getElementById('based-in').addEventListener(
     'mouseout', e => {heroHide('california')}
 )
+
+
+
+
+
+
+// ********** CASE STUDIES **********
+
