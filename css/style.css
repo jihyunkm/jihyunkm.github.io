@@ -195,6 +195,16 @@ p{
    cursor: pointer;
 } */
 
+#desktop{
+    display: none;
+}
+
+@media (max-width: 600px){
+    #desktop{
+        display: block;
+    }
+}
+
 @media (max-width: 400px){
     h1{
         font-size: 3rem;
@@ -501,7 +511,7 @@ WORK (CASE STUDIES)
     max-width: 1000px;
     margin: 0 auto;
 
-    padding: 0.3em;
+    padding: 0.1%;
     align-items: baseline;
 
     backdrop-filter: blur(10px);
