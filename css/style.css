@@ -26,6 +26,7 @@ background-image: linear-gradient(180deg, rgba(255,0,0,0) 40%, #CFEFE4 40%,
 
 /***** LAYOUT *****/
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -179,6 +180,13 @@ p{
     align-self: center;
 }
 
+#hero-description{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #B3B3B3;
+    line-height: 1.6;
+}
+
 /* button{
    font-size: 1rem; 
    padding: 1em 2em;
@@ -186,6 +194,16 @@ p{
    border: 1px solid #767676;
    cursor: pointer;
 } */
+
+@media (max-width: 400px){
+    h1{
+        font-size: 3rem;
+    }
+
+    #hero-description{
+        font-size: 1.8rem;
+    }
+}
 
 /* text color */
 
@@ -257,10 +275,6 @@ HOME PAGE
 
 /* layout */
 
-#hero{
-    width: 35em;
-}
-
 #hero-wrap{
     max-width: 1000px;
     width: 95%;
@@ -269,14 +283,12 @@ HOME PAGE
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+        
     animation: transitionIn 400ms;
 }
 
-#hero-description{
-    font-size: 2.3rem;
-    font-weight: 500;
-    color: #B3B3B3;
-    line-height: 1.6;
+#hero{
+    max-width: 35em;
 }
 
 .herohover{
@@ -617,6 +629,7 @@ WORK (CASE STUDIES)
 }
 
 
+
 /***** SHOPSMILES *****/
 
 .cp-preview{
@@ -729,7 +742,6 @@ WORK (CASE STUDIES)
     margin: 3em auto;
     display: flex;
     justify-content: space-around;
-    
 }
 
 #gn-research-plan > * {
@@ -755,6 +767,12 @@ WORK (CASE STUDIES)
 @media (max-width: 600px){
     html{
         font-size: 13px;
+    }
+}
+
+@media (max-width: 400px){
+    html{
+        font-size: 12px;
     }
 }
 
