@@ -509,7 +509,7 @@ WORK (CASE STUDIES)
     max-width: 1000px;
     margin: 0 auto;
 
-    padding: 0.1%;
+    padding: 0.24em 0.1%;
     align-items: baseline;
 
     backdrop-filter: blur(10px);
