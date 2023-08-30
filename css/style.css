@@ -33,7 +33,7 @@ html{
   
 body{
     font-family: "Inter";
-    color: #2e2e2e;
+    color: var(--black);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.7;
@@ -45,7 +45,7 @@ li{
 }
 
 s{
-    color: #767676;
+    color: var(--darkgray);
 }
 
 hr{
@@ -53,9 +53,8 @@ hr{
     width: 95%;
     margin: auto;
     margin-top: 6em;
-    color: #E0E0E0;
-    border: 0.8px solid #E0E0E0;
-    border-radius: 50px;
+    border: none;
+    border-bottom: 1px solid var(--gray);
 }
 
 img{
@@ -64,8 +63,14 @@ img{
 
 
 :root{
+    --white: #FFFFFF; 
+    --black: #2e2e2e;
+    --lightgray: #F7F7F7;
+    --gray: #E0E0E0; 
+    --darkgray: #767676; 
     --shopsmiles-bg: #FF7F79;
     --goodnotes-bg: #C7E4FF;
+    
 }
 
 
@@ -105,7 +110,7 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #767676;
+    color: var(--darkgray);
     font-size: 0.8125rem;
     margin: auto;
     margin-top: 16em;
@@ -114,7 +119,7 @@ footer{
 
 #footer-nav{
     font-size: 1rem;
-    color: #2e2e2e;
+    color: var(--black);
     margin-bottom: 0.5em;
 }
 
@@ -144,7 +149,7 @@ h2{
 h3{
     font-size: 0.8125rem;
     font-weight: 400;
-    color: #767676;
+    color: var(--darkgray);
     text-transform: uppercase;
     margin: 3em 0;
 }
@@ -152,7 +157,7 @@ h3{
 h4{
     font-size: 0.8125rem;
     font-weight: 400;
-    color: #767676;
+    color: var(--darkgray);
     margin: 1.25em 0px;
 }
 
@@ -164,7 +169,7 @@ p{
     font-size: 0.8125rem;
     font-style: italic;
     font-weight: 400;
-    color: #767676;
+    color: var(--darkgray);
     margin: 1.23em 0;
 }
 
@@ -172,27 +177,18 @@ p{
     display: inline-block;
     font-size: 0.7rem;
     font-weight: 500;
-    color:#767676;
+    color: var(--black);
     padding: 0.3em 1.2em;
     margin: 0.4em 0.3em 0.4em 0;
     border-radius: 50px;
-    background-color: #F5F5F5;
+    background-color: #EEEEEE;
     align-self: center;
 }
 
 #hero-description{
-    color: #B3B3B3;
     margin-top: 0.35em;
-    color: #767676;
+    color: var(--darkgray);
 }
-
-/* button{
-   font-size: 1rem; 
-   padding: 1em 2em;
-   border-radius: 50px;
-   border: 1px solid #767676;
-   cursor: pointer;
-} */
 
 #desktop{
     display: none;
@@ -221,11 +217,11 @@ p{
 /* text color */
 
 .darkgray{
-    color: #767676;
+    color: var(--darkgray);
 }
 
 .black{
-    color: #2e2e2e;
+    color: var(--black);
 }
 
 .turquoise{
@@ -243,13 +239,12 @@ p{
 /* link */
 
 a{
-    color: #2e2e2e;
+    color: var(--black);
     transition: 150ms;
 }
 
 a:hover, 
 a:focus{
-    /* color: #767676; */
     color: rgba(0, 0, 0, 0.5);
     transition: 150ms;
 }
@@ -312,14 +307,14 @@ HOME PAGE
 }
 
 .herohover{
-    color: #2e2e2e;
+    color: var(--black);
     text-decoration: underline solid transparent;
     transition: all 150ms;
 }
 
 .herohover:hover{
-    color: #2e2e2e;
-    text-decoration: underline solid #2e2e2e;
+    color: var(--black);
+    text-decoration: underline solid var(--black);
     transition: all 150ms;
 }
 
@@ -343,7 +338,7 @@ HOME PAGE
 
 #hcd{
     position: absolute;
-    transform: translate(420%, -170%);
+    transform: translate(400%, -170%);
 }
 
 #california{
@@ -375,7 +370,7 @@ HOME PAGE
 }
 
 #scroll-down:hover{
-    color: #767676;
+    color: var(--darkgray);
     transition: 150ms;
 }
 
@@ -452,10 +447,10 @@ WORK (CASE STUDIES)
 } /* adds padding to sections */
 
 .gray-section{
-    background-color: #F7F7F7;
+    background-color: var(--lightgray);
     padding: 6em 0;
     margin-top: 6em;
-    box-shadow: 0 0 0 100vmax #F7F7F7;
+    box-shadow: 0 0 0 100vmax var(--lightgray);
     clip-path: inset(0 -100vmax);
 } /* credits https://youtu.be/81pnuZFarRw?si=ZvR-AVEEveJ-6JL_ */
 
@@ -467,12 +462,6 @@ WORK (CASE STUDIES)
     border-radius: 1rem;
 }
 
-/* .highlight-red{
-    background-image: linear-gradient(180deg, rgba(255,0,0,0) 40%, #FFDAD9 40%, 
-    #FFDAD9 90%,rgba(255,0,0,0) 90%);
-} */
-
-
 
 
 /***** CONTENT *****/
@@ -482,7 +471,6 @@ WORK (CASE STUDIES)
     width: 95%;
     max-width: 1000px;
     margin: 0 auto;
-    box-shadow: 0 0 0 100vmax #E0E0E0;
     clip-path: inset(0 -100vmax);
 }
 
@@ -520,7 +508,7 @@ WORK (CASE STUDIES)
     align-items: baseline;
 
     backdrop-filter: blur(10px);
-    border: 1px solid #E0E0E0;
+    border: 1px solid var(--gray);
     border-radius: 50px;
 
     display: flex;
@@ -528,29 +516,29 @@ WORK (CASE STUDIES)
     
     font-size: 0.8125rem;
     font-weight: 400;
-    color: #767676;
+    color: var(--darkgray);
 
     z-index: 99;
-    transition: all 150ms ease-in-out;
+    transition: all 150ms;
 }
 
 .process-step{
     padding: 0.2% 2%;
-    color: #767676;
+    color: var(--darkgray);
     border-radius: 50px;
     text-decoration: none;
 
-    transition: all 150ms ease-in-out;
+    transition: all 150ms;
 }
 
 .process-step:hover{
-    color: #2e2e2e;
+    color: var(--black);
 }
 
 .active{
-    color: #2e2e2e;
+    color: var(--black);
     background-color: rgba(0, 0, 0, 0.16);
-    transition: all 150ms ease-in-out;
+    transition: all 150ms;
 }
 
 .no-margin{
@@ -620,7 +608,7 @@ WORK (CASE STUDIES)
 }
 
 .bubble-icon{
-    background-color: #F7F7F7;
+    background-color: var(--lightgray);
     display: flex;
     align-items: flex-start;
     padding: 2.5em 3.5em;
@@ -635,7 +623,7 @@ WORK (CASE STUDIES)
 }
 
 .bubble{
-    background-color: #F7F7F7;
+    background-color: var(--lightgray);
     width: fit-content;
     height: fit-content;
     padding: 32px 40px;
@@ -737,7 +725,7 @@ WORK (CASE STUDIES)
     justify-content: space-between;
     margin: 1em 0;
 
-    background-color: #F7F7F7;
+    background-color: var(--lightgray);
     align-items: flex-start;
     padding: 2.5em;
     border-radius: 1rem;
@@ -838,5 +826,5 @@ WORK (CASE STUDIES)
 
 #hdt{
     margin-top: 0.5em;
-    color: #767676;
+    color: var(--darkgray);
 }
