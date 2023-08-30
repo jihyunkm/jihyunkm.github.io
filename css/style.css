@@ -298,7 +298,7 @@ HOME PAGE
 }
 
 #hero{
-    max-width: 35em;
+    width: 35em;
 }
 
 .herohover{
@@ -315,8 +315,6 @@ HOME PAGE
     text-decoration-color: #767676;
     transition: 150ms;
 }
-
-
 
 #hero-recently{
     width: 26.25em;
