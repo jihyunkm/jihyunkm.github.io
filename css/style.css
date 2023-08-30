@@ -127,7 +127,8 @@ footer{
 /***** TEXT *****/
 
 h1{
-    font-size: 3.8rem;
+    /* font-size: 3.8rem; */
+    font-size: 3.2rem;
     font-weight: 500;
     margin-bottom: 0.2em;
     line-height: normal;
@@ -174,17 +175,15 @@ p{
     color:#767676;
     padding: 0.3em 1.2em;
     margin: 0.4em 0.3em 0.4em 0;
-    border: 1px solid #767676;
     border-radius: 50px;
     background-color: #F5F5F5;
     align-self: center;
 }
 
 #hero-description{
-    font-size: 2.3rem;
-    font-weight: 500;
     color: #B3B3B3;
-    line-height: 1.6;
+    margin-top: 0.35em;
+    color: #767676;
 }
 
 /* button{
@@ -200,6 +199,10 @@ p{
 }
 
 @media (max-width: 600px){
+    h1{
+        font-size: 2.8rem;
+    }
+
     #desktop{
         display: block;
     }
@@ -207,7 +210,7 @@ p{
 
 @media (max-width: 400px){
     h1{
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     #hero-description{
@@ -286,10 +289,11 @@ HOME PAGE
 /* layout */
 
 #hero-wrap{
-    max-width: 1000px;
+    max-width: 700px;
     width: 95%;
-    height: 38em;
+    height: 34em;
     margin: auto;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -297,56 +301,59 @@ HOME PAGE
     animation: transitionIn 400ms;
 }
 
-#hero{
+/* #hero{
     max-width: 35em;
+} */
+
+#im-jihyun{
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .herohover{
-    color: #767676;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-decoration-color: #B3B3B3;
-    text-underline-offset: 0.16em;
-    transition: 150ms;
+    color: #2e2e2e;
+    text-decoration: underline solid transparent;
+    transition: all 150ms;
 }
 
 .herohover:hover{
     color: #2e2e2e;
-    text-decoration-color: #767676;
-    transition: 150ms;
+    text-decoration: underline solid #2e2e2e;
+    transition: all 150ms;
 }
 
-#hero-recently{
-    max-width: 26.25em;
-    margin-top: 5em;
+#hero-previously{
+    margin-top: 4em;
+    /* width: 55%; */
 }
 
 /* hover image display */
 
 .hover-img{
-    position: relative;
-    top: 45%;
-    left: 65%;
     display: none;
+    width: 9.375rem;
     z-index: -99;
 }
 
-#watercolor{
-    width: 16.25em;
+#watercolor{  
+    position: absolute;
+    transform: translate(200%, -120%);
 }
 
 #hcd{
-    width: 17.5em;
+    position: absolute;
+    transform: translate(420%, -170%);
 }
 
 #california{
-    width: 14.375em;
+    position: absolute;
+    transform: translate(320%, -25%);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .hover-img{
-        top: 40%;
-        left: 60%;
+        opacity: 0;
     }
 }
 
@@ -810,17 +817,26 @@ WORK (CASE STUDIES)
 /* testing */
 
 #ht{
-    height:70vh;
+    height:30em;
+    max-width: 700px;
+    width: 95%;
+    display: block;
+    margin: auto;
+
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    animation: transitionIn 400ms;
 }
 
 #tij{
-    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 #hdt{
-    width: 50%;
+    margin-top: 0.5em;
+    color: #767676;
 }
