@@ -62,22 +62,38 @@ img{
 }
 
 
+:root{
+    --shopsmiles-bg: #FF7F79;
+    --goodnotes-bg: #C7E4FF;
+}
+
+
 /***** NAVIGATION *****/
 
+header{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    inset: 0;
+    z-index: 99;
+}
+
 nav{
-    font-family: "GmarketSansMedium";
-    /* font-size: 0.9rem; */
-    display: flex;
-    justify-content: space-between;
     max-width: 1000px;
     width: 95%;
     margin: auto;
     margin-top: 2.5em;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "GmarketSansMedium";
+    /* font-size: 0.9rem; */
 }
 
 #nav-item{
     font-family: "Inter";
-    margin-left: 2.5em;
+    margin-left: 1em;
     text-decoration: none;
     padding-left: 1em;
 }
@@ -202,7 +218,8 @@ a{
 
 a:hover, 
 a:focus{
-    color: #767676;
+    /* color: #767676; */
+    color: rgba(0, 0, 0, 0.5);
     transition: 150ms;
 }
 
@@ -247,7 +264,7 @@ HOME PAGE
 #hero-wrap{
     max-width: 1000px;
     width: 95%;
-    height: 34em;
+    height: 38em;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -291,6 +308,7 @@ HOME PAGE
     top: 45%;
     left: 65%;
     display: none;
+    z-index: -99;
 }
 
 #watercolor{
@@ -307,8 +325,8 @@ HOME PAGE
 
 @media (max-width: 1000px) {
     .hover-img{
-        top: 8%;
-        left: 56%;
+        top: 40%;
+        left: 60%;
     }
 }
 
@@ -432,21 +450,33 @@ WORK (CASE STUDIES)
 
 /***** CONTENT *****/
 
-.case-study-img{
-    margin: 1em 0;
-    border-radius: 1em;
+.cs-img{
+    display: block;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 0 100vmax #E0E0E0;
+    clip-path: inset(0 -100vmax);
 }
 
-.case-study-details{
+.cs-img.shopsmiles-bg {
+    box-shadow: 0 0 0 100vmax var(--shopsmiles-bg);
+}
+
+.cs-img.goodnotes-bg {
+    box-shadow: 0 0 0 100vmax var(--goodnotes-bg);
+}
+
+.cs-details{
     display: flex;
     justify-content: space-between;
 }
 
-.case-study-overview{
+.cs-overview{
     width: 67%;
 }
 
-.case-study-logistics{
+.cs-logistics{
     display: flex;
     flex-direction: column;
     width: 24%;
@@ -695,24 +725,20 @@ WORK (CASE STUDIES)
 
 #gn-research-plan{
     width: 82%;
+    min-width: 600px;
     margin: 3em auto;
     display: flex;
     justify-content: space-around;
     
 }
 
-.gn-research-plan-col{
+#gn-research-plan > * {
     width: 29%;
-}
-
-@media (max-width: 1000px) {
-    #gn-research-plan{
-        width: 600px;
-    }
 }
 
 @media (max-width: 600px) {
     #gn-research-plan{
+        min-width: 100%;
         width: 100%;
     }
 }
@@ -735,10 +761,11 @@ WORK (CASE STUDIES)
 /* etc. */
 
 #caution{
-    margin: 1em auto;
+    margin: 0 auto 1em auto;
     padding: 0.8em;
     font-size: 0.8125rem;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,235,198,1) 10%, rgba(255,235,198,1) 90%, rgba(255,255,255,0) 100%);
+    background-color: #ffebc6;
+    /* background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,235,198,1) 10%, rgba(255,235,198,1) 90%, rgba(255,255,255,0) 100%); */
     font-style: italic;
     text-align: center;
 }

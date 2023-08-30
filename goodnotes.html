@@ -22,10 +22,18 @@
     </nav>
 </header>
 
+<img class="cs-img goodnotes-bg" src="img/goodnotes/card image.png">
+
+<!-- CAUTION -->
+<div id="caution">
+    <b>⚠️ CAUTION:</b> This case-study is still being hand-developed; apologies for any inconveniences! From, your self-taught coder...
+</div>
+
 <!--project overview-->
 
 <section id="overview">
     <div class="container-wide">
+
         <h1>GoodNotes</h1>
 
         <span class="pill">Mobile Tablet</span>
@@ -33,24 +41,17 @@
         <span class="pill">Apple iOS</span>
         <span class="pill">Figma</span>
 
-        <img class="case-study-img" src="img/goodnotes/card image.png">
-        
-        <!-- CAUTION -->
-        <div id="caution">
-            <b>⚠️ CAUTION:</b> This case-study is still being hand-developed; apologies for any inconveniences! From, your self-taught coder...
-        </div>
 
+        <div class="cs-details">
 
-        <div class="case-study-details">
-
-            <span class="case-study-overview">
+            <span class="cs-overview">
                 <h3>overview</h3>
                 <p>GoodNotes is an iOS app designed for students to streamline their note-taking process. 
                     They challenged <a href="https://www.berkeleyinnovation.org" class="external-link" target="_blank">Berkeley Innovation</a> to find a way to <b>boost students' confidence levels</b> while studying with the app.</p>
                 <p>As the <b>Design Lead</b>, I assisted and guided four other designers to conceptualize a new feature within GoodNotes to best reassure students in their understanding of a desired academic topic.</p>
             </span>
 
-            <div class="case-study-logistics">
+            <div class="cs-logistics">
                 
                     <h3>LOGISTICS</h3>
                     <h4 class="no-top-margin"><i>Timeline</i><br>
@@ -80,8 +81,6 @@
     <a class="process-step ideation" href="#ideation">Ideation</a>
         ->
     <a class="process-step design" href="#design">Design</a>
-        ->
-    <a class="process-step final-design" href="#final-design">Final Design</a>
 </div>
 
 <hr>
@@ -129,37 +128,48 @@
         </div>
 
         <div class="padding">
-            <h2>🧑‍🔬 With these questions in mind, we started formulating a research plan.</h2>
+            <h2>🧑‍🔬 With these questions in mind, we formulated a three-step research plan.</h2>
         </div>
         
     </div>
 
     <div class="container-wide">
         <div id="gn-research-plan">
-            <div class="gn-research-plan-col">
+            <div>
                 <p class="caption"><b>01.</b> Competitive Analysis</p>
                 <img src="img/goodnotes/r-competitive.png">
                 <p>Exploring GoodNotes' features and where it stands among its competitors.</p>
                 </div>
                 
-            <div class="gn-research-plan-col">
+            <div>
                 <p class="caption"><b>02.</b> Contextual Inquiry</p>
                 <img src="img/goodnotes/r-contextual.png">
                 <p>Uncovering students' note-taking practices and habits.</p>
                 </div>
             
-            <div class="gn-research-plan-col">
+            <div>
                 <p class="caption"><b>03.</b> Survey + Interviews</p>
                 <img src="img/goodnotes/r-interviews.png">
                 <p>Understanding confidence and what makes students feel confident.</p>
                 </div>
         </div>
+    </div>    
+
+</section>
+
+<hr>
+
+<section id="research">
+
+    <div class="padding container-small">
+        <h3>research insights</h3>
     </div>
 
     
 
-</section>
 
+
+</section>
 
 
 
@@ -197,9 +207,13 @@
         sections.forEach( section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+            if(pageYOffset >= (sectionTop - ( 2 * window.innerHeight / 5))) {
                 current = section.getAttribute('id');
             }
+
+            // if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+            //     current = section.getAttribute('id');
+            // }
         })
 
         processLi.forEach( li => {
