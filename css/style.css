@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('../fonts/GmarketSansMedium.otf') format('otf');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -14,25 +22,15 @@ GENERAL
 ********************************************************************/
 
 
-/* 
-
-highlight 
-
-background-image: linear-gradient(180deg, rgba(255,0,0,0) 40%, #CFEFE4 40%, 
-#CFEFE4 90%,rgba(255,0,0,0) 90%);
-
- */
-
-
 /***** LAYOUT *****/
 
 
 html{
     scroll-behavior: smooth;
+    font-family: "Inter";
 }
   
 body{
-    font-family: "Inter";
     color: var(--black);
     font-weight: 400;
     font-size: 1rem;
@@ -59,19 +57,29 @@ hr{
 
 img{
     width: 100%;  
+    height: auto;
 }
 
 
 :root{
+    /* color */
     --white: #FFFFFF; 
     --black: #2e2e2e;
     --lightgray: #F7F7F7;
     --gray: #E0E0E0; 
     --darkgray: #767676; 
-    --shopsmiles-bg: #FF7F79;
-    --goodnotes-bg: #C7E4FF;
-    
+    --shopsmiles: #FF7F79;
+    --goodnotes: #C7E4FF;
+
+    /* font-size */
+    --small-text: 0.8125rem;
 }
+
+
+
+
+
+
 
 
 /***** NAVIGATION *****/
@@ -92,16 +100,16 @@ nav{
 
     display: flex;
     justify-content: space-between;
-
-    font-family: "GmarketSansMedium";
-    /* font-size: 0.9rem; */
+    
+    font-weight: 700;
 }
 
 #nav-item{
-    font-family: "Inter";
     margin-left: 1em;
     text-decoration: none;
     padding-left: 1em;
+
+    font-weight: 400;
 }
 
 footer{
@@ -111,7 +119,7 @@ footer{
     align-items: center;
     text-align: center;
     color: var(--darkgray);
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     margin: auto;
     margin-top: 16em;
     margin-bottom: 4em;
@@ -142,12 +150,12 @@ h1{
 h2{
     font-size: 1.625rem;
     font-weight: 500;
-    margin: 1em 0 0.5em 0;
+    margin: 1em 0;
     line-height: 1.5;
 }
 
 h3{
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     font-weight: 400;
     color: var(--darkgray);
     text-transform: uppercase;
@@ -155,7 +163,7 @@ h3{
 }
 
 h4{
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     font-weight: 400;
     color: var(--darkgray);
     margin: 1.25em 0px;
@@ -166,7 +174,7 @@ p{
 }
 
 .caption{
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     font-style: italic;
     font-weight: 400;
     color: var(--darkgray);
@@ -309,12 +317,13 @@ HOME PAGE
 .herohover{
     color: var(--black);
     text-decoration: underline solid transparent;
+    -webkit-text-decoration: underline solid transparent; /* for safari */
     transition: all 150ms;
 }
 
 .herohover:hover{
-    color: var(--black);
     text-decoration: underline solid var(--black);
+    -webkit-text-decoration: underline solid var(--black); /* for safari */
     transition: all 150ms;
 }
 
@@ -406,10 +415,18 @@ HOME PAGE
     transition: 300ms;
     transform: translateX(-20px);
     border-radius: 1rem;
-    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16) ;
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
 }
 
 @media (max-width: 1000px) {
+    .project-card{
+        width: 60%;
+    }
+
+    .project-text{
+        width: 35%;
+    }
+
     .project-img:hover{
         transform: translateY(-8px);
     }
@@ -462,40 +479,7 @@ WORK (CASE STUDIES)
     border-radius: 1rem;
 }
 
-
-
-/***** CONTENT *****/
-
-.cs-img{
-    display: block;
-    width: 95%;
-    max-width: 1000px;
-    margin: 0 auto;
-    clip-path: inset(0 -100vmax);
-}
-
-.cs-img.shopsmiles-bg {
-    box-shadow: 0 0 0 100vmax var(--shopsmiles-bg);
-}
-
-.cs-img.goodnotes-bg {
-    box-shadow: 0 0 0 100vmax var(--goodnotes-bg);
-}
-
-.cs-details{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cs-overview{
-    width: 67%;
-}
-
-.cs-logistics{
-    display: flex;
-    flex-direction: column;
-    width: 24%;
-}
+/***** PROCESS *****/
 
 #process-bar{
     position: sticky;
@@ -508,13 +492,14 @@ WORK (CASE STUDIES)
     align-items: baseline;
 
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* for safari */
     border: 1px solid var(--gray);
     border-radius: 50px;
 
     display: flex;
     justify-content: space-evenly;
     
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     font-weight: 400;
     color: var(--darkgray);
 
@@ -549,6 +534,39 @@ WORK (CASE STUDIES)
     #process-bar{
         position: relative;
     }
+}
+
+/***** CONTENT *****/
+
+.cs-img{
+    display: block;
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    clip-path: inset(0 -100vmax);
+}
+
+.cs-img.shopsmiles-bg {
+    box-shadow: 0 0 0 100vmax var(--shopsmiles);
+}
+
+.cs-img.goodnotes-bg {
+    box-shadow: 0 0 0 100vmax var(--goodnotes);
+}
+
+.cs-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cs-overview{
+    width: 67%;
+}
+
+.cs-logistics{
+    display: flex;
+    flex-direction: column;
+    width: 24%;
 }
 
 
@@ -619,7 +637,7 @@ WORK (CASE STUDIES)
 
 .bubble-icon.yellow{
     background-color: #FFFAEF;
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
 }
 
 .bubble{
@@ -758,6 +776,41 @@ WORK (CASE STUDIES)
     }
 }
 
+.gn-insight-wrapper{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.gn-post-it{
+    display: inline-block;
+    font-size: var(--small-text);
+    font-weight: 500;
+
+    width: 24%;
+    height: fit-content;
+    padding: 2em;
+
+    background: linear-gradient(var(--goodnotes) 20%, #AFD9FF 70%, var(--goodnotes) 90%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+    
+}
+
+.gn-insight{
+    width: 64%;
+}
+
+#gn-efficient{
+    rotate: 1deg;
+    margin-right: -1em;
+    margin-top: -2em;
+}
+
+#gn-revising{
+    rotate: -2deg;
+    margin-left: -1em;
+}
+
 
 /* RESPONSIVE */
 
@@ -784,7 +837,7 @@ WORK (CASE STUDIES)
 #caution{
     margin: 0 auto 1em auto;
     padding: 0.8em;
-    font-size: 0.8125rem;
+    font-size: var(--small-text);
     background-color: #ffebc6;
     /* background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,235,198,1) 10%, rgba(255,235,198,1) 90%, rgba(255,255,255,0) 100%); */
     font-style: italic;
