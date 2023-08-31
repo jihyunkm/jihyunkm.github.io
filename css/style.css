@@ -309,13 +309,15 @@ HOME PAGE
 .herohover{
     color: var(--black);
     text-decoration: underline solid transparent;
-    -webkit-text-decoration: underline solid transparent; /* for safari */
+    -webkit-text-decoration: underline solid transparent; /* safari */
+    -moz-text-decoration: underline solid transparent; /* firefox */
     transition: all 150ms;
 }
 
 .herohover:hover{
     text-decoration: underline solid var(--black);
-    -webkit-text-decoration: underline solid var(--black); /* for safari */
+    -webkit-text-decoration: underline solid var(--black); /* safari */
+    -moz-text-decoration: underline solid var(--black); /* firefox */
     transition: all 150ms;
 }
 
@@ -484,7 +486,7 @@ WORK (CASE STUDIES)
     align-items: baseline;
 
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* for safari */
+    -webkit-backdrop-filter: blur(10px); /* safari */
     border: 1px solid var(--gray);
     border-radius: 50px;
 
@@ -795,7 +797,7 @@ WORK (CASE STUDIES)
 #gn-efficient{
     rotate: 1deg;
     margin-right: -1em;
-    margin-top: -2em;
+    margin-top: -1em;
 }
 
 #gn-revising{
