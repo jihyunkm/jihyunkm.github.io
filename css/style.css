@@ -336,7 +336,7 @@ HOME PAGE
 } */
 
 #im-jihyun{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -347,6 +347,7 @@ HOME PAGE
     text-decoration: underline solid transparent;
     -webkit-text-decoration: underline solid transparent; /* safari */
     -moz-text-decoration: underline solid transparent; /* firefox */
+    -o-text-decoration: underline solid transparent; /* opera */
     transition: all 150ms;
 }
 
@@ -354,6 +355,7 @@ HOME PAGE
     text-decoration: underline solid var(--black);
     -webkit-text-decoration: underline solid var(--black); /* safari */
     -moz-text-decoration: underline solid var(--black); /* firefox */
+    -o-text-decoration: underline solid var(--black); /* opera */
     transition: all 150ms;
 }
 
