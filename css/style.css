@@ -491,6 +491,14 @@ WORK (CASE STUDIES)
     margin-top: 0px;
 }
 
+.no-margin{
+    margin: 0;
+}
+
+.margin{
+    
+}
+
 .padding{
     margin-top: 6em;
 } /* adds padding to sections */
@@ -553,10 +561,6 @@ WORK (CASE STUDIES)
     color: var(--black);
     background-color: rgba(0, 0, 0, 0.16);
     transition: all 150ms;
-}
-
-.no-margin{
-    margin: 0;
 }
 
 @media (max-width: 600px) {
