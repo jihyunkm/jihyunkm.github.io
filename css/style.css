@@ -906,6 +906,18 @@ WORK (CASE STUDIES)
     gap: 6%;
 }
 
+@media (max-width: 400px) {
+    #about{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    #about-img-picker{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
 /* img */
 
 #about-img-container{
@@ -926,6 +938,12 @@ WORK (CASE STUDIES)
 
 .about-text{
     display: none;
+}
+
+#about-movie{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
 }
 
 /* selector */
