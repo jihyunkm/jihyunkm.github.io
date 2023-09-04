@@ -33,7 +33,7 @@ body{
 }
 
 li{
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
 }
 
 s{
@@ -67,6 +67,7 @@ video{
     --lightgray: #F7F7F7;
     --gray: #E0E0E0; 
     --darkgray: #767676; 
+    --turquoise: #319A87;
     --shopsmiles: #FF7F79;
     --goodnotes: #C7E4FF;
 
@@ -139,6 +140,7 @@ footer{
 h1{
     /* font-size: 3.8rem; */
     font-size: 3.5rem;
+
     font-weight: 500;
     margin-bottom: 1rem;
     line-height: normal;
@@ -239,7 +241,7 @@ sup{
 }
 
 .turquoise{
-    color: #319A87;
+    color: var(--turquoise);
 }
 
 .red{
@@ -330,10 +332,6 @@ HOME PAGE
         
     animation: transitionIn 400ms;
 }
-
-/* #hero{
-    max-width: 35em;
-} */
 
 #im-jihyun{
     font-size: 1.6rem;
@@ -493,10 +491,6 @@ WORK (CASE STUDIES)
 
 .no-margin{
     margin: 0;
-}
-
-.margin{
-    
 }
 
 .padding{
@@ -895,29 +889,98 @@ WORK (CASE STUDIES)
 } */
 
 
-/* testing */
 
-#ht{
-    height:30em;
-    max-width: 700px;
-    width: 95%;
-    display: block;
-    margin: auto;
 
+/* about */
+
+#about{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 8%;
+}
+
+#about-img-picker{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6%;
+}
+
+/* img */
+
+#about-img-container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-
-    animation: transitionIn 400ms;
+    align-items: center;
 }
 
-#tij{
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
+#about-img-container > * {
+    border-radius: 1rem;
 }
 
-#hdt{
-    margin-top: 0.5em;
+.about-img{
+    display: none;
+}
+
+/* text */
+
+.about-text{
+    display: none;
+}
+
+/* selector */
+
+#about-selector-container{
+    margin-top: 1.5rem; 
+    align-items: flex-end;
+
+}
+
+#about-selector{
+    gap: 1rem;
+}
+
+#about-selector > * {
+    font-size: 2.3rem;
+    text-align: center;
+
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+}
+
+#about-selector > *:hover {
+    opacity: 0.6;
+    transition: all 150ms ease-in-out;
+}
+
+#about-reset{
+    color: var(--turquoise);
+}
+
+
+/* where i've been */
+
+#about-where{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+#about-list{
     color: var(--darkgray);
+    padding-left: 1.5rem;
+}
+
+#about-list >*{
+    padding-left: 0.5rem;
+}
+
+
+/* testing */
+
+.test-h{
+    display: inline-block;
+    width: 4rem;
+    border-radius: 50px;
 }

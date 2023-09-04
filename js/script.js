@@ -15,7 +15,7 @@ document.getElementById('artist-turned').addEventListener(
 )
 
 document.getElementById('artist-turned').addEventListener(
-    'mouseout', e => {heroHide('watercolor')}
+    'mouseout', e => {heroHide('watercolor');}
 )
 
 // product designer hover
@@ -25,7 +25,7 @@ document.getElementById('product-designer').addEventListener(
 )
 
 document.getElementById('product-designer').addEventListener(
-    'mouseout', e => {heroHide('hcd')}
+    'mouseout', e => {heroHide('hcd');}
 )
 
 // based in california hover
@@ -35,13 +35,5 @@ document.getElementById('based-in').addEventListener(
 )
 
 document.getElementById('based-in').addEventListener(
-    'mouseout', e => {heroHide('california')}
+    'mouseout', e => {heroHide('california');}
 )
-
-
-
-
-
-
-// ********** CASE STUDIES **********
-
