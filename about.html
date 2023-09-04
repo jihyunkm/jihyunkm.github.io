@@ -52,7 +52,11 @@
             </ul> -->
         </div>
 
-        <img src="img/about/IMG_3668 1.svg" class="rounded-border">
+        <div>
+            <img src="img/about/IMG_3668 1.svg" class="rounded-border">
+            <p style="text-align: right;" class="caption">PC: <a href="https://www.aaroncwu.me" class="external-link">Aaron Wu</a></p>
+        </div>
+
         
     </div>
 
@@ -68,15 +72,15 @@
                     
                     <img id="about-img1" class="about-img" src="img/about/about-img1.png" alt="">
                     <img id="about-img2" class="about-img" src="img/about/about-img2.png" alt="">
-                    <!-- <img id="about-img3" class="about-img" src="" alt=""> -->
+                    <img id="about-img3" class="about-img" src="img/about/about-img3.png" alt="">
 
                     <!-- selector -->
                     <div id="about-selector-container">
                         <h3 class="no-margin">Click on an icon below!</h3>
                         <div id="about-selector">
                             <span id="about-s1">🎨</span>
-                            <span id="about-s2">🍪</span>
-                            <!-- <span id="about-s3">📸</span> -->
+                            <span id="about-s2">📚</span>
+                            <span id="about-s3">🧁</span>
                             <span id="about-reset">☻</span>
                         </div>
                     </div>
@@ -100,6 +104,12 @@
 
                     <!-- text1 -->
                     <div id="about-text1" class="about-text">
+                        <h3 style="margin-bottom: 0;">My design philosophy</h3>
+                        <p>The part that attracted me the most to design, especially UX design, was its closeness to humans and the users.</p>
+                    </div>
+
+                    <!-- text2 -->
+                    <div id="about-text2" class="about-text">
                         <h3 style="margin-bottom: 0;">A perpetual learner</h3>
                         <p>I'm a constant learner, especially regarding creative skills.</p>
                         <p>I've dabbled in not only dancing, photography, and screen-printing, but self-taught myself video editing, 
@@ -109,17 +119,16 @@
                         <p>My curiosity and "what if"s always fuel my urge to learn, and I love the feeling of fulfillment and the widening of perspectives when it comes to acquiring new skills.</p>
                     </div>
 
-                    <!-- text2 -->
-                    <div id="about-text2" class="about-text">
+                    <!-- text3 -->
+                    <div id="about-text3" class="about-text">
                         <h3 style="margin-bottom: 0;">In my free time...</h3>
-                        <p>In my free time, I love to bake recipes found on YouTube or take photos of skies while on long walks.</p>
+                        <p>In my free time, I love to bake recipes found on <a href="https://youtube.com/playlist?list=PLrOtq6QjSLtCHdpI3ZBuVdlVX2dF2NfX7&si=55AEwGdrLVDs89Vd" target="_blank" class="external-link">YouTube</a>
+                            or take photos of skies while on long walks.</p>
                         <p>I love spending time with my friends, doing the goofiest things we can imagine. This applies to gift-giving too: I've made
                             and gifted a life-sized Leonardo Dicaprio cut-out for my friend's 16th birthday 😌.
                         </p>
+                        
                     </div>
-
-                    <!-- text3 -->
-                    <!-- <div id="about-text3" class="about-text"></div> -->
 
 
                 </div> <!-- close text container -->
@@ -183,29 +192,7 @@
 
 <script>
 
-// reset
-let reset = document.getElementById('about-reset'); /* get #about-reset button */
 
-reset.onclick = function() {
-	hideAll();
-	document.getElementById('about-img0').style.display = 'block';
-    document.getElementById('about-text0').style.display = 'block';
-
-	/* call the function you created to hide all the outfits */
-	/* show about-0's */
-};
-
-function hideAll() {
-	let imgLength = document.getElementsByClassName('about-img').length;
-	for (let i = 1; i <= imgLength; i++) {
-		document.getElementById('about-img'+i).style.display = 'none';
-	}
-
-    let textLength = document.getElementsByClassName('about-text').length;
-    for (let i = 1; i <= imgLength; i++) {
-		document.getElementById('about-text'+i).style.display = 'none';
-	}
-}
 
 
 // s1 img
@@ -243,20 +230,44 @@ s2.onclick = function() {
 // s3 outfit
 /* get #s3 outfit */
 /* repeat process */
-// let s3 = document.getElementById('s3');/* get #s1 outfit */
+let s3 = document.getElementById('about-s3');/* get #s1 outfit */
 
-// s3.onclick = function() {
-// 	document.getElementById("body").style.display = "none";
-// 	/* 1. hide #body (set display to none)
+s3.onclick = function() {
+    document.getElementById('about-img0').style.display = 'none';
+    document.getElementById('about-text0').style.display = 'none';
+    /* 1. hide #body (set display to none)
 	
-// 	/* 2. call the function you created to hide all the outfits 
-// 	(remember: get the list of .outfit elements and use a for loop to hide each outfit)
-// 	/* 3. show #o1 outfit (set display to block)*/
-// 	hideAll();
-// 	document.getElementById('o3').style.display = 'block';
-// };
+	/* 2. call the function you created to hide all the outfits 
+	(remember: get the list of .outfit elements and use a for loop to hide each outfit)
+	/* 3. show #o1 outfit (set display to block)*/
+	hideAll();
+	document.getElementById('about-img3').style.display = 'block';
+    document.getElementById('about-text3').style.display = 'block';
+};
 
+// reset
+let reset = document.getElementById('about-reset'); /* get #about-reset button */
 
+reset.onclick = function() {
+	hideAll();
+	document.getElementById('about-img0').style.display = 'block';
+    document.getElementById('about-text0').style.display = 'block';
+
+	/* call the function you created to hide all the outfits */
+	/* show about-0's */
+};
+
+function hideAll() {
+	let imgLength = document.getElementsByClassName('about-img').length;
+	for (let i = 1; i <= imgLength; i++) {
+		document.getElementById('about-img'+i).style.display = 'none';
+	}
+
+    let textLength = document.getElementsByClassName('about-text').length;
+    for (let i = 1; i <= imgLength; i++) {
+		document.getElementById('about-text'+i).style.display = 'none';
+	}
+}
 
 
 
