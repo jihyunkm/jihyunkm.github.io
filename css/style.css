@@ -52,6 +52,13 @@ hr{
 img{
     width: 100%;  
     height: auto;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
 }
 
 video{
@@ -901,6 +908,7 @@ WORK (CASE STUDIES)
 }
 
 #about-img-picker{
+    margin: 3rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6%;
@@ -994,6 +1002,24 @@ WORK (CASE STUDIES)
     padding-left: 0.5rem;
 }
 
+#about-places{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.about-places-col{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+@media (max-width: 400px) {
+    #about-places{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
 
 /* testing */
 
