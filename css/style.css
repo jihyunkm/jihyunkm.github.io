@@ -52,6 +52,10 @@ hr{
 img{
     width: 100%;  
     height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    pointer-events: none;
 
     user-select: none;
     -moz-user-select: none;
@@ -64,6 +68,8 @@ img{
 video{
     width: 100%;  
     height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -145,19 +151,22 @@ footer{
 /***** TEXT *****/
 
 h1{
-    /* font-size: 3.8rem; */
     font-size: 3.5rem;
 
+    /* font-size: clamp(2.4rem, 4vw, 3.5rem); */
+
     font-weight: 500;
-    margin-bottom: 1rem;
-    line-height: normal;
+    margin: 2rem 0;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
 }
 
 h2{
     font-size: 1.625rem;
     font-weight: 500;
     margin: 1.6rem 0;
-    line-height: 1.5;
+    line-height: 1.4;
+
 }
 
 h3{
@@ -377,9 +386,21 @@ HOME PAGE
     z-index: -99;
 }
 
+#artist-turned:hover ~ #watercolor{
+    display: block;
+}
+
+#product-designer:hover ~ #hcd{
+    display: block;
+}
+
+#based-in:hover ~ #california{
+    display: block;
+}
+
 #watercolor{  
     position: absolute;
-    transform: translate(270%, -123%);
+    transform: translate(270%, -132%);
 }
 
 #hcd{
@@ -389,7 +410,7 @@ HOME PAGE
 
 #california{
     position: absolute;
-    transform: translate(380%, -25%);
+    transform: translate(360%, -30%);
 }
 
 @media (max-width: 600px) {
@@ -446,6 +467,7 @@ HOME PAGE
     border-radius: 1rem;
     object-fit: cover;
     height: 100%;
+    pointer-events: auto;
 }
 
 .project-img:hover{
@@ -644,6 +666,23 @@ WORK (CASE STUDIES)
     }
 }
 
+
+
+
+/* GRID */
+
+
+.grid-col2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+
+
+
+
+
+
 .grid-column{
     display: flex;
     flex-direction: column;
@@ -803,13 +842,6 @@ WORK (CASE STUDIES)
     width: 29%;
 }
 
-@media (max-width: 600px) {
-    #gn-research-plan{
-        min-width: 100%;
-        width: 100%;
-    }
-}
-
 .gn-insight-wrapper{
     display: flex;
     justify-content: space-between;
@@ -845,13 +877,29 @@ WORK (CASE STUDIES)
     margin-left: -1.5em;
 }
 
+#gn-longpress{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+}
+
 #gn-fd-tags{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
+@media (max-width: 600px) {
+    #gn-research-plan{
+        min-width: 100%;
+        width: 100%;
+    }
 
+    #gn-longpress{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
 
 /* RESPONSIVE */
 
