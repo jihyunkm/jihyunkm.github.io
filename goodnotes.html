@@ -24,10 +24,10 @@
 
 <img class="cs-img goodnotes-bg" src="img/goodnotes/card image.png">
 
-<!-- CAUTION -->
+<!-- CAUTION
 <div id="caution">
     <b>⚠️ CAUTION:</b> This case-study is still a WIP... please feel free to read through my other works in the meantime!
-</div>
+</div> -->
 
 <!--project overview-->
 
@@ -46,7 +46,7 @@
                 <h3>overview</h3>
                 <p>GoodNotes is an iOS app designed for students to streamline their note-taking process. 
                     They challenged <a href="https://www.berkeleyinnovation.org" class="external-link" target="_blank">Berkeley Innovation</a> to find a way to <b>boost students' confidence levels</b> while studying with the app.</p>
-                <p>As the <b>Project Mentor</b>, I led and guided four other designers to conceptualize a new feature within GoodNotes to best reassure students in their understanding of a desired academic topic.</p>
+                <p>As the <b>Project Mentor</b>, I led and guided four other designers to conceptualize new features within GoodNotes to best reassure students in their understanding of a desired academic topic.</p>
             </span>
 
             <div class="cs-logistics">
@@ -267,7 +267,7 @@
     </div>
 
     <div class="container-small">
-        <p>From our Impact x Effort Matrix, we found the ideas with the greatest impact to be <b>interactive note-taking methods</b> such as adding tags or using markdown segmentation in notes, or sending out reminders per study material.</p>
+        <p>From our Impact x Effort Matrix, we found the ideas with the greatest impact to be <b>interactive note-taking and studying methods</b> such as adding tags or using markdown segmentation in notes, or sending out reminders per study material.</p>
         <p>However, I deemed <b>markdown segmentation</b> required <b>high effort</b> to the point where it was <b>infeasible</b>, 
             as it is most suited for typed-platforms such as GitHub and Obsidian, compared to GoodNotes and its focus on hand-written notes.
             It also has a <b>high-learning curve</b> which can be burdening for the users.
@@ -285,15 +285,15 @@
 
     <div class="padding container-small">
         <h3>The design concept</h3>
-        <h2>🏷 Inspired from paper sticky notes, GoodNotes Tags aims to combine the best of two worlds—digital and paper.</h2>
+        <h2>🏷 GoodNotes Tags & Reminders combines the best of digital and paper note-taking.</h2>
         <img class="border" src="img/goodnotes/dd-tags.png" alt="">
-        <p>Just like when tagging one’s book with physical sticky notes, we wanted the experience of GoodNotes Tags to feel <b>intuitive</b>, yet 
-            be differentiated from pen-and-paper by showcasing the strengths only <b>digital platforms</b> can have.</p>
+        <p>Inspired from paper sticky notes, we wanted the experience of GoodNotes Tags to feel <b>intuitive</b>—like when actually tagging one’s notes with post-its.
+        Combined with Reminders, we imagine GoodNotes to be differentiated from pen-and-paper by showcasing the strengths only <b>digital platforms</b> can have.</p>
     </div>
 
     <div class="padding container-small">
         <h3>Some design decisions we faced</h3>
-        <h2>1. Bringing familiarity and visual cues to notes.</h2>
+        <h2>Tags: Adding familiar visual cues to notes.</h2>
         <img src="img/goodnotes/dd-visual cue.png" alt="" class="border">
         <p>In our initial iteration, we experimented with straightforward designs with tag names explictly embedded within the shape.
             However, I thought the text on the tags felt overwhelming when paired with the notes, with the design itself lacking a clear visual identity.</p>
@@ -301,13 +301,13 @@
     </div>
 
     <div class="padding container-small">
-        <h2>2. Streamlining for the optimal workflow.</h2>
+        <h2>Tags: Streamlining for an optimal workflow.</h2>
         <video class="border" autoplay controls muted>
             <source src="img/goodnotes/dd-toolbar.mp4"/>
         </video>
         <p>Previously, we placed tags within GoodNotes' toolbar alongside the rest of its features. 
             Yet, during user testing, we realized this was <b>not</b> convenient
-            as users had to repeatedly <b>drag and drop</b> the tags, interrupting their note-taking.
+            as users had to repeatedly <b>drag and drop</b> the tags from the toolbar, interrupting their flow of note-taking.
         </p>
     </div>
 
@@ -333,7 +333,21 @@
     </div>
 
     <div class="padding container-small">
-        <h2>3. Reminding you to study—without being annoying.</h2>
+        <h2>Reminders: Encouraging you to study—without being annoying.</h2>
+        <img class="border" src="img/goodnotes/dd-reminder-old.png" alt="">
+        <p>Originally, we <b>integrated Tags and Reminders</b>, imagining a feature where users could activate reminders specifically for a particular type of tag. 
+            For example, if a user wished to enable reminders exclusively for the "Question" and "Review" tags within their "Lecture 34" notes, they would only receive notifications for these tags.</p>
+        <p>However, if this were the case, we realized that some users would get <b>bombarded with notifications</b> for the <b>same file</b>—quickly getting annoying.</p>
+    </div>
+
+    <div class="container-wide">
+        <img src="img/goodnotes/dd-reminder-new.png" alt="">
+    </div>
+
+    <div class="container-small">
+        <p>To solve this issue, we ultimately decided to <b>separate</b> the two features—Tags and Reminders—and let the Reminders live under the settings of each file.</p>
+        <p>This way, users can receive a <b>consolidated reminder</b> per each file, instead of being notified by every type of tag.</p>
+        <img src="img/goodnotes/dd-reminder.png" alt="">
     </div>
 
 </section>
@@ -342,8 +356,8 @@
 <section id="final-experience">
     <div class="padding container-small gray-section">
         <h3>The Final Experience</h3>
-        <h1>✍️ GoodNotes Tags</h1>
-        <p>From forming <b>tactile connections</b> with one's own notes to developing an <b>organized routine</b> to review content, GoodNotes Tags leads students through the entire studying process—from start to finish.</p> 
+        <h2>✍️ Introducing the new GoodNotes studying experience.</h2>
+        <p>From forming <b>tactile connections</b> with one's own notes to developing an <b>organized routine</b> to review content, GoodNotes Tags and Reminders leads students through the entire studying process—from start to finish.</p> 
            
     </div>
 
@@ -351,6 +365,10 @@
         <h2>Add tags to indicate important information.</h2>
         <p></p>
         search, personalization
+    </div>
+
+    <div class="padding container-wide">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FOfEcsnwfivfZV4LaIPzRhL%2FGoodNotes-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D52-4277%26viewport%3D68%252C-40%252C0.03%26t%3D4Gi81Wypn6WGwnbE-1%26scaling%3Dscale-down%26starting-point-node-id%3D52%253A4277%26mode%3Ddesign" allowfullscreen></iframe>
     </div>
 </section>
 
