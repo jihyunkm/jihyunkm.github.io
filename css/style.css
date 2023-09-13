@@ -86,6 +86,9 @@ video{
 
     /* font-size */
     --small-text: 0.8125rem;
+
+    /* transition */
+    --transition: all 150ms ease-in-out;
 }
 
 
@@ -468,7 +471,7 @@ HOME PAGE
     border-radius: 1rem;
     object-fit: cover;
     height: 100%;
-    pointer-events: auto;
+    pointer-events: auto; /* lets img be interactive despite no pointer for all imgs */
 }
 
 .project-img:hover{
@@ -476,6 +479,14 @@ HOME PAGE
     transform: translateX(-20px);
     border-radius: 1rem;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.disabled{
+    pointer-events: none;
+}
+
+.disabled:hover{
+    transform: none;
 }
 
 @media (max-width: 1000px) {
@@ -508,19 +519,22 @@ HOME PAGE
 }
 
 
-
 /********************************************************************
 WORK (CASE STUDIES)
 ********************************************************************/
 
 /***** LAYOUT *****/
 
-.no-top-margin{
-    margin-top: 0px;
-}
-
 .no-margin{
     margin: 0;
+}
+
+.no-top-margin{
+    margin-top: 0;
+}
+
+.no-bottom-margin{
+    margin-bottom: 0;
 }
 
 .padding{
@@ -1010,6 +1024,17 @@ WORK (CASE STUDIES)
     gap: 1rem;
 }
 
+.contact{
+    width: 2rem;
+    pointer-events: auto;
+    transition: var(--transition)
+}
+
+.contact:hover{
+    opacity: 0.5;
+    transition: var(--transition)
+}
+
 /* selector */
 
 #about-selector-container{
@@ -1028,12 +1053,12 @@ WORK (CASE STUDIES)
 
     padding: 0.5rem;
     cursor: pointer;
-    transition: all 150ms ease-in-out;
+    transition: var(--transition);
 }
 
 #about-selector > *:hover {
     opacity: 0.6;
-    transition: all 150ms ease-in-out;
+    transition: var(--transition);
 }
 
 #about-reset{
