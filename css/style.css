@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('Mona-Sans.woff2') format('woff2 supports variations'),
+      url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -19,7 +28,7 @@ GENERAL
 
 html{
     scroll-behavior: smooth;
-    font-family: "Inter";
+    font-family: 'Inter';
 }
   
 body{
@@ -44,7 +53,7 @@ hr{
     max-width: 1000px;
     width: 95%;
     margin: auto;
-    margin-top: 6em;
+    margin-top: 6rem;
     border: none;
     border-bottom: 1px solid var(--gray);
 }
@@ -81,8 +90,10 @@ video{
     --gray: #E0E0E0; 
     --darkgray: #767676; 
     --turquoise: #319A87;
+
     --shopsmiles: #FF7F79;
     --goodnotes: #C7E4FF;
+    --food52: #D1F2A8;
 
     /* font-size */
     --small-text: 0.8125rem;
@@ -118,12 +129,17 @@ nav{
     font-weight: 700;
 }
 
-#nav-item{
+.nav-link{
     margin-left: 1em;
     text-decoration: none;
     padding-left: 1em;
 
     font-weight: 400;
+
+}
+
+.nav-link[aria-current="page"]{
+    color: var(--darkgray);
 }
 
 footer{
@@ -154,7 +170,8 @@ footer{
 /***** TEXT *****/
 
 h1{
-    font-size: 3.5rem;
+    font-family: 'Mona Sans';
+    font-size: 3.4rem;
 
     /* font-size: clamp(2.4rem, 4vw, 3.5rem); */
 
@@ -162,14 +179,16 @@ h1{
     margin-top: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-    letter-spacing: -0.01em;
+    /* letter-spacing: -0.01em; */
 }
 
 h2{
-    font-size: 1.625rem;
+    
+    font-size: 1.7rem;
     font-weight: 500;
     margin: 1.6rem 0;
-    line-height: 1.4;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
 
 }
 
@@ -178,15 +197,16 @@ h3{
     font-weight: 400;
     color: var(--darkgray);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin: 3rem 0;
+    letter-spacing: 0.08em;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
 h4{
     font-size: var(--small-text);
     font-weight: 400;
     color: var(--darkgray);
-    margin: 1rem 0px;
+    margin: 1rem 0;
 }
 
 p{
@@ -341,14 +361,11 @@ HOME PAGE
 /* layout */
 
 #hero-wrap{
-    max-width: 800px;
+    max-width: 720px;
     width: 95%;
-    height: 34em;
+    height: 32rem;
     margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin-top: 13rem;
         
     animation: transitionIn 400ms;
 }
@@ -377,9 +394,15 @@ HOME PAGE
     transition: all 150ms;
 }
 
+
 #hero-previously{
-    margin-top: 4em;
-    /* width: 55%; */
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#arrow{
+    z-index: -2;
 }
 
 /* hover image display */
@@ -387,7 +410,7 @@ HOME PAGE
 .hover-img{
     display: none;
     width: 9.375rem;
-    z-index: -99;
+    z-index: -1;
 }
 
 #artist-turned:hover ~ #watercolor{
@@ -404,17 +427,17 @@ HOME PAGE
 
 #watercolor{  
     position: absolute;
-    transform: translate(270%, -132%);
+    transform: translate(260%, -132%);
 }
 
 #hcd{
     position: absolute;
-    transform: translate(420%, -178%);
+    transform: translate(400%, -175%);
 }
 
 #california{
     position: absolute;
-    transform: translate(360%, -30%);
+    transform: translate(340%, -30%);
 }
 
 @media (max-width: 600px) {
@@ -448,13 +471,10 @@ HOME PAGE
 
 /***** SELECTED WORK *****/
 
-#projects{
-    padding-top: 6em;
-} /* id for scroll-down */
 
 .project{
     display: flex;
-    margin-bottom: 6em;
+    margin-bottom: 6rem;
     justify-content: space-between;
 }
 
@@ -625,6 +645,10 @@ WORK (CASE STUDIES)
     box-shadow: 0 0 0 100vmax var(--goodnotes);
 }
 
+.cs-img.food52-bg {
+    box-shadow: 0 0 0 100vmax var(--food52);
+}
+
 .cs-details{
     display: flex;
     justify-content: space-between;
@@ -714,23 +738,10 @@ WORK (CASE STUDIES)
     text-align: center;
 }
 
-.bubble-icon{
-    background-color: var(--lightgray);
-    display: flex;
-    align-items: flex-start;
-    padding: 2.5em 3.5em;
-    border-radius: 1rem;
-    margin: 2em 0;
-    column-gap: 1.5em;
-}
-
-.bubble-icon.yellow{
-    background-color: #FFFAEF;
-    font-size: var(--small-text);
-}
-
 .bubble{
-    background-color: var(--lightgray);
+    /* background-color: var(--lightgray); */
+    box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.08);
+
     width: fit-content;
     height: fit-content;
     padding: 32px 40px;
@@ -738,6 +749,27 @@ WORK (CASE STUDIES)
     margin: 16px 0px;
 }
 
+.bubble-icon{
+    /* background-color: var(--lightgray); */
+    box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: flex-start;
+    padding: 2.5em 3.5em;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    column-gap: 1.5em;
+
+}
+
+.bubble-icon.yellow{
+    /* background-color: #FFFAEF; */
+    font-size: var(--small-text);
+}
+
+.bubble, .bubble-icon > *{
+    margin: 0;
+}
 
 
 /***** SHOPSMILES *****/
@@ -1085,7 +1117,7 @@ WORK (CASE STUDIES)
 
 #about-places{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2%;
 }
 
@@ -1108,4 +1140,9 @@ WORK (CASE STUDIES)
     display: inline-block;
     width: 4rem;
     border-radius: 50px;
+}
+
+.cs-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
 }
