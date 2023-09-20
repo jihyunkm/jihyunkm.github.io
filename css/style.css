@@ -142,6 +142,8 @@ nav{
     color: var(--darkgray);
 }
 
+
+
 footer{
     width: 95%;
     display: flex;
@@ -234,6 +236,7 @@ sup{
     margin: 0.4em 0.3em 0.4em 0;
     border-radius: 50px;
     background-color: #EEEEEE;
+    /* background-color: rgba(0, 0, 0, 0.08); */
     align-self: center;
 }
 
@@ -247,10 +250,6 @@ sup{
 }
 
 @media (max-width: 600px){
-    h1{
-        font-size: 2.8rem;
-    }
-
     #desktop{
         display: block;
     }
@@ -258,11 +257,7 @@ sup{
 
 @media (max-width: 400px){
     h1{
-        font-size: 2.4rem;
-    }
-
-    #hero-description{
-        font-size: 1.8rem;
+        font-size: 3rem;
     }
 }
 
@@ -473,18 +468,12 @@ HOME PAGE
 
 
 .project{
-    display: flex;
-    margin-bottom: 6rem;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
 }
 
-.project-card{
-    width: 70%;
-}
-
-.project-text{
-    width: 25%;
-}
 
 .project-img{
     transition: 300ms;
@@ -502,22 +491,15 @@ HOME PAGE
 }
 
 .disabled{
-    pointer-events: none;
+    cursor: not-allowed;
 }
 
 .disabled:hover{
     transform: none;
+    box-shadow: none;
 }
 
 @media (max-width: 1000px) {
-    .project-card{
-        width: 60%;
-    }
-
-    .project-text{
-        width: 35%;
-    }
-
     .project-img:hover{
         transform: translateY(-8px);
     }
@@ -525,22 +507,42 @@ HOME PAGE
 
 @media (max-width: 600px) {
     .project{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
-
-    .project-number{
-        margin: 1em 0;
-    }
-
-    .project-card,
+    
     .project-text{
-        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        align-items: baseline;
     }
+
+    .project-title{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .project-title > *{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .project-text{
+        display: block;
+    }
+
+    .project-title > *{
+        margin-bottom: 0;
+    }
+
 }
 
 
 /********************************************************************
-WORK (CASE STUDIES)
+WORK (CASE STUDY)
 ********************************************************************/
 
 /***** LAYOUT *****/
@@ -572,6 +574,35 @@ WORK (CASE STUDIES)
 .border{
     border: 1px solid var(--gray);
     border-radius: 1rem;
+}
+
+.next-project{
+    text-decoration: none;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.next-project-txt{
+    padding: 4rem;
+}
+
+.next-project-txt h2{
+    margin: 0;
+}
+
+.next-project-img{
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border-radius: 1rem;
+}
+
+.next-project.goodnotes{
+    background-color: var(--goodnotes);
 }
 
 /***** PROCESS *****/
