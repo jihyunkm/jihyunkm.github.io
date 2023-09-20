@@ -1187,3 +1187,10 @@ WORK (CASE STUDY)
     display: grid;
     grid-template-columns: 1fr 1.5fr;
 }
+
+/* not-work */
+
+body.dark-mode{
+    color: var(--white);
+    background-color: #121212;
+}
