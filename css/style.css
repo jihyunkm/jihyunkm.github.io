@@ -1225,6 +1225,6 @@ WORK (CASE STUDY)
 /* not-work */
 
 body.dark-mode{
-    color: var(--white);
-    background-color: #121212;
+    /* color: var(--white); */
+    background-color: #9EC2B7;
 }
