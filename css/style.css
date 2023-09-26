@@ -889,43 +889,22 @@ WORK (CASE STUDY)
 /* final designs */
 
 #cp-before-and-after{
-    display: flex;
-    column-gap: 2em;
-}
-
-.cp-final-design-grid{
-    display: flex;
-}
-
-.cp-final-design-caption{
-    width: 20%;
-}
-
-.cp-final-design-img{
-    width: 70%;
-    margin: 1.5rem 0;
-}
-
-#cp-design-system{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
+.cp-design-system{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
 
 @media (max-width: 600px) {
-    #cp-before-and-after{
-        flex-direction: column;
-        row-gap: 4em;
-    }
-    
-    .cp-final-design-grid{
-        flex-direction: column;
-    }
-
-    .cp-final-design-caption,
-    .cp-final-design-img{
-        width: 100%;
+    #cp-before-and-after,
+    .cp-design-system{
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
