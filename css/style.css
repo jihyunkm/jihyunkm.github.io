@@ -94,6 +94,7 @@ video{
     --shopsmiles: #FF7F79;
     --goodnotes: #C7E4FF;
     --food52: #D1F2A8;
+    --gigabrain: #FFE9F8;
 
     /* font-size */
     --small-text: 0.8125rem;
@@ -716,6 +717,10 @@ WORK (CASE STUDY)
 
 .cs-img.food52-bg {
     box-shadow: 0 0 0 100vmax var(--food52);
+}
+
+.cs-img.gigabrain-bg {
+    box-shadow: 0 0 0 100vmax var(--gigabrain);
 }
 
 .cs-details{
