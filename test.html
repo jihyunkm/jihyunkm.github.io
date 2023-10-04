@@ -1,84 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Circular Carousel</title>
-    <style>
-        .carousel {
-            overflow: hidden; /* Hides the overflow of the carousel */
-            position: relative; /* Allows relative positioning for child elements */
-            width: 100%; /* Set the carousel width to fit the images */
-        }
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+    <link rel="stylesheet" href="Mona-Sans.woff2">
 
-        .carousel-container {
-            display: flex; /* Makes the items inside the carousel display as a flex container */
-            transition: transform 0.5s ease; /* Adds a smooth transition effect for sliding */
-            width: 500%; /* Ensure enough width to fit all items in a row */
-        }
-
-        .carousel-item {
-            flex: 0 0 20%; /* Set each item's width to 20% (for 5 items in a row) */
-            text-align: center; /* Centers the text content within each item */
-            padding: 20px; /* Adds padding around each item */
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Jihyun Kim</title>
+    <link rel="icon" type="image/svg" href="img/favicon.svg">
 </head>
+
 <body>
-    <div class="carousel">
-        <div class="carousel-container">
-            <!-- List of carousel items -->
-            <div class="carousel-item">
-                <img src="image5.jpg" alt="Image 5">
-                <p>Caption 5</p>
+
+<!--header-->
+
+<header id="top">
+    <nav>
+        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
+            <div>
+                <a aria-current="page" class="nav-link" href="index.html">Work</a>
+                <!-- <a class="nav-link" href="">Not-Work</a> -->
+                <a class="nav-link" href="about.html">About</a>
             </div>
-            <div class="carousel-item">
-                <img src="image1.jpg" alt="Image 1">
-                <p>Caption 1</p>
+    </nav>
+</header>
+
+
+<!--content-->
+
+<!--hero-->
+<section id="hero-wrap">
+
+    <div id="hero">
+        <!-- <span id="im-jihyun">
+            안녕<i>!</i> I'm <span class="turquoise"><b>Jihyun</b></span> 
+            
+        </span> -->
+
+        <h1 id="hero-description">
+                <span class="black"><b><span id="underline">Jihyun</span> Kim</b></span>
+                 is an
+
+                <div style="display: inline;">
+                    <span class="herohover" id="artist-turned">artist-turned</span> 
+                    <img class="hover-img" id="watercolor" src="img/still-life.png"></div>
+                
+                <div style="display: inline;">
+                    <span class="herohover" id="product-designer">product designer</span>
+                    <img class="hover-img" id="hcd" src="img/hcd.png"></div>
+                
+                based in 
+
+                <div style="display: inline;">
+                    <span class="herohover" id="based-in">CA</span> <span class="turquoise">☻</span>.
+                    <img class="hover-img" id="california" src="img/california.png"></div>
+                    
+        </h1>            
+        
+        <div id="hero-previously">
+            <div class="darkgray">
+                <span class="black">Passionate about</span> building empathetic experiences.<br>
+                <span class="black">Designed for</span> Colgate-Palmolive, GoodNotes, and more.
+                <p id="desktop">👉 <i>For your best experience, please view on a Desktop 🖥 !</i></p>
             </div>
-            <div class="carousel-item">
-                <img src="image2.jpg" alt="Image 2">
-                <p>Caption 2</p>
-            </div>
-            <div class="carousel-item">
-                <img src="image3.jpg" alt="Image 3">
-                <p>Caption 3</p>
-            </div>
-            <div class="carousel-item">
-                <img src="image4.jpg" alt="Image 4">
-                <p>Caption 4</p>
+            
+                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="77" viewBox="0 0 62 77" fill="none">
+                    <path d="M2.52539 0.611816C1.42082 0.611816 0.525391 1.50725 0.525391 2.61182C0.525391 3.71639 1.42082 4.61182 2.52539 4.61182V0.611816ZM46.5254 2.61182H48.5254C48.5254 1.50725 47.63 0.611816 46.5254 0.611816V2.61182ZM45.1112 76.026C45.8922 76.8071 47.1586 76.8071 47.9396 76.026L60.6675 63.2981C61.4486 62.5171 61.4486 61.2507 60.6675 60.4697C59.8865 59.6886 58.6201 59.6886 57.8391 60.4697L46.5254 71.7834L35.2117 60.4697C34.4306 59.6886 33.1643 59.6886 32.3833 60.4697C31.6022 61.2507 31.6022 62.5171 32.3833 63.2981L45.1112 76.026ZM2.52539 4.61182H46.5254V0.611816H2.52539V4.61182ZM44.5254 2.61182V74.6118H48.5254V2.61182H44.5254Z" fill="#E0E0E0"/>
+                </svg>
+        </div>
+        
+       
+
+    </div>
+</section>
+
+
+<!--projects-->
+
+<section id="projects">
+    <div class="container-wide">
+
+        <!--project 1-->
+        <div class="project">
+            <a class="project-card" href="shopsmiles.html">
+                <img class="project-img" src="img/cp-pdp.png">
+            </a>
+            <div class="project-text">
+                <div class="project-title">
+                    <h3 class="project-number">01</h3>
+                    <h2>ShopSmiles</h2>
+                </div>
+                <div class="project-description">
+                    <p>Redesigning product cards for a streamlined browsing experience.</p>
+                    <h4>2022, UX Intern</h4>
+                    <span class="pill">Web & Mobile Design</span>
+                    <span class="pill">Design Systems</span>
+                    <span class="pill">Shipped</span>
+                </div>
             </div>
         </div>
+        
+        
+        <!--project 2-->
+        <div class="project">
+            <a class="project-card" href="goodnotes.html">
+                <img class="project-img" src="img/goodnotes.png">
+            </a>
+            <div class="project-text">
+                <div class="project-title">
+                    <h3 class="project-number">02</h3>
+                    <h2>GoodNotes</h2>
+                </div>
+                <div class="project-description">
+                    <p>Building useful tools to bolster students' confidence levels when studying.</p>
+                <h4>2022, Project Mentor</h4>
+                <span class="pill">Mobile Tablet Design</span>
+                <span class="pill">Apple HIG</span>
+                <span class="pill">Client Work</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--project 3-->
+        <div class="project">
+            <a class="project-card" href="https://jihyun.webflow.io/food52" target="_blank">
+                <img class="project-img" src="img/food52.png">
+            </a>
+            <div class="project-text">
+                <div class="project-title">
+                    <h3 class="project-number">03</h3>
+                    <h2 class="external-link">Food52</h2>
+                </div>
+                <div class="project-description">
+                    <p>Reimagining an engaging community in a newly designed 0-1 mobile interface.</p>
+                <h4>2021, Design Consultant</h4>
+                <span class="pill">Mobile Design</span>
+                <span class="pill">0-1</span>
+                <span class="pill">Client Work</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--project 4-->
+        <div class="project">
+            <a class="project-card" href="gigabrain.html">
+                <img class="project-img" src="img/gigabrain.png">
+            </a>
+            <div class="project-text">
+                <div class="project-title">
+                    <h3 class="project-number">04</h3>
+                    <h2>GigaBrain</h2>
+                </div>
+                <div class="project-description">
+                    <p>Presenting search results so users can digest important information at a glance.</p>
+                    <h4>2023, Product Designer</h4>
+                    <span class="pill">Mobile Design</span>
+                    <span class="pill">Design Challenge</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--project 5-->
+        <div class="project">
+            <a class="project-card">
+                <img class="project-img disabled" src="img/redesign.png">
+            </a>
+            <div class="project-text">
+                <div class="project-title">
+                    <h3>05</h3>
+                    <h2>Daily UX</h2>
+                </div>
+                <div class="project-description">
+                    <p>Taking time to practice and refine my UX/UI skills through redesigns.</p>
+                <h4 class="project-description">2023, Personal Project</h4>
+                <span class="pill">Web & Mobile Design</span>
+                <span class="pill">Coming Soon</span>
+                </div>
+                
+            </div>
+        </div>
+
     </div>
+</section>
+
+<!--footer-->
+
+<footer>
     
-    <!-- Navigation buttons -->
-    <button id="prevButton">Previous</button>
-    <button id="nextButton">Next</button>
+    <div class="footer-txt">
+        <h2 class="no-bottom-margin">Thanks</span> for making it down here <span class="turquoise">☻</span></h2>
+        <p class="darkgray">Feel free to further explore my site from the right, or shoot me a hello 👋 via 
+            <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
+            <a href="mailto:jihyunkim@berkeley.edu" target="_blank">Email</a>, or 
+            <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
+            I would love to keep in touch<i>!</i>
+            <!-- learn more <a href="" class="">about me</a> -->
+        </p>
+    </div>
 
-    <script>
-        const carouselContainer = document.querySelector('.carousel-container');
-        const prevButton = document.getElementById('prevButton');
-        const nextButton = document.getElementById('nextButton');
-        const itemCount = document.querySelectorAll('.carousel-item').length;
-        let currentIndex = 1; /* Start with the second item */
+    <div class="footer-nav">
+        <ul class="footer-nav-col">
+            <li><a href="shopsmiles.html">ShopSmiles</a></li>
+            <li><a href="goodnotes.html">GoodNotes</a></li>
+            <li><a href="https://jihyun.webflow.io/food52" target="_blank">Food52</a></li>
+        </ul>
 
-        function updateCarousel() {
-            const translateValue = -currentIndex * 20 + '%'; /* Calculate the translation value */
-            carouselContainer.style.transform = `translateX(${translateValue})`; /* Apply the translation */
-        }
+        <ul class="footer-nav-col">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cat/index.html">🐱☔️</a></li>
+        </ul>
+    </div>
+                    
+    <h4>© 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️.</h4>
+    
+    <a href="#top" id="back-to-top">Just take me back to the top ☝</a>
+    
+</footer>
 
-        function moveToNext() {
-            currentIndex = (currentIndex + 1) % itemCount; /* Move to the next item (looping if necessary) */
-            updateCarousel(); /* Update the carousel's position */
-        }
-
-        function moveToPrev() {
-            currentIndex = (currentIndex - 1 + itemCount) % itemCount; /* Move to the previous item (looping if necessary) */
-            updateCarousel(); /* Update the carousel's position */
-        }
-
-        nextButton.addEventListener('click', moveToNext); /* Add event listener for next button */
-        prevButton.addEventListener('click', moveToPrev); /* Add event listener for previous button */
-    </script>
 </body>
-</html>
