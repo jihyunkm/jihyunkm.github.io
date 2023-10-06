@@ -1,11 +1,11 @@
 // ********** INDEX **********
 
 function heroShow(imageID) {
-    document.getElementById(imageID).style.display = 'block';
+    document.getElementById(imageID).style.opacity = '1';
 }
 
 function heroHide(imageID) {
-    document.getElementById(imageID).style.display = 'none';
+    document.getElementById(imageID).style.opacity = '0';
 }
 
 // artist-turned hover
@@ -18,16 +18,6 @@ document.getElementById('artist-turned').addEventListener(
     'mouseout', e => {heroHide('watercolor');}
 )
 
-// product designer hover
-
-document.getElementById('product-designer').addEventListener(
-    'mouseover', e => {heroShow('hcd');}
-)
-
-document.getElementById('product-designer').addEventListener(
-    'mouseout', e => {heroHide('hcd');}
-)
-
 // based in california hover
 
 document.getElementById('based-in').addEventListener(
@@ -37,3 +27,14 @@ document.getElementById('based-in').addEventListener(
 document.getElementById('based-in').addEventListener(
     'mouseout', e => {heroHide('california');}
 )
+
+// product designer hover
+
+document.getElementById('designed-for').addEventListener(
+    'mouseover', e => {heroShow('scroll');}
+)
+
+document.getElementById('designed-for').addEventListener(
+    'mouseout', e => {heroHide('scroll');}
+)
+
