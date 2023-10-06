@@ -408,10 +408,10 @@ HOME PAGE
 
 .hero-hover{
     color: var(--darkgray);
-    text-decoration: underline solid transparent;
-    -webkit-text-decoration: underline solid transparent; /* safari */
-    -moz-text-decoration: underline solid transparent; /* firefox */
-    -o-text-decoration: underline solid transparent; /* opera */
+    /* text-decoration: underline solid transparent;
+    -webkit-text-decoration: underline solid transparent; safari
+    -moz-text-decoration: underline solid transparent; firefox
+    -o-text-decoration: underline solid transparent; opera */
 
     padding-right: 1rem;
     transition: all 150ms;
@@ -419,10 +419,10 @@ HOME PAGE
 
 .hero-hover:hover{
     color: var(--black);
-    text-decoration: underline solid var(--black);
-    -webkit-text-decoration: underline solid var(--black); /* safari */
-    -moz-text-decoration: underline solid var(--black); /* firefox */
-    -o-text-decoration: underline solid var(--black); /* opera */
+    /* text-decoration: underline solid var(--black);
+    -webkit-text-decoration: underline solid var(--black); safari
+    -moz-text-decoration: underline solid var(--black); firefox
+    -o-text-decoration: underline solid var(--black); opera */
     transition: all 150ms;
 }
 
