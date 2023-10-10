@@ -153,7 +153,7 @@ nav{
 footer{
     border: none;
     border-top: 1px solid var(--gray);
-    padding-top: 6rem;
+    padding-top: 5rem;
 
     max-width: 1000px;
     width: 95%;
@@ -264,7 +264,7 @@ sup{
     font-weight: 500;
     color: var(--black);
     padding: 0.3em 1.2em;
-    margin: 0.4em 0.3em 0.4em 0;
+    margin: 0.5rem 0.2rem 0.5rem 0;
     border-radius: 50px;
     background-color: #EEEEEE;
     /* background-color: rgba(0, 0, 0, 0.08); */
@@ -488,7 +488,7 @@ HOME PAGE
 
 
 .project{
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
 
 .project-img{
@@ -498,9 +498,17 @@ HOME PAGE
     width: 100%;
     vertical-align: top;
     margin: 0;
+
+    transition: var(--transition-slow);
 }
 
-.project-img-overlay{
+.project-img:hover{
+    transform: scale(1.016);
+    box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-slow);
+}
+
+/* .project-img-overlay{
     position: relative;
     display: block;
 }
@@ -519,14 +527,14 @@ HOME PAGE
 
 .project-img-overlay:hover::after{
     opacity: 1;
-}
+} */
+
 
 .project-txt{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    /* display: grid;
+    grid-template-columns: 1fr 2.5fr; */
     gap: 3rem;
     align-items: baseline;
-
     text-decoration: none;
 }
 
@@ -535,7 +543,7 @@ HOME PAGE
 }
 
 .project-title{
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -544,22 +552,16 @@ HOME PAGE
     margin-top: 3rem;
 }
 
+
 .disabled{
     cursor: not-allowed;
 }
 
-.disabled:hover::after{
-    opacity: 0;
+.disabled:hover{
+    transform: none;
+    box-shadow: none;
 }
 
-@media (max-width: 1000px) {
-    .project-img:hover{
-        transform: translateY(-8px);
-    }
-    .disabled:hover{
-        transform: none;
-    }
-}
 
 @media (max-width: 400px) {
     .project{
