@@ -83,17 +83,13 @@
     <a class="process-step implementation" href="#implementation">Implementation</a>
 </div>
 
-<hr>
+<!-- <hr> -->
 
 <!--project content-->
 <section id="scope">
     <div class="padding container-small">
         <h3>Scope</h3>
-        <h2>
-            <!-- <span class="material-symbols-rounded">
-            query_stats
-            </span> -->
-            While ShopSmiles has high user traffic from social ads, these visits rarely translated to actual purchases.</h2>
+        <h2>While ShopSmiles has high user traffic from social ads, these visits rarely translated to actual purchases.</h2>
         <p>Meaning, many users visited the site but <b>decided to leave</b> without exploring any other parts of the site or committing to their purchase.</p>
         <p>Thus, my Global IT Team was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.</p>
 
@@ -134,25 +130,32 @@
     </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <!-- preview of final experience -->
 <section id="preview-final-designs">
 
-    <div class="padding container-wide">
+    <div class="padding container-small">
         <h3>preview of final experience</h3>
-        <div class="cp-preview">
-            <div class="cp-preview1-text">
-                <h2>A cleaner browsing experience with more cards.</h2>
-                <p>More products are visible at a single glance when browsing to better inform users in their purchase decisions.</p>
-            </div>
-            <div class="cp-preview1-img">
-                <img src="img/shopsmiles/preview 1.png">
-            </div>
-        </div>
+        <h2>A streamlined product browsing experience—both externally & internally.</h2>
+        <p>An improved product card design aimed at enhancing user browsing, 
+            along with a consolidated design system featuring fewer component 
+            variations to reduce development efforts.
+        </p>
+    </div>
+    <div class="container-medium">
+        <img class="rounded-border" src="img/shopsmiles/preview.png">
     </div>
 
-    <div class="padding container-wide">
+    <div class="container-small">
+        <h2>Increased accessibility for all screens.</h2>
+        <p>Designed for the smallest mobile and biggest desktop screen in mind, 
+            with adherence to the WCAG 2.1 standards with legible colors and 
+            bigger target sizes.</p>
+        <img src="img/shopsmiles/Kapture 2023-02-16 at 17.28.26.gif">
+    </div>
+
+    <!-- <div class="padding container-medium">
         <div class="cp-preview">
             <div class="cp-preview2-img">
                 <img src="img/shopsmiles/Kapture 2023-02-16 at 17.28.26.gif">
@@ -162,11 +165,11 @@
                 <p>Adherence to the WCAG 2.1 standards with legible colors, bigger target sizes, and fewer product card variations living in the design system.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <!-- process -->
 
@@ -205,14 +208,31 @@
         </div>
         <img src="img/shopsmiles/product cards.png">
         <p>A card's content depends on what information users deem most important.</p>
-        <p>From landscape analyses and user interviews, we concluded that shoppers are most curious of a <b>product's image, name, ratings,</b> and <b>price</b>.
-            The business team also required that we include <b>secondary information</b> such as the sale percentage and the original price, new or best sellers, etc.
-        </p>
+    
+        <div class="grid-col-2">
+
+            <div>
+                <p>From landscape analyses and user interviews, 
+                    we concluded shoppers are <b>most curious</b> of a product's:</p>
+                <ul>
+                    <li>Image</li>
+                    <li>Name</li>
+                    <li>Ratings/reviews</li>
+                    <li>Price</li>
+                </ul>
+            </div>
+
+            <div>
+                <p>The business team also required that we include <b>secondary information</b> such as:</p>
+                <ul>
+                    <li>Sale percentage</li>
+                    <li>Original & discounted price</li>
+                    <li>New/best seller labels</li>
+                </ul>
+            </div>
+                
+        </div>
     </div>
-    <!-- <div class="container-medium">
-        <img src="img/shopsmiles/benchmark.png" alt="" class="border" style="margin-top: 3rem;">
-        <span class="caption">My benchmark of e-commerce brands' product cards in use</span>
-    </div> -->
 
     <div class="padding container-small">
         <h2>I then reduced the number of card variations for a consistent user experience & less development effort.</h2>
@@ -223,12 +243,12 @@
     </div>
     <div class="container-small">
         <p>While <b>6 variations</b> of the product card lived in the ShopSmiles design system, 
-            many were <b>redundant</b> due to similar layouts with minor dimensional differences.</p>
-        <p>Recognizing this, the cards could quickly be consolidated to 4—a vertical and horizontal layout for both desktop and mobile screens.</p>
+            many were <b>redundant</b> due to similar layouts with minor dimensional differences.
+            Recognizing this, the cards could quickly be consolidated to 4 (vertical and horizontal layout for both desktop and mobile).</p>
     </div>
 
-    <div class="padding container-small">
-        <p>Instead of a slightly longer horizontal card for the desktop Top Picks (PDP), 
+    <div class="container-small">
+        <p>However, instead of a slightly longer horizontal card for the desktop Top Picks (PDP), 
             I noticed that we could either use the vertical desktop or the newly consolidated horizontal card,
             ultimately resulting in <b>3 card components</b> for ShopSmiles:
         </p>
@@ -251,7 +271,7 @@
     </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <section id="ideation">
     <div class="padding container-small">
@@ -294,12 +314,12 @@
         <p>I would then adapt its design to the large and small-sized product card.</p>
         
     </div>
-    <div class="padding container-small">
+    <div class="container-small">
         <h2>Iteration 1: Wide instead of narrow cards</h2>
         <img class="border" src="img/shopsmiles/narrow wide.png">
 
                 <p>Narrow cards allow for <b>higher comparability</b> (can view more products on a single screen), but <b>hinders the tappability</b> of elements, especially for those with small mobile screens.</p>
-                <p>Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility.</b></p>
+                <p>Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility</b>—making it the ultimate winner.</p>
             
         <div class="bubble-icon yellow">
             <h2>💡</h2>
@@ -355,7 +375,7 @@
 
 <section id="final-design">
     <div class="gray-section container-small">
-        <h3>Final Designs</h3>
+        <h3>Final Design</h3>
         <h2>The new product cards: easier on the eyes & a streamlined browsing experience.</h2>
         <p>After many deliberations with not only the UX team, but with developers, product managers, and business teams (legal and marketing), we ultimately landed on the final design:</p>
     </div>
@@ -404,7 +424,7 @@
     </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <section id="implementation">
 
@@ -412,6 +432,8 @@
         <h3>Implementation</h3>
         <h2>My team eventually fleshed out the entire design system with the new cards.</h2>
         <p>As previously mentioned, we were able to successfully <b>reduce the component variation</b> of product cards (base state without the color picker) from 6 to 3.</p>
+    </div>
+    <div class="container-medium">
         <img class="margin-add" src="img/shopsmiles/reduced variation.png">
     </div>
 
@@ -471,7 +493,7 @@
     </div>
 </section>
 
-<hr>
+<!-- <hr> -->
 
 <section class="padding">
     <div class="container-small">

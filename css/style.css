@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Mona Sans';
     src:
-      url('Mona-Sans.woff2') format('woff2 supports variations'),
-      url('Mona-Sans.woff2') format('woff2-variations');
+      url('../Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../Mona-Sans.woff2') format('woff2-variations');
     font-weight: 200 900;
     font-stretch: 75% 125%;
   }
@@ -85,7 +85,7 @@ video{
 :root{
     /* color */
     --white: #FFFFFF; 
-    --black: #2e2e2e;
+    --black: #121212;
     --lightgray: #F7F7F7;
     --gray: #E0E0E0; 
     --darkgray: #767676; 
@@ -232,7 +232,11 @@ h3{
     color: var(--darkgray);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin: 3rem 0;
+    margin: 4rem 0 2rem 0;
+    padding-bottom: 0.5rem;
+
+    border: none;
+    border-bottom: 1px solid var(--gray);
 }
 
 h4{
@@ -362,18 +366,26 @@ a:focus{
 
 .gray-section{
     background-color: var(--lightgray);
-    padding: 6em 0;
-    margin-top: 6em;
+    padding: 8em 0;
+    margin-top: 8em;
     box-shadow: 0 0 0 100vmax var(--lightgray);
     clip-path: inset(0 -100vmax);
 } /* credits https://youtu.be/81pnuZFarRw?si=ZvR-AVEEveJ-6JL_ */
 
 
 .black-section{
-    color: var(--lightgray);
-    padding-top: 5rem;
+    background-color: var(--black);
+    padding: 8em 0;
+    margin-top: 8em;
+    box-shadow: 0 0 0 100vmax var(--black);
+    clip-path: inset(0 -100vmax);
+
+    color: var(--white);
 }
 
+.black-section h3{
+    color: var(--white);
+}
 
 /********************************************************************
 HOME PAGE
@@ -636,7 +648,7 @@ WORK (CASE STUDY)
 }
 
 .padding{
-    margin-top: 6em;
+    margin-top: 8em;
 } /* adds padding to sections */
 
 .margin-add{
@@ -661,16 +673,17 @@ WORK (CASE STUDY)
     max-width: 1000px;
     margin: 0 auto;
 
+    display: flex;
+    justify-content: space-evenly;
+
     padding: 0.24em 0.1%;
     align-items: baseline;
+    margin-bottom: 10rem;
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* safari */
     border: 1px solid var(--gray);
     border-radius: 50px;
-
-    display: flex;
-    justify-content: space-evenly;
     
     font-size: var(--small-text);
     font-weight: 400;
@@ -737,6 +750,7 @@ WORK (CASE STUDY)
     margin-top: 1rem;
 }
 
+
 .cs-overview{
     width: 67%;
 }
@@ -753,7 +767,7 @@ WORK (CASE STUDY)
 .grid-col-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 3rem;
 }
 
 
@@ -984,6 +998,19 @@ WORK (CASE STUDY)
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE */
 
 @media (max-width: 1000px) {
@@ -1100,8 +1127,9 @@ WORK (CASE STUDY)
 
 #about-selector-container{
     margin-top: 1.5rem; 
-    align-items: flex-end;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #about-selector{
