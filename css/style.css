@@ -64,7 +64,7 @@ img{
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    pointer-events: none;
+    /* pointer-events: none; */
 
     user-select: none;
     -moz-user-select: none;
@@ -72,7 +72,14 @@ img{
     -ms-user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
+
+    transition: var(--transition-slow);
 }
+
+/* img:hover{
+    transform: scale(1.032);
+    transition: var(--transition-slow);
+} */
 
 video{
     width: 100%;  
@@ -85,7 +92,7 @@ video{
 :root{
     /* color */
     --white: #FFFFFF; 
-    --black: #121212;
+    --black: #1E1E1E;
     --lightgray: #F7F7F7;
     --gray: #E0E0E0; 
     --darkgray: #767676; 
@@ -363,6 +370,7 @@ a:focus{
     margin: 0 auto;
     animation: transitionIn 400ms;
 }
+
 
 .gray-section{
     background-color: var(--lightgray);
@@ -652,7 +660,7 @@ WORK (CASE STUDY)
 }
 
 .padding{
-    margin-top: 8em;
+    padding-top: 8rem;
 } /* adds padding to sections */
 
 .margin-add{
@@ -730,6 +738,10 @@ WORK (CASE STUDY)
     max-width: 1000px;
     margin: 0 auto;
     clip-path: inset(0 -100vmax);
+}
+
+.cs-img:hover{
+    transform: none;
 }
 
 .cs-img.shopsmiles-bg {
