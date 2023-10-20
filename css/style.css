@@ -227,7 +227,7 @@ h2{
     
     font-size: 1.8rem;
     font-weight: 500;
-    margin: 3rem 0;
+    margin: 3rem 0 2rem 0;
     line-height: 1.4;
     letter-spacing: -0.02em;
 
@@ -374,8 +374,8 @@ a:focus{
 
 .gray-section{
     background-color: var(--lightgray);
-    padding: 8em 0;
-    margin-top: 8em;
+    padding: 6rem 0;
+    margin-top: 6rem;
     box-shadow: 0 0 0 100vmax var(--lightgray);
     clip-path: inset(0 -100vmax);
 } /* credits https://youtu.be/81pnuZFarRw?si=ZvR-AVEEveJ-6JL_ */
@@ -383,8 +383,8 @@ a:focus{
 
 .black-section{
     background-color: var(--black);
-    padding: 8em 0;
-    margin-top: 8em;
+    padding: 6rem 0;
+    margin-top: 6rem;
     box-shadow: 0 0 0 100vmax var(--black);
     clip-path: inset(0 -100vmax);
 
@@ -660,7 +660,7 @@ WORK (CASE STUDY)
 }
 
 .padding{
-    padding-top: 8rem;
+    padding-top: 6rem;
 } /* adds padding to sections */
 
 .margin-add{
@@ -1016,14 +1016,29 @@ WORK (CASE STUDY)
 
 
 
+/* gigabrain */
 
+#gb-preview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
 
+#gb-preview-img{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
 
+#gb-preview-img > *{
+    object-fit: contain;
+    width: 50%;
+}
 
-
-
-
-
+#gb-preview-txt{
+    width: 35%;
+}
 
 
 
