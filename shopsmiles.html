@@ -1,71 +1,72 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600">
     <link rel="stylesheet" href="Mona-Sans.woff2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Jihyun Kim | ShopSmiles</title>
+    <title>ShopSmiles | Jihyun Kim</title>
     <link rel="icon" type="image/svg" href="img/favicon.svg">
 </head>
 
 <body>
 
 <!--header-->
+        <!-- <a href="javascript: history.go(-1)"><span class="material-symbols-rounded nav-back">arrow_back</span></a> -->
 
 <header id="top">
     <nav>
-        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-            <div>
-                <a class="nav-link" href="index.html">Work</a>
-                <a class="nav-link" href="about.html">About</a>
-            </div>
+        <a class="nav-link" href="index.html">Work</a>
+        <a class="nav-link" href="not-work.html">Not Work</a>
+        <a class="nav-link" href="about.html">About</a>
     </nav>
 </header>
 
 <!--content-->
-
-<img class="cs-img shopsmiles-bg" src="img/shopsmiles/shopsmiles.png">
+<div class="cs-img-container shopsmiles">
+    <img class="cs-img" src="img/shopsmiles/shopsmiles.png">
+</div>
 
 <!--project overview-->
 <section id="overview">
-    <div class="container-wide">
+    <div class="container-medium">
         
         <h1>ShopSmiles</h1>
 
-        <span class="pill">Web & Mobile Design</span>
-        <span class="pill">Design Systems</span>
-        <span class="pill">Shipped</span>
-        
-        <div class="cs-details">
+        <h3>overview</h3>
+        <p class="txt-medium">As a global oral care company, Colgate-Palmolive offers its products on its e-commerce 
+            shop ShopSmiles—yet the site struggles to maintain its visiting users.</p>
+        <p class="txt-medium">As a <b>UX Intern</b>, I redesigned the product cards within ShopSmiles’ design system to 
+            streamline the product browsing experience, <b>decreasing bounce rates by 20% and increasing
+            pages per visit by 0.5</b>*.</p>
 
-            <span class="cs-overview">
-                <h3>overview</h3>
-                <p>As a global oral care company, Colgate-Palmolive offers its products on its e-commerce 
-                    website ShopSmiles—yet the website struggles to maintain its visiting users.</p>
-                <p>As a <b>UX Intern</b>, I redesigned the product cards within ShopSmiles’ design system to 
-                    streamline the product browsing experience, <b>decreasing bounce rates by 20% and increasing
-                    pages per visit by 0.5</b>*.</p>
-            </span>
+        <h3>LOGISTICS</h3>
+        <div class="overview-logistics">
+
+            <p class="darkgray txt-small"><i>Timeline</i><br>
+                July - August 2022
+            </p>
+            <p class="darkgray txt-small"><i>Tools</i><br>
+                Figma <br>
+                Google Suite
+            </p>
+            <p class="darkgray txt-small"><i>Team</i><br>
+                2 Product Designers<br>
+                5 Engineers<br>
+                1 Product Manager<br>
+                1 Marketing Lead
+            </p>
+            <p class="darkgray txt-small"><i>Skills</i><br>
+                Design Systems <br>
+                Interaction Design <br>
+                Responsive Design <br>
+                WCAG 2.1 
+            </p>
             
-            <div class="cs-logistics">
-                <h3>LOGISTICS</h3>
-                <h4 class="no-top-margin"><i>Timeline</i><br>
-                    July - August 2022
-                </h4>
-                <h4 class="no-top-margin"><i>Team</i><br>
-                    2 Product Designers, 5 Engineers, 1 Product Manager, 1 Marketing Lead
-                </h4>
-                <h4 class="no-top-margin"><i>Tools</i><br>
-                    Figma, Google Suite
-                </h4>
-            </div>
-
         </div>
-
-
+        
         <h3>process</h3>
         
     </div>
@@ -74,13 +75,13 @@
 
 <div id="process-bar">
     <a class="process-step scope" href="#scope">Scope</a>
-        ->
+        
     <a class="process-step research" href="#research">Research</a>
-        ->
+        
     <a class="process-step ideation" href="#ideation">Ideation</a>
-        ->
+        
     <a class="process-step final-design" href="#final-design">Final Design</a>
-        ->
+        
     <a class="process-step implementation" href="#implementation">Implementation</a>
 </div>
 
@@ -88,7 +89,7 @@
 <!-- preview of final experience -->
 <section id="preview-final-designs" class="black-section">
 
-    <div class="container-small">
+    <div class="container-medium">
         <h3>preview of final experience</h3>
         <h2>A streamlined product browsing experience—both externally & internally.</h2>
         <p>An improved product card design aimed at enhancing user browsing, 
@@ -100,14 +101,14 @@
         <img class="rounded-border" src="img/shopsmiles/preview.png">
     </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <h2>Increased accessibility for all screens.</h2>
         <p>Designed for a variety of mobile and desktop screens in mind, 
             with adherence to the WCAG 2.1 standards with legible colors and 
             bigger target sizes.</p>
     </div>
-    <div class="container-wide">
-        <img src="img/shopsmiles/preview-all-screens.png">
+    <div class="container-medium">
+        <img class="border" src="img/shopsmiles/preview-all-screens.png">
     </div>
 
     <!-- <div class="padding container-medium">
@@ -127,26 +128,27 @@
 <!--project content-->
 
 <section id="scope">
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <h3>Scope</h3>
         <h2>While ShopSmiles has high user traffic, these visits rarely translated to actual purchases.</h2>
-        <p>Meaning, many users visited the site but <b>decided to leave</b> without exploring any other parts of the site or committing to their purchase.</p>
-        <p>Thus, my Global IT Team was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.</p>
+        <p>Meaning, many users visited the site but <b>decided to leave</b> without exploring any other parts of the site or committing to their purchase.
+            Thus, my Global IT Team was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.
+        </p>
 
-        <img src="img/shopsmiles/overhaul.png" class="margin-add">
+        <!-- <img src="img/shopsmiles/overhaul.png" class="margin-add"> -->
     </div>
 
-    <div class="gray-section container-small">
+    <div class="gray-section container-medium">
         <p>With the context in mind, we landed on a core question:</p>
-            <h2>HMW improve ShopSmile's browsing experience to encourage more interaction?</h2>
+            <h2>How might we improve ShopSmile's browsing experience to encourage more engagement?</h2>
     </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <p>Some relevant goals and constraints we came up with:</p>
         <div class="bubble-icon">
-            <h2 class="no-top-margin">🏆</h2>
+            <span class="material-symbols-rounded medium">trophy</span>
             <div><b>Goals:</b>
-                <ul style="padding-left: 20px; margin: 8px 0;">
+                <ul>
                     <li>Improve the <b>experience</b> and <b>accessibility</b> of browsing</li>
                     <li>Minimize the number of cards living in the ecosystem</li>
                     <li>Improve possible <b>success metrics</b>: conversion, pages per visit, bounce, average order rates</li>
@@ -155,15 +157,21 @@
         </div>
 
         <div class="bubble-icon">
-            <h2 class="no-top-margin">⚒️</h2>
-            <div><b>Constraints:</b>
-                <ul style="padding-left: 20px; margin: 8px 0;">
-                    <li>Not disruptive to existing architecture</li>
-                    <li>Fast timeline/hand-off</li>
-                    <li>Feasibility for development</li>
-                    <li>Accessibility (e.g., screen reader)</li>
-                    <li>Business restrictions (e.g., product wording)</li>
-                </ul>
+            <span class="material-symbols-rounded medium">service_toolbox</span>
+            <div>
+                <b>Constraints:</b>
+                <div class="grid-col-2" style="gap: 0;">
+                    <ul>
+                        <li>Respects existing architecture</li>
+                        <li>Fast timeline/hand-off</li>
+                        <li>Feasibility for development</li>
+                        
+                    </ul>
+                    <ul>
+                        <li>Accessibility (e.g., screen reader)</li>
+                        <li>Business restrictions (e.g., product wording)</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -174,20 +182,16 @@
 <!-- process -->
 
 <section id="research">
-    <div class="padding container-small">
-        
+    <div class="padding container-medium">
         <h3>Research</h3>
-        <h2>According to past audits & heuristic evaluations, we discovered that users were pushed away by product cards.</h2>
-    </div>
-    <div class="container-medium">
+        <h2>According to past audits & heuristic evaluations, users were pushed away by product cards.</h2>
+        <p>Product cards touch upon various areas of the site and act as the <b>main drivers of purchase decisions</b> by providing quick gists of information. 
+            They allow users to easily compare different products, which is a big user "want."
+            However, ShopSmiles' product cards were <b>too large</b> and <b>visually distracting</b>—undermining this value.</p>
         <img class="border" src="img/shopsmiles/heuristic evaluation.png" class="margin-add">
     </div>
-    <div class="container-small">
-        <p>Product cards touch upon various areas of the site and act as the <b>main drivers of purchase decisions</b> by providing quick gists of information. They allow users to easily compare different products, which is a big user "want."</p>
-        <p>However, ShopSmiles' product cards were <b>too large</b> and <b>visually distracting</b>—undermining this value.</p>
-    </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <div class="grid-col-2">
             <p>I also noted that there were too many variations of the cards throughout the site, making it:</p>
             <ol>
@@ -200,19 +204,19 @@
         <img src="img/shopsmiles/instances.png" class="margin-add" style="margin-bottom: 0;">
     </div>
 
-    <div class="padding container-small">
-        <h2>Before redesigning, I first had to understand the components of a product card.</h2>
+    <div class="padding container-medium">
+        <h2>Before redesigning, I first took time to understand the components of a product card.</h2>
         <div class="bubble-icon">
-            <h2 class="no-top-margin">💬</h2>
-            <span>A <b>product card</b> is a container (common region) of related information regarding a product, presenting information in a visually intuitive and digestible way.</span>
+            <span class="material-symbols-rounded medium">dictionary</span>
+            <p>A <b>product card</b> is a container (common region) of related information regarding a product, presenting information in a visually intuitive and digestible way.</p>
         </div>
         <img src="img/shopsmiles/product cards.png">
-        <p>A card's content depends on what information users deem most important.</p>
     
         <div class="grid-col-2">
 
             <div>
-                <p>From landscape analyses and user interviews, 
+                <p>A card's content depends on what information users deem most important.
+                    From landscape analyses and user interviews, 
                     we concluded shoppers are <b>most curious</b> of a product's:</p>
                 <ul>
                     <li>Image</li>
@@ -234,22 +238,21 @@
         </div>
     </div>
 
-    <div class="padding container-small">
-        <h2>I then reduced the number of card variations for a consistent user experience & less development effort.</h2>
+    <div class="padding container-medium">
+        <h2>I then reduced the number of card variations for a consistent experience & easier development.</h2>
     
     </div>
-    <div class="container-wide">
-        <img src="img/shopsmiles/many cards.png" alt="" class="border">
-    </div>
-    <div class="container-small">
+    <div class="container-medium">
         <p>While <b>6 variations</b> of the product card lived in the ShopSmiles design system, 
             many were <b>redundant</b> due to similar layouts with minor dimensional differences.
             Recognizing this, the cards could quickly be consolidated to 4 (vertical and horizontal layout for both desktop and mobile).</p>
+        <!-- <img src="img/shopsmiles/many cards.png" alt="" class="border"> -->
+        <img src="img/shopsmiles/minimum card.png" alt="" class="border">
     </div>
 
-    <div class="container-small">
-        <p>However, instead of a slightly longer horizontal card for the desktop Top Picks (PDP), 
-            I noticed that we could either use the vertical desktop or the newly consolidated horizontal card,
+    <div class="container-medium grid-col-2">
+        <p>However, instead of a slightly longer horizontal desktop card, 
+            I noticed that we could either use (1) the vertical desktop or (3) the newly consolidated horizontal card,
             ultimately resulting in <b>3 card components</b> for ShopSmiles:
         </p>
         <ol>
@@ -259,13 +262,13 @@
         </ol>
     </div>
 
-    <div class="container-medium">
+    <!-- <div class="container-medium">
         <img src="img/shopsmiles/minimum card.png" alt="" class="border">
-    </div>
+    </div> -->
 
-    <div class="container-small">
-        <div class="bubble-icon">
-            <h2>✅</h2>
+    <div class="container-medium">
+        <div class="bubble-icon" style="align-items: center;">
+            <span class="material-symbols-rounded medium">check_box</span>
             <p><b>Goal (1/3):</b> Minimize the number of cards living in the ecosystem</p>
         </div>
     </div>
@@ -274,7 +277,7 @@
 <!-- <hr> -->
 
 <section id="ideation">
-    <div class="padding container-small">
+    <div class="padding container-medium">
 
         <!-- <h3>Design considerations & explorations</h3> -->
         <h3>Ideation</h3>
@@ -283,142 +286,131 @@
         <p>Previous ShopSmiles' product cards did not show color options, as most of its products are offered in a <b>single color</b>. 
             However, the business team requested a color picker for the products offered in multiple colors, meaning
             those offered in only one color would <b>instead</b> have to show:</p>
-        <div style="display: grid; grid-auto-flow: column; column-gap: 1rem;">
-            <div class="center-text">
-                <p>1. A single color selection in the color picker</p>
-                <img src="img/shopsmiles/color picker spacing 1.png">
-            </div>
-            <div class="center-text">
-                <p>2. An empty gap with a fixed card height</p>
-                <img src="img/shopsmiles/color picker spacing 2.png">
-            </div>
-            <div class="center-text">
-                <p>3. Have no gap with a variable height</p>
-                <img src="img/shopsmiles/color picker spacing 3.png">
-            </div>
-        </div>
+        <img class="border" src="img/shopsmiles/color picker options.png" alt="">
     </div>
         
-    <div class="padding container-small">
-        <p>Additionally, we decided to display the mobile Top Picks in a <b>carousel</b> instead of a list, changing the card to a vertical layout, to <b>reduce the time</b> it took users to reach the reviews.</p>
-        <p>This meant that I had to make sure to <b>minimize</b> the number of <b>complex haptic controls</b> (i.e., nested scrolling, pop-up in a scroll), as the color picker would introduce more interactions.
+    <div class="padding container-medium">
+        <p>Additionally, we decided to display the mobile Top Picks in a <b>carousel</b> instead of a list, changing the card to a vertical layout, to <b>reduce the time</b> it took users to reach the reviews.
+        This meant that I had to make sure to <b>minimize</b> the number of complex <b>haptic controls</b> (i.e., nested scrolling, pop-up in a scroll), as the color picker would introduce more interactions.
         </p>
         <img src="img/shopsmiles/top picks color picker w gradient.png" class="margin-add">
     </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <p>Once the card elements were finalized, I started iterating on 
             the <b>medium-sized product card</b> as it was both the intermediary size 
             and dealt with the most restrictions (as it's suited for mobile screens).
-        </p>
-        <p>I would then adapt its design to the large and small-sized product card.</p>
+            I would then adapt its design to the large and small-sized product card.</p>
         
     </div>
-    <div class="container-small">
+    <div class="container-medium">
         <h2>Iteration 1: Wide instead of narrow cards</h2>
         <img class="border" src="img/shopsmiles/narrow wide.png">
 
-                <p>Narrow cards allow for <b>higher comparability</b> (can view more products on a single screen), but <b>hinders the tappability</b> of elements, especially for those with small mobile screens.</p>
-                <p>Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility</b>—making it the ultimate winner.</p>
+                <p>Narrow cards allow for higher comparability (can view more products on a single screen), but <b>hinders the tappability</b> of elements, especially for those with small mobile screens.
+                Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility</b>—making it the ultimate winner.</p>
             
-        <div class="bubble-icon yellow">
-            <h2>💡</h2>
+        <div class="bubble-icon">
+            <span class="material-symbols-rounded medium">emoji_objects</span>
             <div>
                 <span><b><i>What I learned...</i></b></span>
-                <p>Here, we have the typical business vs. UX dilemma—showing more cards for more opportunities for sale versus the contrast to increase accessibility.
+                <p class="txt-small">Here, we have the typical business vs. UX dilemma—showing more cards for more opportunities for sale versus the contrast to increase accessibility.
                     However, UX teams should always advocate for the user, even more so when accessibility is involved.</p>
-                <p>In fact, <i>accessibility -> more users have access -> higher potential for sales!</i> 🤔</p>
+                <p class="txt-small">In fact, <i>accessibility -> more users have access -> higher potential for sales, a double win!</i></p>
             </div>
         </div>
     </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <h2>Iteration 2: An intuitive color picker</h2>
     </div>
     <div class="container-medium">
         <img class="border" src="img/shopsmiles/intuitive color picker.png" alt="">
     </div>
-    <div class="container-small">
-        <p>Due to the principles of proximity, the empty gap in place of an inactive color picker looked <b>confusing</b> when placed in a grid.
+    <div class="container-medium">
+        <p>Due to the principles of proximity, the empty gap looked confusing when placed in a grid.
             The single-option color picker, on the other hand, featured an unintentional design that took up real estate.
         </p>
         <p>To avoid the possible confusion and make the most efficient use of space, I moved forward with the <b>third option</b> despite the variable height.</p>
     </div>
     
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <img class="border" src="img/shopsmiles/cta size.png" alt="">
         <p>To "extra-ensure" the issue was addressed, we reduced the <b>width of the call-to-action (CTA)</b> on desktop cards, as desktop screens primarily utilized the grid layout.
             I left the <b>mobile CTA untouched</b>, since (1) no mobile screen used the grid layout and (2) the longer width allowed for a bigger touch area.
         </p>
     </div>
 
-    <div class="padding container-small">
+    <div class="padding container-medium">
         <h2>Iteration 3: An accessible color picker</h2>
-        <p>However, as we still weren't satisfied with the problem of variable heights, I also came up with a <b>fourth idea</b>: nesting the color selections in a separate button that would prompt to an overlay.</p>
-        <p>This button would be always docked, solving the problems of an empty gap or misalignment.</p>
-        <img src="img/shopsmiles/overlay options.gif">
-        <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.</p>
-        <p>The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
+        <p>However, as we still weren't satisfied with the problem of variable heights, I also came up with a <b>fourth idea</b>: nesting the color selections in a separate button that would prompt to an overlay.
+            This button would be always docked, solving the problems of an empty gap or misalignment.</p>
+        <!-- <img src="img/shopsmiles/overlay options.gif"> -->
+        <div class="grid-col-2">
+            <video autoplay loop muted class="border" src="img/shopsmiles/overlay option 1.mp4"></video>
+            <video autoplay loop muted class="border" src="img/shopsmiles/overlay option 2.mp4"></video>
+        </div>
+        <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.
+            The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
             (2) feel <b>intrusive</b>, causing frequent UX frustrations.</p>
-            <div class="bubble-icon yellow">
-                <h2>💡</h2>
-                <div>
-                    <span><b><i>What I learned...</i></b></span>
-                    <p>While my last idea ultimately turned out to be inaccessible, I still learned that the more ideas, the better:</p>
-                    <p>By ruling out more and more ideas, not only is there more opportunity to justify the best-design-standing, but I can experiment and understand
-                        more about the restrictions (here, I learned more about the engineering restrictions).</p>
-                </div>
+        <div class="bubble-icon">
+            <span class="material-symbols-rounded medium">emoji_objects</span>
+            <div>
+                <span><b><i>What I learned...</i></b></span>
+                <p class="txt-small">While my last idea turned out to be inaccessible, I still learned that the more ideas, the better:</p>
+                <p class="txt-small">By ruling out more and more ideas, not only is there more opportunity to justify the best-design-standing, but I can experiment and understand
+                    more about the restrictions (here, I learned more about what was possible within the engineering restrictions).</p>
             </div>
+        </div>
             
     </div>
 </section>
 
-<section id="final-design" class="black-section">
-    <div class="container-small">
-        <h3>Final Design</h3>
-        <h2>The new product cards: easier on the eyes & a streamlined browsing experience.</h2>
-        <p>After many deliberations with not only the UX team, but with developers, product managers, and business teams (legal and marketing), we ultimately landed on the final design:</p>
-    </div>
+<section id="final-design" class="black-section container-medium">
+    <h3>Final Design</h3>
+    <h2>The new product cards: easier on the eyes & a streamlined browsing experience.</h2>
+    <p>After many deliberations with not only the UX team, but with developers, product managers, and business teams (legal and marketing), we ultimately landed on the final design:</p>
 
-    <div class="padding container-wide">        
-        <span class="caption">Old to new product cards</span>
+    <div class="padding">        
+        <span class="txt-medium">Old to new product cards</span>
         <img class="rounded-border" src="img/shopsmiles/final design.png">
     </div>
 
-    <div class="padding container-wide">        
-        <span class="caption">Some design decisions</span>
-        <img class="rounded-border" src="img/shopsmiles/final design decisions.png">
+    <div class="padding">        
+        <span class="txt-medium">Design decisions</span>
+        <!-- <img class="rounded-border" src="img/shopsmiles/final design decisions.png"> -->
+        <img src="img/shopsmiles/final design decisions large.png" alt="" class="border">
+        <img src="img/shopsmiles/final design decisions medium.png" alt="" class="border">
+        <img src="img/shopsmiles/final design decisions small.png" alt="" class="border">
     </div>
 
-    <div class="padding container-wide">
+    <div class="padding">
         <div id="cp-before-and-after">
             <div>
-                <span class="caption">Before (Mobile Top Picks list)</span>
+                <span class="txt-medium">Before (Mobile Top Picks list)</span>
                 <img class="rounded-border" src="img/shopsmiles/final design-before.png">
             </div>
             <div>
-                <span class="caption">After (Mobile Top Picks carousel)</span>
+                <span class="txt-medium">After (Mobile Top Picks carousel)</span>
                 <img class="rounded-border" src="img/shopsmiles/final design-after.png">
             </div>
         </div>
     </div>
 
-    <div class="padding container-wide">
-        <span class="caption">Mobile card placed within a carousel</span>
+    <div class="padding">
+        <span class="txt-medium">Mobile card placed within a carousel</span>
         <img class="rounded-border" src="img/shopsmiles/final design-carousel.png">
     </div>
 
-    <div class="padding container-wide">
+    <div class="padding">
         <div id="cp-before-and-after">
             <div>
-                <span class="caption">Before (Mobile Search)</span>
+                <span class="txt-medium">Before (Mobile Search)</span>
                 <img class="rounded-border" src="img/shopsmiles/final design-search before.png">
             </div>
             <div>
-                <span class="caption">After (Mobile Search)</span>
-                <video autoplay loop muted class="rounded-border">
-                    <source src="img/shopsmiles/final design-search after.mp4"/>
-                </video>
+                <span class="txt-medium">After (Mobile Search)</span>
+                <img class="rounded-border" src="img/shopsmiles/final design-search after.png">
             </div>
         </div>
     </div>
@@ -426,53 +418,29 @@
 
 <!-- <hr> -->
 
-<section id="implementation">
+<section id="implementation" class="container-medium">
 
-    <div class="padding container-small">
+    <div class="padding">
         <h3>Implementation</h3>
         <h2>My team eventually fleshed out the entire design system with the new cards.</h2>
         <p>As previously mentioned, we were able to successfully <b>reduce the component variation</b> of product cards (base state without the color picker) from 6 to 3.</p>
-    </div>
-    <div class="container-medium">
-        <img class="margin-add" src="img/shopsmiles/reduced variation.png">
-    </div>
 
-    <div class="padding container-small">
+        <img src="img/shopsmiles/reduced variation.png">
+
         <p>My mentor and I also <b>documented and redlined</b> the new cards, explicitly indicating its usage, spacing, touch areas, and more, for ShopSmiles' developers and any other involved.</p>
-    </div>
-    <div class="padding container-wide">
-        <span class="caption">Product card documentation</span>
-        <div class="cp-design-system">
-            <img class="border" src="img/shopsmiles/implementation01.png" alt="">
-            <img class="border" src="img/shopsmiles/implementation02.png" alt="">
-            <img class="border" src="img/shopsmiles/implementation03.png" alt="">
-        </div>
-    </div>
-    
-    <div class="padding container-wide cp-design-system">
-        <div>
-            <span class="caption">Updated Home Page</span>
-            <img class="border" src="img/shopsmiles/Home.png">
-        </div>
-        <div>
-            <span class="caption">Updated PLP</span>
-            <img class="border" src="img/shopsmiles/PLP.png">
-        </div>
-        <div>
-            <span class="caption">Updated PDP</span>
-            <img class="border" src="img/shopsmiles/PDP.png">
-        </div>
-    </div>
-    <div class="padding container-small">        
-        <div class="bubble-icon">
-            <h2>✅</h2>
+        
+        <span class="txt-medium">Example documentation</span>
+        <img class="border" src="img/shopsmiles/documentation example.png" alt="">
+
+        <div class="bubble-icon" style="align-items: center;">
+            <span class="material-symbols-rounded medium">check_box</span>
             <p><b>Goal (2/3):</b> Improve the experience and accessibility of browsing</p>
         </div>
     </div>
 
 
-    <div class="gray-section container-small">
-        <h2>The designs are currently <a href="https://shop.colgate.com/" target="_blank" class="external-link">live</a>,
+    <div class="gray-section">
+        <h2>My designs are currently <a href="https://shop.colgate.com/" target="_blank" class="external-link">live</a>,
             successfully kicking off ShopSmiles' UX overhaul.</h2>
         <p>Since its launch in January 2023, <b>bounce rates decreased by ~20%</b> while the 
             average number of <b>pages visited per session increased by 0.5</b>*. 
@@ -481,73 +449,81 @@
             Feel free to <a href="https://www.jihyunkim.me/colgate-uxr" target="_blank" class="external-link">read more</a> on 
             how I reimagined the information architecture of ShopSmiles' product description page (PDP) through research.
         </p>
-        <p class="caption">*Since my internship concluded before I could observe the precise impact, 
-            these metrics are approximate figures sourced from <a href="https://www.semrush.com/" target="_blank" class="external-link">Semrush</a>.</p>
+        <p class="caption">*As my internship concluded before I could observe the precise impact, 
+            I sourced these figures from <a href="https://www.semrush.com/" target="_blank" class="external-link">Semrush</a>.</p>
+        
+            <div class="bubble-icon" style="align-items: center;">
+            <span class="material-symbols-rounded medium">check_box</span>
+            <p><b>Goal (3/3):</b> Improve possible success metrics</p>
+        </div>
     </div>
+
 </section>
 
-<section class="padding">
-    <div class="container-small">
-        <h3>If I had more time...</h3>
-        <h2>User testing to see what works vs. doesn't.</h2>
-        <p>Because of time limitations, the shipment of my designs took place after the completion of my 10-week internship at Colgate-Palmolive.
-            Given more time on the project, I would have liked to perform user testing to verify whether the designs had effectively enhanced users' 
-            browsing experience on ShopSmiles. 
-        </p>
-    </div>
+<section class="padding container-medium">
+    <h3>If I had more time...</h3>
+    <h2>User testing to see what works vs. doesn't.</h2>
+    <p>Because of time limitations, the shipment of my designs took place after the completion of my 10-week internship at Colgate-Palmolive.
+        Given more time on the project, I would have liked to perform user testing to verify whether the designs had effectively enhanced users' 
+        browsing experience on ShopSmiles. 
+    </p>
 </section>
 
-<!-- <hr> -->
 
-<section class="padding">
-    <div class="container-small">
-        <h3>Reflection & Takeaways</h3>
-        <h2>During my time at Colgate-Palmolive, I not only grew as a designer but gained valuable work ethics and soft skills.</h2>
-        <p>Hands down, my teammates at Colgate's UX Team were one of the most supportive and enjoyable people to work with! Although my time at Colgate was short-lived, I learned so much not only about the design process but the cross-functional nature of UX design.</p>
-        <img src="img/shopsmiles/reflection w comments.png" class="margin-add">
-        <p>Some takeaways from my time at Colgate-Palmolive:</p>
-        <h2>Good designers design for everyone.</h2>
-        <p>As a company with a large user base, the UX team was especially concerned with the 
-            <b>accessibility</b> of its products. A lot of effort was placed into making our designs accessible, whether it be designing for a screen reader or the smallest mobile screen size possible.</p>
-        <h2>Organization & documentation is key.</h2>
-        <p>Colgate-Palmolive is hundreds of years old, with numerous departments and roles. From this environment, I learned that it's ever-important to <b>keep a record</b> of everything you did and, most importantly, <b><i>why</i> you did them</b>.</p>
-        <p>Good organization and documentation not only makes it easier to refer back to one's own work, but makes it easier for others as well—whether it be for hand-offs, working in cross-functional environments, or, simply, efficient communication.</p>
-    </div>
+<section class="padding container-medium">
+    <h3>Reflection & Takeaways</h3>
+    <h2>While at Colgate, I not only grew as a designer, but gained valuable work ethics & soft skills.</h2>
+    <p>Hands down, my teammates at Colgate-Palmolive's UX team were one of the most supportive and enjoyable people to work with! Although my time at Colgate was short-lived, I learned so much not only about the design process but the cross-functional nature of UX design.</p>
+    <img src="img/shopsmiles/reflection w comments.png" class="margin-add">
+    <p>Some takeaways from my time at Colgate-Palmolive:</p>
+    <h2>Good designers design for everyone.</h2>
+    <p>As a company with a large user base, the UX team was especially concerned with the 
+        <b>accessibility</b> of its products. A lot of effort was placed into making our designs accessible, whether it be designing for a screen reader or the smallest mobile screen size possible.</p>
+    <h2>Organization & documentation is key.</h2>
+    <p>Colgate-Palmolive is hundreds of years old, with numerous departments and roles. From this environment, I learned that it's ever-important to <b>keep a record</b> of everything you did and, most importantly, <b><i>why</i> you did them</b>.</p>
+    <p>Good organization and documentation not only makes it easier to refer back to one's own work, but makes it easier for others as well—whether it be for hand-offs, working in cross-functional environments, or, simply, efficient communication.</p>
 </section>
 
-<!-- footer -->
+<section class="padding container-medium">
+    <h3>next project</h3>
+    <a href="goodnotes.html">
+        <img class="next-project" src="img/np-goodnotes.png" alt="">
+    </a>
+</section>
+
+<!--footer-->
 
 <footer>
     
     <div class="footer-txt">
-        <h2 class="no-bottom-margin">Thanks</span> for making it down here <span class="turquoise">☻</span></h2>
-        <p class="darkgray">Feel free to further explore my site from the right, or shoot me a hello 👋 via 
+        <h2 class="no-bottom-margin">Thanks</span> for making it here<span class="material-symbols-rounded medium turquoise">family_star</span></h2>
+        <p class="darkgray">Feel free to explore my site from the right, or shoot me a
+            hello<span class="material-symbols-rounded small">
+                waving_hand
+                </span> on 
             <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
             <a href="mailto:jihyunkim@berkeley.edu" target="_blank">Email</a>, or 
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
-            <!-- learn more <a href="" class="">about me</a> -->
         </p>
+        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
     </div>
 
     <div class="footer-nav">
         <ul class="footer-nav-col">
-            <li><a href="shopsmiles.html">ShopSmiles</a></li>
-            <li><a href="goodnotes.html">GoodNotes</a></li>
-            <li><a href="https://jihyun.webflow.io/food52" target="_blank">Food52</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="not-work.html">Not work</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
 
         <ul class="footer-nav-col">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cat/index.html">🐱☔️</a></li>
+            <li><a href="#top">Back to top</a></li>
+            <li><a href="cat/index.html">
+                <span class="material-symbols-rounded small">pets</span><span class="material-symbols-rounded small">rainy</span>
+            </a></li>
         </ul>
     </div>
-                    
-    <h4>© 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️.</h4>
-    
-    <a href="#top" id="back-to-top">Just take me back to the top ☝</a>
-    
+                            
 </footer>
 
 </body>

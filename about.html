@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600">
     <link rel="stylesheet" href="Mona-Sans.woff2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Jihyun Kim | About</title>
+    <title>About | Jihyun Kim</title>
     <link rel="icon" type="image/svg" href="img/favicon.svg">
 </head>
 
@@ -16,17 +17,86 @@
 
 <header id="top">
     <nav>
-        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-            <div>
-                <a class="nav-link" href="index.html">Work</a>
-                <a aria-current="page" class="nav-link" href="about.html">About</a>
-            </div>
+        <a class="nav-link" href="index.html">Work</a>
+        <a class="nav-link" href="not-work.html">Not Work</a>
+        <a aria-current="page" class="nav-link" href="about.html">About</a>
     </nav>
 </header>
 
-
-
 <!--content-->
+
+<section id="hero" class="container-wide">
+    <h1 id="hero-main">
+        <b style="font-family: 'Inter';">안녕</b> <sup id="pronunciation">(hello)</sup><span class="material-symbols-rounded yellow big">
+            waving_hand</span>,
+        here's some stuff you might want to know about me<span class="material-symbols-rounded turquoise big">
+            person_raised_hand</span>.
+    </h1>
+    <p id="hero-description" class="darkgray">
+        (Basically just a few fun facts & anecdotes in hopes that I sound interesting.)
+     </p>
+</section>
+
+<div id="about-photos">
+    <img src="img/about/about-img0.png" alt="">
+    <img src="img/about/about2.png" alt="">
+    <img src="img/about/about3.png" alt="">
+    <img src="img/about/about4.png" alt="">
+    <img src="img/about/about5.png" alt="">
+    <img src="img/about/about6.png" alt="">
+</div>
+
+
+<section class="container-wide">
+    <h3>A little about me & my journey</h3>
+    <div class="about-grid">
+
+        
+        <p class="txt-medium">Using my strong suit of detail-orientation, communication, & newfound familiarity with code, 
+            I'm a product designer who strives to craft human-first, meaningful solutions.
+        </p>
+        
+        <div>
+            <p>I recently graduated UC Berkeley with B.A.'s in Media Studies and Psychology,
+                and am currently cuddled back in my sunny hometown of SoCal.</p>
+            <p>Doing fine art in high school, I used to not know too much about design. 
+                I first encountered UX in college—and paired with my interests in psychology—I've fallen in love ever since.</p>
+            <p>Now, I strongly believe in the power and potential of a well-made design, 
+                and am passionate about shaping meaningful interactions that make our experiences more enjoyable and accessible.</p>
+            <!-- <p class="darkgray">PC: <a href="https://www.aaroncwu.me/play" target="_blank" class="external-link">Aaron Wu</a></p> -->
+
+        </div>
+        <img class="rounded-border" src="img/about/about.png" alt="">
+
+    </div>
+
+    <!-- <h3 class="padding">My design philosophy</h3>
+    <div class="about-grid">
+
+        
+        <p class="txt-medium">Before joining the design community, I didn't realize its significance nor appreciate good design. 
+            However, after tackling diverse problem scopes, empathizing with users during interviews, 
+            and witnessing my prototypes come to life, I now see design as a tool to understand, support, and empower.
+        </p>
+        
+        <div>
+            <p>Design is essential to contributing to an empathetic world, and I believe the <i>more designers, the merrier:</i> I've taught over 80 students the basics of 
+                <a href="https://classes.berkeley.edu/content/2021-fall-desinv-198-005-lec-005" target="_blank" class="external-link">Adobe Photoshop and Illustrator</a>,
+                an incoming class of consultants the foundations of <a href="https://www.berkeleyinnovation.org" target="_blank" class="external-link">human-centered design</a>, 
+                and lowered the barrier of entry to joining UC Berkeley's premier <a href="https://www.innovativedesign.club" target="_blank" class="external-link">creative agency</a> by creating beginner level teams.</p>
+            <p>As a designer, I hope to foster a more inclusive design community and join the hands of those who share the same passion for impact.</p>
+
+        </div>
+        <img class="rounded-border" src="img/about/about.png" alt="">
+
+    </div> -->
+
+    <h2>This page is currently being built<i>!</i> <br>
+        Please check back for the finished page.</h2>
+</section>
+
+
+<!-- 
 <section>
     <div id="about" class="container-medium">
         <div>
@@ -40,8 +110,6 @@
                 I'm a <span class="black">product designer</span> who strives to carefully craft <span class="black">human-first, creative solutions</span>. </p>
             <p class="darkgray">I'm also constantly on the hunt to learn how to create the most <span class="black">accessible</span> and <span class="black">sustainable designs</span>...</p>
             
-            <!-- <a href="mailto:jihyunkim@berkeley.edu"><img class="contact" src="img/about/email.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank"><img class="contact" src="img/about/linkedin.svg" alt=""></a> -->
 
         </div>
 
@@ -55,7 +123,7 @@
 
     
 
-    <div class="padding container-wide">
+    <div class="padding container-medium">
         <h2>... & More about me 🫣</h2>
 
         <div id="about-img-picker">
@@ -67,7 +135,7 @@
                     <img id="about-img2" class="about-img no-margin" src="img/about/about-img2.png" alt="">
                     <img id="about-img3" class="about-img no-margin" src="img/about/about-img3.png" alt="">
 
-                    <!-- selector -->
+                    selector
                     <div id="about-selector-container">
                         <p class="no-margin darkgray">Click on an icon below<i>!</i></p>
                         <div id="about-selector">
@@ -82,7 +150,7 @@
 
                 <div id="about-text-container">
 
-                    <!-- text0 -->
+                    text0
                     <div id="about-text0">
                         <h3 class="no-top-margin">My journey</h3>
                         <p>I recently graduated UC Berkeley with Bachelor's of Arts degrees in Media Studies and Psychology this past May, and am now cuddled back in my sunny hometown of SoCal 🌴.</p>
@@ -93,7 +161,7 @@
                         <p class="caption">PC: <a href="https://lalynyu.com" target="_blank" class="external-link">Lalyn Yu</a></p>
                     </div>
 
-                    <!-- text1 -->
+                    text1
                     <div id="about-text1" class="about-text">
                         <h3 class="no-top-margin">My design philosophy</h3>
                         <p>Before joining the design community, I didn't realize its significance in our daily lives or appreciate good design. However, after working with diverse clients, conducting user interviews, 
@@ -105,7 +173,7 @@
                         <p>As a designer, I hope to foster a more inclusive design community and join the hands of those who share the same passion for impact.</p>
                     </div>
 
-                    <!-- text2 -->
+                    text2
                     <div id="about-text2" class="about-text">
                         <h3 class="no-top-margin">A perpetual learner</h3>
                         <p>I'm a constant learner, especially regarding creative skills 🖍.</p>
@@ -116,7 +184,7 @@
                         <p>In the future, I would also love to learn 3D modeling tools like Blender or motion graphics tools like After Effects.</p>
                     </div>
 
-                    <!-- text3 -->
+                    text3
                     <div id="about-text3" class="about-text">
                         <h3 class="no-top-margin">In my free time...</h3>
                         <p>I love to bake recipes found on <a href="https://youtube.com/playlist?list=PLrOtq6QjSLtCHdpI3ZBuVdlVX2dF2NfX7&si=55AEwGdrLVDs89Vd" target="_blank" class="external-link">YouTube</a>,
@@ -129,9 +197,11 @@
                     </div>
 
 
-                </div> <!-- close text container -->
+                </div> 
+                close text container
 
-        </div> <!-- close img picker -->
+        </div> 
+        close img picker
 
     </div>
 
@@ -209,41 +279,44 @@
         </div>
     </div>
     
-</section>
+</section> -->
+
+
+
 
 <!--footer-->
 
 <footer>
     
     <div class="footer-txt">
-        <h2 class="no-bottom-margin">Thanks</span> for making it down here <span class="turquoise">☻</span></h2>
-        <p class="darkgray">Feel free to further explore my site from the right, or shoot me a hello 👋 via 
+        <h2 class="no-bottom-margin">Thanks</span> for making it here<span class="material-symbols-rounded medium turquoise">family_star</span></h2>
+        <p class="darkgray">Feel free to explore my site from the right, or shoot me a
+            hello<span class="material-symbols-rounded small">
+                waving_hand
+                </span> on 
             <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
             <a href="mailto:jihyunkim@berkeley.edu" target="_blank">Email</a>, or 
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
-            <!-- learn more <a href="" class="">about me</a> -->
         </p>
+        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
     </div>
 
     <div class="footer-nav">
         <ul class="footer-nav-col">
-            <li><a href="shopsmiles.html">ShopSmiles</a></li>
-            <li><a href="goodnotes.html">GoodNotes</a></li>
-            <li><a href="https://jihyun.webflow.io/food52" target="_blank">Food52</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="not-work.html">Not work</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
 
         <ul class="footer-nav-col">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cat/index.html">🐱☔️</a></li>
+            <li><a href="#top">Back to top</a></li>
+            <li><a href="cat/index.html">
+                <span class="material-symbols-rounded small">pets</span><span class="material-symbols-rounded small">rainy</span>
+            </a></li>
         </ul>
     </div>
-                    
-    <h4>© 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️.</h4>
-    
-    <a href="#top" id="back-to-top">Just take me back to the top ☝</a>
-    
+                            
 </footer>
 
 </body>

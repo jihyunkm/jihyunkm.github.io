@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600">
     <link rel="stylesheet" href="Mona-Sans.woff2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -16,183 +17,68 @@
 
 <header id="top">
     <nav>
-        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-            <div>
-                <a aria-current="page" class="nav-link" href="index.html">Work</a>
-                <!-- <a class="nav-link" href="">Not-Work</a> -->
-                <a class="nav-link" href="about.html">About</a>
-            </div>
+        <a aria-current="page" class="nav-link" href="index.html">Work</a>
+        <a class="nav-link" href="not-work.html">Not Work</a>
+        <a class="nav-link" href="about.html">About</a>
     </nav>
 </header>
 
-
 <!--content-->
 
-<!--hero-->
-<section id="hero">
+<section id="hero" class="container-wide">
+    <h1 id="hero-main">
+        <!-- <b>Jihyun</b><span class="material-symbols-rounded big turquoise">family_star</span>is a
+        digital product designer who crafts intuitive experiences<span class="material-symbols-rounded big yellow">arrow_selector_tool</span>with
+        her background in psychology<span class="material-symbols-rounded big magenta">school</span>. -->
+
+        <b>Jihyun</b> 
+        <sup id="pronunciation">/jee-hy-uh-n/</sup><span id="hero-icon-star" class="material-symbols-rounded big turquoise">family_star</span>designs
+        intuitive digital experiences<span id="hero-icon-cursor" class="material-symbols-rounded big yellow">arrow_selector_tool</span>with
+        her background in psychology<a  href="https://psychology.berkeley.edu" 
+        target="_blank"><span id="hero-icon-cap" class="material-symbols-rounded big magenta">school</span></a>.
+    </h1>
+    <p id="hero-description" class="darkgray">
+        Recent <span class="black">UC Berkeley graduate</span> who designed for 
         
-    <div id="hero-grid">
-
-        <div id="hero-txt">
-            <h1 id="hero-txt-main"><b>Jihyun Kim</b> designs digital experiences <span class="turquoise">☻</span></h1>
-            <div class="hero-description">
-                <p>🎨 <span id="artist-turned" class="hero-hover">ex-artist</span></p>
-                <p>🌴 <span id="based-in" class="hero-hover">based in CA</span></p>
-                <p>👇 <span id="designed-for" class="hero-hover">designed for GoodNotes & more<i>!</i></span></p>
-            </div>
-        </div>
-
-        <div id="hero-img">
-            <img id="watercolor" class="border hover-img" src="img/still-life.png">
-            <img id="california" class="border hover-img" src="img/california.png">
-            <img id="scroll" class="border hover-img" src="img/scroll.png">
-            <video class="border" autoplay loop muted src="img/hero.mp4"></video>
-        </div>
-        
-    </div>
-
-    <p id="desktop" class="darkgray"><i>🖥 For your best experience, please view on a Desktop!</i></p>
-    
+        <span class="black">GoodNotes</span>, <span class="black">Colgate-Palmolive</span>, and more. 
+        Usually spotted tinkering with <span class="black">Figma</span> and <span class="black">VS Code</span>, 
+        or farming in <span class="black">Stardew Valley</span>. 
+        Explore her <a href="">design philosophy</a> or check out <a href="">some paintings</a>. ◡̈
+     </p>
 </section>
 
+<section class="container-wide">
+    <h3>selected work ↓</h3>
+    <div id="selected-work">
 
-
-<!--projects-->
-
-<section id="projects">
-
-    <!--project 1-->
-    <div class="project">
-
-        <!-- project img -->
-        <div class="container-wide">
-            <a class="project-img-overlay" href="shopsmiles.html">
-                <img class="project-img" src="img/cp-pdp.png">
-            </a>
-        </div>
-
-        <!-- project txt -->
-        <div class="container-medium">
-            <a class="project-txt" href="shopsmiles.html">
-                <h2 class="project-title">ShopSmiles</h2>
-
-                <div class="project-description">
-                    <p>Redesigning product cards for Colgate-Palmolive's e-commerce design system to streamline users' browsing experience.</p>
-                    <h4>2022, UX Intern</h4>
-
-                    <span class="pill">Web & Mobile Design</span>
-                    <span class="pill">Design Systems</span>
-                    <span class="pill">Shipped</span>
-                    <!-- <hr> -->
-                </div>
-            </a>
-        </div>
-
-    </div>
-
-
-    <!--project 2-->
-    <div class="project">
-
-        <!-- project img -->
-        <div class="container-wide">
-            <a class="project-img-overlay" href="goodnotes.html">
-                <img class="project-img" src="img/goodnotes.png">
-            </a>
-             
-        </div>
-
-        <!-- project txt -->
-        <div class="container-medium">
-            <a class="project-txt" href="goodnotes.html">
-                <h2 class="project-title">GoodNotes</h2>
-
-                <div class="project-description">
-                    <p>Bolstering students' confidence levels by building tactile tools they can use while note-taking and studying.</p>
-                    <h4>2022, Project Mentor</h4>
-
-                    <span class="pill">Mobile Tablet Design</span>
-                    <span class="pill">Apple HIG</span>
-                    <span class="pill">Client Work</span>
-                    <!-- <hr> -->
-                </div>                      
-            </a>
-        </div>
-
-    </div>
-
-
-    <!--project 3-->
-    <div class="project">
-
-        <!-- project img -->
-        <div class="container-wide">
-            <a class="project-img-overlay" href="https://jihyun.webflow.io/food52" target="_blank">
-                <img class="project-img" src="img/food52.png">
-            </a>
-             
-        </div>
-
-        <!-- project txt -->
-        <div class="container-medium">
-            <a class="project-txt" href="https://jihyun.webflow.io/food52" target="_blank">
-                <h2 class="project-title external-link">Food52</h2>
-
-                <div class="project-description">
-                    <p>Reimagining an engaging community experience that appeals to a broader audience in a newly designed 0 -> 1 mobile interface.</p>
-                    <h4>2021, Design Consultant</h4>
-
-                    <span class="pill">Mobile Design</span>
-                    <span class="pill">0 -> 1</span>
-                    <span class="pill">Client Work</span>
-                    <!-- <hr> -->
-                </div>                      
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-<section id="featured">
-
-    <div class="container-wide featured">
-
-        <!--project 4-->
-        <a href="gigabrain.html" class="project">
-            <div class="project-img-overlay">
-                <img class="project-img" src="img/gigabrain.png">
-            </div>
-            <div>
-                <h2 class="project-title">GigaBrain</h2>
-                <p>Presenting search results so users can digest important information at a glance.</p>
-                <h4>2023, Product Designer</h4>
-                <span class="pill">Mobile Design</span>
-                <span class="pill">Design Challenge</span>
-            </div> 
-        </a>
-                 
-
-        <!--project 5-->
-        <a class="project">
-            <div class="project-img-overlay">
-                <img class="project-img disabled" src="img/redesign.png">
-            </div>
-
-            <h2 class="project-title">Weekly UX</h2>
-
+        <!-- shopsmiles -->
+        <a class="project" href="shopsmiles.html">
+            <img class="project-img" src="img/cp-pdp.png" alt="">
             <div class="project-description">
-                <p>Taking time to practice and refine my UX/UI skills through redesigns, with a glimpse into my design process.</p>
-                <h4 class="project-description">2023, Personal Project</h4>
-                <span class="pill">Web & Mobile Design</span>
-                <span class="pill">Coming Soon</span>
+                <p>Redesigning ShopSmiles’ product cards to enhance the shopping experience.</p>
+                <p class="darkgray">Internship, 2022</p>
             </div>
-                
         </a>
+
+        <!-- goodnotes -->
+        <a class="project" href="goodnotes.html">
+            <img class="project-img" src="img/goodnotes.png" alt="">
+            <div class="project-description">
+                <p>Building tactile studying tools in GoodNotes to bolster students’ confidence levels.</p>
+                <p class="darkgray">Client Work, 2022</p>
+            </div>
+        </a>
+
+        <!-- food52 -->
+        <a class="project" href="https://jihyun.webflow.io/food52" target="_blank">
+            <img class="project-img" src="img/food52.png" alt="">
+            <div class="project-description">
+                <p>Crafting an engaging Food52 community for more home cooks in a new 0 -> 1 mobile interface <span class="external-link"></span>.</p>
+                <p class="darkgray">Client Work, 2021</p>
+            </div>
+        </a>
+
     </div>
-
-
 </section>
 
 <!--footer-->
@@ -200,34 +86,34 @@
 <footer>
     
     <div class="footer-txt">
-        <h2 class="no-bottom-margin">Thanks</span> for making it down here <span class="turquoise">☻</span></h2>
-        <p class="darkgray">Feel free to further explore my site from the right, or shoot me a hello 👋 via 
+        <h2 class="no-bottom-margin">Thanks</span> for making it here<span class="material-symbols-rounded medium turquoise">family_star</span></h2>
+        <p class="darkgray">Feel free to explore my site from the right, or shoot me a
+            hello<span class="material-symbols-rounded small">
+                waving_hand
+                </span> on 
             <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
             <a href="mailto:jihyunkim@berkeley.edu" target="_blank">Email</a>, or 
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
-            <!-- learn more <a href="" class="">about me</a> -->
         </p>
+        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
     </div>
 
     <div class="footer-nav">
         <ul class="footer-nav-col">
-            <li><a href="shopsmiles.html">ShopSmiles</a></li>
-            <li><a href="goodnotes.html">GoodNotes</a></li>
-            <li><a href="https://jihyun.webflow.io/food52" target="_blank">Food52</a></li>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="not-work.html">Not work</a></li>
+            <li><a href="about.html">About</a></li>
         </ul>
 
         <ul class="footer-nav-col">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cat/index.html">🐱☔️</a></li>
+            <li><a href="#top">Back to top</a></li>
+            <li><a href="cat/index.html">
+                <span class="material-symbols-rounded small">pets</span><span class="material-symbols-rounded small">rainy</span>
+            </a></li>
         </ul>
     </div>
-                    
-    <h4>© 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️.</h4>
-    
-    <a href="#top" id="back-to-top">Just take me back to the top ☝</a>
-    
+                            
 </footer>
 
 </body>

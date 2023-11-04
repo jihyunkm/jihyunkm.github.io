@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,700">
     <link rel="stylesheet" href="Mona-Sans.woff2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -10,179 +11,44 @@
     <link rel="icon" type="image/svg" href="img/favicon.svg">
 </head>
 
-<body>
+<body style="max-width: 1400px; margin: 0 auto;">
 
 <!--header-->
 
 <header id="top">
     <nav>
-        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
-            <div>
-                <a aria-current="page" class="nav-link" href="index.html">Work</a>
-                <!-- <a class="nav-link" href="">Not-Work</a> -->
-                <a class="nav-link" href="about.html">About</a>
-            </div>
+        <a aria-current="page" class="nav-link" href="index.html">Work</a>
+        <a class="nav-link" href="">Not-Work</a>
+        <a class="nav-link" href="about.html">About</a>
     </nav>
 </header>
 
-
-<!--content-->
-
-<!--hero-->
-<section id="hero-wrap">
-
-    <div id="hero">
-        <!-- <span id="im-jihyun">
-            안녕<i>!</i> I'm <span class="turquoise"><b>Jihyun</b></span> 
-            
-        </span> -->
-
-        <h1 id="hero-description">
-                <span class="black"><b><span id="underline">Jihyun</span> Kim</b></span>
-                 is an
-
-                <div style="display: inline;">
-                    <span class="herohover" id="artist-turned">artist-turned</span> 
-                    <img class="hover-img" id="watercolor" src="img/still-life.png"></div>
-                
-                <div style="display: inline;">
-                    <span class="herohover" id="product-designer">product designer</span>
-                    <img class="hover-img" id="hcd" src="img/hcd.png"></div>
-                
-                based in 
-
-                <div style="display: inline;">
-                    <span class="herohover" id="based-in">CA</span> <span class="turquoise">☻</span>.
-                    <img class="hover-img" id="california" src="img/california.png"></div>
-                    
-        </h1>            
+<section id="t-hero">
+    <h1 id="t-hero-main"><b>Jihyun</b><span class="material-symbols-rounded big turquoise">family_star</span>designs
+        intuitive digital experiences<span class="material-symbols-rounded big yellow">arrow_selector_tool</span>with
+        her background in psychology<span class="material-symbols-rounded big magenta">school</span>.
+    </h1>
+    <p id="t-hero-description" class="darkgray">
+        <!-- Recent <span class="black">UC Berkeley graduate</span> who designed for  -->
         
-        <div id="hero-previously">
-            <div class="darkgray">
-                <span class="black">Passionate about</span> building empathetic experiences.<br>
-                <span class="black">Designed for</span> Colgate-Palmolive, GoodNotes, and more.
-                <p id="desktop">👉 <i>For your best experience, please view on a Desktop 🖥 !</i></p>
-            </div>
-            
-                <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="62" height="77" viewBox="0 0 62 77" fill="none">
-                    <path d="M2.52539 0.611816C1.42082 0.611816 0.525391 1.50725 0.525391 2.61182C0.525391 3.71639 1.42082 4.61182 2.52539 4.61182V0.611816ZM46.5254 2.61182H48.5254C48.5254 1.50725 47.63 0.611816 46.5254 0.611816V2.61182ZM45.1112 76.026C45.8922 76.8071 47.1586 76.8071 47.9396 76.026L60.6675 63.2981C61.4486 62.5171 61.4486 61.2507 60.6675 60.4697C59.8865 59.6886 58.6201 59.6886 57.8391 60.4697L46.5254 71.7834L35.2117 60.4697C34.4306 59.6886 33.1643 59.6886 32.3833 60.4697C31.6022 61.2507 31.6022 62.5171 32.3833 63.2981L45.1112 76.026ZM2.52539 4.61182H46.5254V0.611816H2.52539V4.61182ZM44.5254 2.61182V74.6118H48.5254V2.61182H44.5254Z" fill="#E0E0E0"/>
-                </svg>
-        </div>
-        
-       
-
-    </div>
+        Designed for <span class="black">GoodNotes</span>, <span class="black">Colgate</span>, and more. 
+        Usually spotted tinkering with <span class="black">Figma</span> and <span class="black">VS Code</span>, 
+        or farming in <span class="black">Stardew Valley</span>. 
+        Explore her <a href="">design philosophy</a> or check out <a href="">some paintings</a>.
+    </p>
 </section>
 
-
-<!--projects-->
-
-<section id="projects">
-    <div class="container-wide">
-
-        <!--project 1-->
-        <div class="project">
-            <a class="project-card" href="shopsmiles.html">
-                <img class="project-img" src="img/cp-pdp.png">
-            </a>
-            <div class="project-text">
-                <div class="project-title">
-                    <h3 class="project-number">01</h3>
-                    <h2>ShopSmiles</h2>
-                </div>
-                <div class="project-description">
-                    <p>Redesigning product cards for a streamlined browsing experience.</p>
-                    <h4>2022, UX Intern</h4>
-                    <span class="pill">Web & Mobile Design</span>
-                    <span class="pill">Design Systems</span>
-                    <span class="pill">Shipped</span>
-                </div>
-            </div>
+<section>
+    <h3>selected work ↓</h3>
+    <div id="t-selected-work">
+        <div class="t-project-description">
+            <p>Redesigning ShopSmiles’ product cards to enhance the shopping experience.</p>
+            <p class="darkgray">Internship, 2022</p>
         </div>
-        
-        
-        <!--project 2-->
-        <div class="project">
-            <a class="project-card" href="goodnotes.html">
-                <img class="project-img" src="img/goodnotes.png">
-            </a>
-            <div class="project-text">
-                <div class="project-title">
-                    <h3 class="project-number">02</h3>
-                    <h2>GoodNotes</h2>
-                </div>
-                <div class="project-description">
-                    <p>Building useful tools to bolster students' confidence levels when studying.</p>
-                <h4>2022, Project Mentor</h4>
-                <span class="pill">Mobile Tablet Design</span>
-                <span class="pill">Apple HIG</span>
-                <span class="pill">Client Work</span>
-                </div>
-                
-            </div>
+        <div class="t-project-description">
+            <p>Building tactile studying tools in GoodNotes to bolster students’ confidence levels.</p>
+            <p class="darkgray">Client Work, 2022</p>
         </div>
-
-        <!--project 3-->
-        <div class="project">
-            <a class="project-card" href="https://jihyun.webflow.io/food52" target="_blank">
-                <img class="project-img" src="img/food52.png">
-            </a>
-            <div class="project-text">
-                <div class="project-title">
-                    <h3 class="project-number">03</h3>
-                    <h2 class="external-link">Food52</h2>
-                </div>
-                <div class="project-description">
-                    <p>Reimagining an engaging community in a newly designed 0-1 mobile interface.</p>
-                <h4>2021, Design Consultant</h4>
-                <span class="pill">Mobile Design</span>
-                <span class="pill">0-1</span>
-                <span class="pill">Client Work</span>
-                </div>
-                
-            </div>
-        </div>
-
-        <!--project 4-->
-        <div class="project">
-            <a class="project-card" href="gigabrain.html">
-                <img class="project-img" src="img/gigabrain.png">
-            </a>
-            <div class="project-text">
-                <div class="project-title">
-                    <h3 class="project-number">04</h3>
-                    <h2>GigaBrain</h2>
-                </div>
-                <div class="project-description">
-                    <p>Presenting search results so users can digest important information at a glance.</p>
-                    <h4>2023, Product Designer</h4>
-                    <span class="pill">Mobile Design</span>
-                    <span class="pill">Design Challenge</span>
-                </div>
-                
-            </div>
-        </div>
-
-        <!--project 5-->
-        <div class="project">
-            <a class="project-card">
-                <img class="project-img disabled" src="img/redesign.png">
-            </a>
-            <div class="project-text">
-                <div class="project-title">
-                    <h3>05</h3>
-                    <h2>Daily UX</h2>
-                </div>
-                <div class="project-description">
-                    <p>Taking time to practice and refine my UX/UI skills through redesigns.</p>
-                <h4 class="project-description">2023, Personal Project</h4>
-                <span class="pill">Web & Mobile Design</span>
-                <span class="pill">Coming Soon</span>
-                </div>
-                
-            </div>
-        </div>
-
     </div>
 </section>
 
@@ -191,7 +57,7 @@
 <footer>
     
     <div class="footer-txt">
-        <h2 class="no-bottom-margin">Thanks</span> for making it down here <span class="turquoise">☻</span></h2>
+        <h2 class="no-bottom-margin">Thanks</span> for making it down here.</h2>
         <p class="darkgray">Feel free to further explore my site from the right, or shoot me a hello 👋 via 
             <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
             <a href="mailto:jihyunkim@berkeley.edu" target="_blank">Email</a>, or 
@@ -215,10 +81,442 @@
         </ul>
     </div>
                     
-    <h4>© 2023 Jihyun Kim. Designed & coded from scratch, with many cups of ☕️.</h4>
+    <h4>© 2023 Built by Jihyun Kim, with many cups of<span class="material-symbols-rounded small">coffee</span>.</h4>
     
     <a href="#top" id="back-to-top">Just take me back to the top ☝</a>
     
 </footer>
 
+
+
+
+
+
+<!--header-->
+
+<header id="top">
+    <nav>
+        <a href="index.html" style="text-decoration: none;">ㄱㅈㅎ</a>
+            <div>
+                <a aria-current="page" class="nav-link" href="index.html">Work</a>
+                <!-- <a class="nav-link" href="">Not-Work</a> -->
+                <a class="nav-link" href="about.html">About</a>
+            </div>
+    </nav>
+</header>
+
+
+<!--content-->
+
+<!--hero-->
+<section id="hero">
+        
+    <div id="hero-grid">
+
+        <div id="hero-txt">
+            <h1 id="hero-txt-main"><b>Jihyun Kim</b> designs digital experiences <span class="turquoise">☻</span></h1>
+            <div class="hero-description">
+                <p>🎨 <span id="artist-turned" class="hero-hover">ex-artist</span></p>
+                <p>🌴 <span id="based-in" class="hero-hover">based in CA</span></p>
+                <p>👇 <span id="designed-for" class="hero-hover">designed for GoodNotes & more<i>!</i></span></p>
+            </div>
+        </div>
+
+        <div id="hero-img">
+            <img id="watercolor" class="border hover-img" src="img/still-life.png">
+            <img id="california" class="border hover-img" src="img/california.png">
+            <img id="scroll" class="border hover-img" src="img/scroll.png">
+            <video class="border" autoplay loop muted src="img/hero.mp4"></video>
+        </div>
+        
+    </div>
+
+    <p id="desktop" class="darkgray"><i>🖥 For your best experience, please view on a Desktop!</i></p>
+    
+</section>
+
+
+
+<!--projects-->
+
+<section id="projects">
+
+    <!--project 1-->
+    <div class="project">
+
+        <!-- project img -->
+        <div class="container-wide">
+            <a class="project-img-overlay" href="shopsmiles.html">
+                <img class="project-img" src="img/cp-pdp.png">
+            </a>
+        </div>
+
+        <!-- project txt -->
+        <div class="container-medium">
+            <a class="project-txt" href="shopsmiles.html">
+                <h2 class="project-title">ShopSmiles</h2>
+
+                <div class="project-description">
+                    <p>Redesigning product cards for Colgate-Palmolive's e-commerce design system to streamline users' browsing experience.</p>
+                    <h4>2022, UX Intern</h4>
+
+                    <span class="pill">Web & Mobile Design</span>
+                    <span class="pill">Design Systems</span>
+                    <span class="pill">Shipped</span>
+                    <!-- <hr> -->
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--project 2-->
+    <div class="project">
+
+        <!-- project img -->
+        <div class="container-wide">
+            <a class="project-img-overlay" href="goodnotes.html">
+                <img class="project-img" src="img/goodnotes.png">
+            </a>
+             
+        </div>
+
+        <!-- project txt -->
+        <div class="container-medium">
+            <a class="project-txt" href="goodnotes.html">
+                <h2 class="project-title">GoodNotes</h2>
+
+                <div class="project-description">
+                    <p>Bolstering students' confidence levels by building tactile tools they can use while note-taking and studying.</p>
+                    <h4>2022, Project Mentor</h4>
+
+                    <span class="pill">Mobile Tablet Design</span>
+                    <span class="pill">Apple HIG</span>
+                    <span class="pill">Client Work</span>
+                    <!-- <hr> -->
+                </div>                      
+            </a>
+        </div>
+
+    </div>
+
+
+    <!--project 3-->
+    <div class="project">
+
+        <!-- project img -->
+        <div class="container-wide">
+            <a class="project-img-overlay" href="https://jihyun.webflow.io/food52" target="_blank">
+                <img class="project-img" src="img/food52.png">
+            </a>
+             
+        </div>
+
+        <!-- project txt -->
+        <div class="container-medium">
+            <a class="project-txt" href="https://jihyun.webflow.io/food52" target="_blank">
+                <h2 class="project-title external-link">Food52</h2>
+
+                <div class="project-description">
+                    <p>Reimagining an engaging community experience that appeals to a broader audience in a newly designed 0 -> 1 mobile interface.</p>
+                    <h4>2021, Design Consultant</h4>
+
+                    <span class="pill">Mobile Design</span>
+                    <span class="pill">0 -> 1</span>
+                    <span class="pill">Client Work</span>
+                    <!-- <hr> -->
+                </div>                      
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="featured">
+
+    <div class="container-wide featured">
+
+        <!--project 4-->
+        <a href="gigabrain.html" class="project">
+            <div class="project-img-overlay">
+                <img class="project-img" src="img/gigabrain.png">
+            </div>
+            <div>
+                <h2 class="project-title">GigaBrain</h2>
+                <p>Presenting search results so users can digest important information at a glance.</p>
+                <h4>2023, Product Designer</h4>
+                <span class="pill">Mobile Design</span>
+                <span class="pill">Design Challenge</span>
+            </div> 
+        </a>
+                 
+
+        <!--project 5-->
+        <a class="project">
+            <div class="project-img-overlay">
+                <img class="project-img disabled" src="img/redesign.png">
+            </div>
+
+            <h2 class="project-title">Weekly UX</h2>
+
+            <div class="project-description">
+                <p>Taking time to practice and refine my UX/UI skills through redesigns, with a glimpse into my design process.</p>
+                <h4 class="project-description">2023, Personal Project</h4>
+                <span class="pill">Web & Mobile Design</span>
+                <span class="pill">Coming Soon</span>
+            </div>
+                
+        </a>
+    </div>
+
+
+</section>
+
+
+
+
 </body>
+
+
+
+<style>
+    #hero{
+    max-width: 800px;
+    width: 95%;
+    margin: auto;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+        
+    animation: transitionIn 400ms;
+}
+
+#hero-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+#hero-txt-main{
+   margin-top: 0; 
+}
+
+#hero-img > *{
+    width: 13rem;
+}
+
+.hero-description > p {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.hero-hover{
+    color: var(--darkgray);
+    /* text-decoration: underline solid transparent;
+    -webkit-text-decoration: underline solid transparent; safari
+    -moz-text-decoration: underline solid transparent; firefox
+    -o-text-decoration: underline solid transparent; opera */
+
+    padding-right: 1rem;
+    transition: all 150ms;
+}
+
+.hero-hover:hover{
+    color: var(--black);
+    /* text-decoration: underline solid var(--black);
+    -webkit-text-decoration: underline solid var(--black); safari
+    -moz-text-decoration: underline solid var(--black); firefox
+    -o-text-decoration: underline solid var(--black); opera */
+    transition: all 150ms;
+}
+
+
+/* hover image display */
+
+.hover-img{
+    width: 13rem;
+    opacity: 0;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+
+#watercolor{  
+    position: absolute;
+}
+
+#scroll{
+    position: absolute;
+}
+
+#california{
+    position: absolute;
+}
+
+@media (max-width: 600px) {
+    #hero-grid{
+        align-items: start;
+        gap: 1rem;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    #hero{
+        margin-bottom: 4rem;
+    }
+
+    #hero-grid{
+        grid-template-columns: 1fr;
+    }
+
+    #hero-img, .hover-img{
+        display: none;
+    }
+
+    .hero-hover:hover{
+        color: var(--darkgray);
+        text-decoration: none;
+    }
+}
+
+
+/***** SELECTED WORK *****/
+
+
+.project{
+    margin-bottom: 8rem;
+}
+
+.project-img{
+    border-radius: 1rem;
+    pointer-events: auto;
+    
+    width: 100%;
+    vertical-align: top;
+    margin: 0;
+
+    transition: var(--transition-slow);
+}
+
+.project-img:hover{
+    transform: scale(1.016);
+    box-shadow: 2px 2px 24px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-slow);
+}
+
+/* .project-img-overlay{
+    position: relative;
+    display: block;
+}
+
+.project-img-overlay:after {
+    content: '';
+    position: absolute;
+    width: 100%; height: 100%;
+    top:0; left:0;
+    border-radius: 1rem;
+    background: linear-gradient(rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.4) 100%);
+    opacity: 0;
+    transition: var(--transition-slow);
+    -webkit-transition: var(--transition-slow);
+}
+
+.project-img-overlay:hover::after{
+    opacity: 1;
+} */
+
+
+.project-txt{
+    /* display: grid;
+    grid-template-columns: 1fr 2.5fr; */
+    gap: 3rem;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.project-txt:hover{
+    color: var(--black);
+}
+
+.project-title{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.project-description > hr{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+.disabled{
+    cursor: not-allowed;
+}
+
+.disabled:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+
+@media (max-width: 400px) {
+    .project{
+        margin-bottom: 4rem;
+    }
+
+    .project-txt{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .project-title > h2{
+        margin: 0;
+    }
+
+    .project-description > hr{
+        display: none;
+    }
+}
+
+
+
+
+
+.featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.featured > a {
+    text-decoration: none;
+}
+
+.featured > a:hover {
+    color: var(--black);
+}
+
+.featured > .project{
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) { 
+    .featured{
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 400px) { 
+    .featured{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+</style>
