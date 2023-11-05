@@ -132,7 +132,7 @@
         <h3>Scope</h3>
         <h2>While ShopSmiles has high user traffic, these visits rarely translated to actual purchases.</h2>
         <p>Meaning, many users visited the site but <b>decided to leave</b> without exploring any other parts of the site or committing to their purchase.
-            Thus, my Global IT Team was tasked to initiate the <b>first steps of a complete overhaul</b> of the current ShopSmiles website.
+            Thus, my Global IT Team was tasked to initiate the <b>first steps of a complete overhaul</b> of the ShopSmiles website.
         </p>
 
         <!-- <img src="img/shopsmiles/overhaul.png" class="margin-add"> -->
@@ -144,9 +144,25 @@
     </div>
 
     <div class="padding container-medium">
-        <p>Some relevant goals and constraints we came up with:</p>
-        <div class="bubble-icon">
-            <span class="material-symbols-rounded medium">trophy</span>
+        <p>Some relevant goals and constraints we kept in mind:</p>
+
+        <div class="test-grid">
+            <div class="test-box">
+                <h2><span class="material-symbols-rounded">web</span></h2>
+                <p class="txt-medium">Minimal effort but high impact</p>
+                <p>Respect the existing ShopSmiles architecture for an easy and fast implementation,
+                    whilst enhancing the overall shopping experience.
+                </p>
+            </div>
+            <div class="test-box">
+                <h2><span class="material-symbols-rounded">equalizer</span></h2>
+                <p class="txt-medium">Improve engagement metrics</p>
+                <p>Improve metrics relevant to site engagement and purchase such as conversion, pages per visit, bounce, and average order rates.</p>
+            </div>
+        </div>
+
+        <!-- <div class="bubble-icon">
+            <span class="material-symbols-rounded">trophy</span>
             <div><b>Goals:</b>
                 <ul>
                     <li>Improve the <b>experience</b> and <b>accessibility</b> of browsing</li>
@@ -155,9 +171,9 @@
                 </ul>
             </div>
         </div>
-
+    
         <div class="bubble-icon">
-            <span class="material-symbols-rounded medium">service_toolbox</span>
+            <span class="material-symbols-rounded">service_toolbox</span>
             <div>
                 <b>Constraints:</b>
                 <div class="grid-col-2" style="gap: 0;">
@@ -173,7 +189,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </section>
@@ -184,7 +200,7 @@
 <section id="research">
     <div class="padding container-medium">
         <h3>Research</h3>
-        <h2>According to past audits & heuristic evaluations, users were pushed away by product cards.</h2>
+        <h2>Current product cards had inaccessible & unintentional design choices.</h2>
         <p>Product cards touch upon various areas of the site and act as the <b>main drivers of purchase decisions</b> by providing quick gists of information. 
             They allow users to easily compare different products, which is a big user "want."
             However, ShopSmiles' product cards were <b>too large</b> and <b>visually distracting</b>—undermining this value.</p>
@@ -207,9 +223,10 @@
     <div class="padding container-medium">
         <h2>Before redesigning, I first took time to understand the components of a product card.</h2>
         <div class="bubble-icon">
-            <span class="material-symbols-rounded medium">dictionary</span>
+            <h2><span class="material-symbols-rounded">dictionary</span></h2>
             <p>A <b>product card</b> is a container (common region) of related information regarding a product, presenting information in a visually intuitive and digestible way.</p>
         </div>
+
         <img src="img/shopsmiles/product cards.png">
     
         <div class="grid-col-2">
@@ -263,23 +280,18 @@
     </div>
 
     <!-- <div class="container-medium">
-        <img src="img/shopsmiles/minimum card.png" alt="" class="border">
-    </div> -->
-
-    <div class="container-medium">
         <div class="bubble-icon" style="align-items: center;">
-            <span class="material-symbols-rounded medium">check_box</span>
+            <span class="material-symbols-rounded">check_box</span>
             <p><b>Goal (1/3):</b> Minimize the number of cards living in the ecosystem</p>
         </div>
-    </div>
+    </div> -->
+
 </section>
 
-<!-- <hr> -->
 
 <section id="ideation">
     <div class="padding container-medium">
 
-        <!-- <h3>Design considerations & explorations</h3> -->
         <h3>Ideation</h3>
 
         <h2>The business team's request: a color picker.</h2>
@@ -311,7 +323,8 @@
                 Wide cards, on the other hand, might take up more space on the screen, but in turn offer greater <b>accessibility and legibility</b>—making it the ultimate winner.</p>
             
         <div class="bubble-icon">
-            <span class="material-symbols-rounded medium">emoji_objects</span>
+            <h2><span class="material-symbols-rounded">emoji_objects</span></h2>
+
             <div>
                 <span><b><i>What I learned...</i></b></span>
                 <p class="txt-small">Here, we have the typical business vs. UX dilemma—showing more cards for more opportunities for sale versus the contrast to increase accessibility.
@@ -353,8 +366,9 @@
         <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.
             The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
             (2) feel <b>intrusive</b>, causing frequent UX frustrations.</p>
+        
         <div class="bubble-icon">
-            <span class="material-symbols-rounded medium">emoji_objects</span>
+            <h2><span class="material-symbols-rounded">emoji_objects</span></h2>
             <div>
                 <span><b><i>What I learned...</i></b></span>
                 <p class="txt-small">While my last idea turned out to be inaccessible, I still learned that the more ideas, the better:</p>
@@ -429,13 +443,13 @@
 
         <p>My mentor and I also <b>documented and redlined</b> the new cards, explicitly indicating its usage, spacing, touch areas, and more, for ShopSmiles' developers and any other involved.</p>
         
-        <span class="txt-medium">Example documentation</span>
+        <span class="txt-medium">Card documentation</span>
         <img class="border" src="img/shopsmiles/documentation example.png" alt="">
 
-        <div class="bubble-icon" style="align-items: center;">
-            <span class="material-symbols-rounded medium">check_box</span>
+        <!-- <div class="bubble-icon" style="align-items: center;">
+            <span class="material-symbols-rounded">check_box</span>
             <p><b>Goal (2/3):</b> Improve the experience and accessibility of browsing</p>
-        </div>
+        </div> -->
     </div>
 
 
@@ -452,10 +466,10 @@
         <p class="caption">*As my internship concluded before I could observe the precise impact, 
             I sourced these figures from <a href="https://www.semrush.com/" target="_blank" class="external-link">Semrush</a>.</p>
         
-            <div class="bubble-icon" style="align-items: center;">
-            <span class="material-symbols-rounded medium">check_box</span>
+        <!-- <div class="bubble-icon" style="align-items: center;">
+            <span class="material-symbols-rounded">check_box</span>
             <p><b>Goal (3/3):</b> Improve possible success metrics</p>
-        </div>
+        </div> -->
     </div>
 
 </section>
@@ -496,9 +510,9 @@
 <footer>
     
     <div class="footer-txt">
-        <h2 class="no-bottom-margin">Thanks</span> for making it here<span class="material-symbols-rounded medium turquoise">family_star</span></h2>
+        <h2 class="no-bottom-margin">Thanks</span> for making it here<span class="material-symbols-rounded turquoise">family_star</span></h2>
         <p class="darkgray">Feel free to explore my site from the right, or shoot me a
-            hello<span class="material-symbols-rounded small">
+            hello<span class="material-symbols-rounded">
                 waving_hand
                 </span> on 
             <a href="https://www.linkedin.com/in/jihyunkimm" target="_blank">LinkedIn</a>, 
@@ -519,7 +533,7 @@
         <ul class="footer-nav-col">
             <li><a href="#top">Back to top</a></li>
             <li><a href="cat/index.html">
-                <span class="material-symbols-rounded small">pets</span><span class="material-symbols-rounded small">rainy</span>
+                <span class="material-symbols-rounded">pets</span><span class="material-symbols-rounded">rainy</span>
             </a></li>
         </ul>
     </div>
