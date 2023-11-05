@@ -632,6 +632,13 @@ HOME PAGE
     text-align: right;
 }
 
+.project.disabled,
+.project.disabled>.project-img:hover{
+    cursor: not-allowed;
+    opacity: 1;
+    color: var(--black);
+}
+
 @media (max-width: 600px) {
     #hero-description{
         max-width: 100%;
