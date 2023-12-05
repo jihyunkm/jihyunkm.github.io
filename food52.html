@@ -43,8 +43,8 @@
         </p>
         <p class="txt-medium">As a <b>Product Design Consultant</b>, I reimagined the website's community to a newly designed 0 -> 1 mobile app,
             aiming to encourage greater activity for both the existing and new members of Food52.</p>
-        <p class="darkgray">*Note: I redesigned this project as an individual designer in 2023 to compare
-            my design growth while showcasing improved designs for the case study. All decisions made
+        <p class="darkgray">*I redesigned this project as an individual designer in 2023 to compare
+            my skill growth while showcasing improved designs for the case study. All decisions made
             with the stakeholders were left as was.
         </p>
 
@@ -82,13 +82,13 @@
 
 
 <div id="process-bar">        
-    <a class="process-step research" href="#research">Research</a>
+    <a class="process-step problem" href="#problem">Problem</a>
         
-    <a class="process-step ideation" href="#ideation">Ideation</a>
+    <a class="process-step edit-flow" href="#edit-flow">Edit Flow</a>
 
     <a class="process-step rescoping" href="#rescoping">Rescoping</a>
         
-    <a class="process-step final-design" href="#final-design">Final Design</a>
+    <a class="process-step final-experience" href="#final-experience">Final Experience</a>
         
     <a class="process-step design-system" href="#design-system">Design System</a>
 </div>
@@ -119,6 +119,22 @@
     </div>
 </section>
 
+<section id="problem" class="padding container-medium">
+    <h3>Problem</h3>
+    <h2>There is a disparity between the number of registered members & active engagement.</h2>
+    <p>Food52 allows all of its member to submit their own recipes, ask questions regarding
+        cooking and cookware, and meet like-minded cooks.
+        However, while there are over <b>two million</b> registered Food52 members, 
+        their <b>engagement</b> with the site's community offerings is significantly low.</p>
+    <img src="img/food52/problem.png" alt="">
+    
+    <div class="gray-section">
+        <p>Thus, to address this large drop in engagement, Food52 approached us with the following question:</p>
+        <h2>How might we ensure Food52's community offerings meet the needs of our existing members to increase engagement?</h2>
+    </div>
+
+    <h2 class="padding">Conducting discovery research to find the reasons for a lack of engagement.</h2>
+</section>
 
 <!-- 
 <section class="padding container-wide">
@@ -170,3 +186,35 @@
 </footer>
 
 </body>
+
+<!-- js -->
+
+<script>
+
+    // credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
+        const sections = document.querySelectorAll('section');
+        const processLi = document.querySelectorAll('.process-step');
+    
+        window.addEventListener('scroll', ()=> {
+            let current = '';
+            sections.forEach( section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= (sectionTop - ( 2 * window.innerHeight / 5))) {
+                    current = section.getAttribute('id');
+                }
+    
+                // if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+                //     current = section.getAttribute('id');
+                // }
+            })
+    
+            processLi.forEach( li => {
+                li.classList.remove('active')
+                if(li.classList.contains(current)){
+                    li.classList.add('active')
+                }
+            })
+        })
+    
+    </script>
