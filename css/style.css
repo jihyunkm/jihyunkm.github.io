@@ -787,6 +787,7 @@ WORK (CASE STUDY)
     height: 100vh;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .cs-img{
