@@ -147,15 +147,15 @@
     <div class="padding container-medium">
         <p>Some relevant goals and constraints we kept in mind:</p>
 
-        <div class="test-grid">
-            <div class="test-box">
+        <div class="grid-col-2">
+            <div class="bubble-box">
                 <h2><span class="material-symbols-rounded">web</span></h2>
                 <p class="txt-medium">Minimal effort but high impact</p>
                 <p>Respect the existing ShopSmiles architecture for an easy and fast implementation,
                     whilst enhancing the overall shopping experience.
                 </p>
             </div>
-            <div class="test-box">
+            <div class="bubble-box">
                 <h2><span class="material-symbols-rounded">equalizer</span></h2>
                 <p class="txt-medium">Improve engagement metrics</p>
                 <p>Improve metrics relevant to site engagement and purchase such as conversion, pages per visit, bounce, and average order rates.</p>
@@ -303,7 +303,7 @@
     </div>
         
     <div class="padding container-medium">
-        <p>Additionally, we decided to display the mobile Top Picks in a <b>carousel</b> instead of a list, changing the card to a vertical layout, to <b>reduce the time</b> it took users to reach the reviews.
+        <p>Additionally, we decided to display the mobile Top Picks in a <b>carousel</b> to <b>reduce the time</b> it took users to reach the reviews.
         This meant that I had to make sure to <b>minimize</b> the number of complex <b>haptic controls</b> (i.e., nested scrolling, pop-up in a scroll), as the color picker would introduce more interactions.
         </p>
         <img src="img/shopsmiles/top picks color picker w gradient.png" class="margin-add">
@@ -317,7 +317,7 @@
         
     </div>
     <div class="container-medium">
-        <h2>Iteration 1: Wide instead of narrow cards</h2>
+        <h2 class="padding">Iteration 1: Wide instead of narrow cards</h2>
         <img class="border" src="img/shopsmiles/narrow wide.png">
 
                 <p>Narrow cards allow for higher comparability (can view more products on a single screen), but <b>hinders the tappability</b> of elements, especially for those with small mobile screens.
@@ -351,8 +351,11 @@
     <div class="padding container-medium">
         <img class="border" src="img/shopsmiles/cta size.png" alt="">
         <p>To "extra-ensure" the issue was addressed, we reduced the <b>width of the call-to-action (CTA)</b> on desktop cards, as desktop screens primarily utilized the grid layout.
-            I left the <b>mobile CTA untouched</b>, since (1) no mobile screen used the grid layout and (2) the longer width allowed for a bigger touch area.
-        </p>
+            I left the <b>mobile CTA untouched</b>, since:</p>
+        <ol>
+            <li>No mobile screen uses the grid layout (thus, less confusing)</li>
+            <li>The longer width allows for a bigger & more accessible touch area</li>
+        </ol>
     </div>
 
     <div class="padding container-medium">
@@ -365,8 +368,11 @@
             <video autoplay loop muted class="border" src="img/shopsmiles/overlay option 2.mp4"></video>
         </div>
         <p>While the idea gained support from the engineering team, we dismissed it as it was ultimately <b>inaccessible</b>, especially for those with screen readers.
-            The design would also: (1) be too <b>complex</b> if embedded within a mobile carousel and 
-            (2) feel <b>intrusive</b>, causing frequent UX frustrations.</p>
+            The design would also:</p>
+        <ul>
+            <li>Be too <b>complex</b> if embedded within a mobile carousel</li>
+            <li>Feel <b>intrusive</b>, causing frequent UX frustrations</li>
+        </ul>
         
         <div class="bubble-icon">
             <h2><span class="material-symbols-rounded">emoji_objects</span></h2>

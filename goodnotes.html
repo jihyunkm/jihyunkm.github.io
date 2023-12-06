@@ -442,14 +442,14 @@
 
     document.getElementById('faster-vid').playbackRate = 1.5;
 
-    // // credits https://stackoverflow.com/questions/70504239/change-div-background-color-on-scroll
+    // credits https://stackoverflow.com/questions/70504239/change-div-background-color-on-scroll
     // window.addEventListener("scroll", ()=> {
     //     const y = window.scrollY;
     //     const sectionTop = document.querySelector('.black-section').offsetTop;
     //     const sectionHeight = document.querySelector('.black-section').clientHeight;
 
     //     if (pageYOffset >= (sectionTop - ( 2 * window.innerHeight / 5))) {
-    //         document.querySelector("body").style.backgroundColor = "#1D1D1D";
+    //         document.querySelector("body").style.backgroundColor = "#1E1E1E";
     //         document.querySelector('#process-bar').style.display = 'none';
     //     } else {
     //         document.querySelector("body").style.backgroundColor = "unset";
@@ -457,6 +457,24 @@
     //     }
 
     // })
+
+    // window.addEventListener("scroll", ()=> {
+    //     const y = window.scrollY;
+    //     const sectionTop = document.querySelector('.black-section').offsetTop;
+    //     const sectionHeight = document.querySelector('.black-section').clientHeight;
+
+    //     if (y < (sectionTop)) {
+    //         document.querySelector("body").style.backgroundColor = "var(--white)";
+    //         document.querySelector('#process-bar').style.display = 'flex';
+    //     } else if (y <= (sectionTop + sectionHeight)) {
+    //         document.querySelector("body").style.backgroundColor = "var(--black)";
+    //         document.querySelector('#process-bar').style.display = 'none';
+    //     } else if (y > (sectionTop + sectionHeight)) {
+    //         document.querySelector("body").style.backgroundColor = "var(--white)";
+    //         document.querySelector('#process-bar').style.display = 'flex';
+    //     }
+    // })
+    
 
 
 </script>

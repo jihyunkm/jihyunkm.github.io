@@ -509,7 +509,6 @@ a:focus{
     margin-top: 6rem;
     box-shadow: 0 0 0 100vmax var(--black);
     clip-path: inset(0 -100vmax);
-
     color: var(--white);
 }
 
@@ -835,6 +834,12 @@ WORK (CASE STUDY)
     gap: 1.5rem;
 }
 
+.grid-col-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
 
 @media (max-width: 1000px) {
     .cs-img-container{
@@ -892,7 +897,42 @@ WORK (CASE STUDY)
 }
 
 
-.bubble, .bubble-icon > *{
+.bubble-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    /* border: 1px solid var(--gray);
+    border-radius: 1rem;
+    padding: 2.5rem; */
+
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    border-radius: 1rem;
+
+    margin: 1.5rem 0;
+    color: var(--darkgray);
+}
+
+
+.bubble-box .material-symbols-rounded{
+    /* font-size: 2rem; */
+    /* font-size: 1.8rem; */
+
+    /* padding: 0.5rem;
+    background-color: var(--gray);
+    border-radius: var(--corner-radius); */
+    color: var(--black);
+    padding: 0;
+}
+
+.bubble-box .txt-medium{
+    color: var(--black);
+}
+
+.bubble, 
+.bubble-icon,
+.bubble-box > *{
     margin: 0;
 }
 
@@ -1061,6 +1101,45 @@ WORK (CASE STUDY)
         gap: 0;
     }
 }
+
+
+
+
+
+/* FOOD52 */
+
+.f52-community-quote{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: #ECF6DF;
+    padding: 2.5rem;
+    border-radius: 1rem;
+
+    margin: 1.5rem 0;
+    color: var(--black);
+}
+
+.f52-community-quote>*{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1385,48 +1464,7 @@ WORK (CASE STUDY)
 }
 
 
-.test-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* gap: 2rem; */
-    gap: 1.5rem;
-}
 
-.test-box{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-    /* border: 1px solid var(--gray);
-    border-radius: 1rem;
-    padding: 2.5rem; */
-
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.08);
-    padding: 2.5rem;
-    border-radius: 1rem;
-
-    margin: 1.5rem 0;
-    color: var(--darkgray);
-}
-
-.test-box > *{
-    margin: 0 !important;
-}
-
-.test-box .material-symbols-rounded{
-    /* font-size: 2rem; */
-    /* font-size: 1.8rem; */
-
-    /* padding: 0.5rem;
-    background-color: var(--gray);
-    border-radius: var(--corner-radius); */
-    color: var(--black);
-    padding: 0;
-}
-
-.test-box .txt-medium{
-    color: var(--black);
-}
 
 
 @media (max-width: 1000px) {
