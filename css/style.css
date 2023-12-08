@@ -47,7 +47,7 @@ ul{
 }
 
 li{
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
 }
 
 s{
@@ -930,11 +930,12 @@ WORK (CASE STUDY)
     color: var(--black);
 }
 
-.bubble, 
-.bubble-icon,
+.bubble > *, 
+.bubble-icon > *,
 .bubble-box > *{
     margin: 0;
 }
+
 
 /***** SHOPSMILES *****/
 
@@ -1108,22 +1109,7 @@ WORK (CASE STUDY)
 
 /* FOOD52 */
 
-.f52-community-quote{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 
-    background-color: #ECF6DF;
-    padding: 2.5rem;
-    border-radius: 1rem;
-
-    margin: 1.5rem 0;
-    color: var(--black);
-}
-
-.f52-community-quote>*{
-    margin: 0;
-}
 
 
 
