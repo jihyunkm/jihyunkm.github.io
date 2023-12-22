@@ -410,6 +410,10 @@ b{
     margin: 1rem 0;
 }
 
+.txt-medium.bold{
+    font-weight: 500;
+}
+
 .txt-small{
     font-size: var(--small-text);
 }
@@ -1042,10 +1046,6 @@ WORK (CASE STUDY)
 
 .gn-insight-txt{
     grid-column: span 2;
-}
-
-.gn-insight-txt>.txt-medium{
-    font-weight: 500;
 }
 
 
