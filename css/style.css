@@ -811,8 +811,8 @@ WORK (CASE STUDY)
     background-color: var(--food52);
 }
 
-.cs-img.gigabrain-bg {
-    box-shadow: 0 0 0 100vmax var(--gigabrain);
+.cs-img-container.gigabrain {
+    background-color: var(--gigabrain);
 }
 
 .overview-logistics{
