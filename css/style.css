@@ -744,7 +744,7 @@ WORK (CASE STUDY)
 
     padding: 0.2rem 0.1%;
     align-items: baseline;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* safari */
@@ -819,6 +819,7 @@ WORK (CASE STUDY)
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .next-project{
