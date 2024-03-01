@@ -122,7 +122,7 @@ video{
     --transition-slow: all 300ms ease-in-out;
 
     /* etc */
-    --corner-radius: 0.5rem;
+    --corner-radius: 1rem;
 }
 
 
@@ -315,14 +315,16 @@ footer li{
 /***** TEXT *****/
 
 h1{
-    font-family: 'Mona Sans';
-    /* font-size: 4rem; */
-
+    /* font-family: 'Mona Sans';
     font-size: clamp(2.5rem, 4.5vw, 4rem);
 
     font-weight: 500;
-    font-variation-settings: "slnt" -2;
+    font-variation-settings: "slnt" -2; */
 
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+    font-weight: 500;
+    
     margin-top: 3rem;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -366,6 +368,7 @@ h4{
 p{
     margin: 1rem 0;
     line-height: 1.6;
+    letter-spacing: -0.03em;
 }
 
 sup{
@@ -560,9 +563,14 @@ HOME PAGE
 }
 
 #hero-main{
-    max-width: 1100px;
-
+    max-width: 700px;
     animation: heroMain 1500ms;
+}
+
+#name{
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
 }
 
 #pronunciation{
@@ -595,7 +603,8 @@ HOME PAGE
 }
 
 #hero-description{
-    max-width: 48%;
+    /* max-width: 48%; */
+    max-width: 800px;
     animation: heroDescription 1500ms;
 }
 
@@ -668,9 +677,6 @@ HOME PAGE
 
 
 @media (max-width: 1000px) {
-    #hero-description{
-        max-width: 60%;
-    }
     .project-description{
         grid-template-columns: 1fr;
     }
