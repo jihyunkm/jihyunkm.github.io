@@ -45,16 +45,16 @@
      </p> -->
 
      <p id="hero-description" class="darkgray">
-        tinkers with <span class="black">Figma</span> and <span class="black">VS Code</span>, bakes matcha-everything, and enjoys her Stardew Valley harvests. 
-        <span class="black">Currently</span> designing social media for AI-generated outfits. <span class="black">Recent</span> Cal grad, <span class="black">previously</span> @ Colgate, GoodNotes, & more.
+        on <span class="black">Figma</span> & <span class="black">VS Code</span>, bakes matcha-everything, and enjoys her Stardew Valley harvests. 
+        <span class="black">Currently</span> designing social media for AI-generated outfits. <span class="black">Recent</span> Cal grad, <span class="black">previously</span> @ Colgate & more.
      </p>
 </section>
 
-<section class="container-wide">
+<!-- <section class="container-wide">
     <h3>selected work ↓</h3>
     <div id="selected-work">
 
-        <!-- shopsmiles -->
+        shopsmiles
         <a class="project" href="shopsmiles.html">
             <div class="project-img shopsmiles">
                 <img class="project-img-main" src="img/shopsmiles.png" alt="">
@@ -65,7 +65,7 @@
             </div>
         </a>
 
-        <!-- goodnotes -->
+        goodnotes
         <a class="project" href="goodnotes.html">
             
             <div class="project-img goodnotes">
@@ -78,7 +78,7 @@
         </a>
 
 
-        <!-- food52 -->
+        food52
         <a class="project" href="food52.html">
             <div class="project-img food52">
                 <img class="project-img-main" src="img/food52.png" alt="">
@@ -89,8 +89,8 @@
             </div>
         </a>
 
-        <!-- gigabrain -->
-        <!-- <a class="project disabled"> -->
+        gigabrain
+        <a class="project disabled">
         <a class="project" href="gigabrain.html">
             <div class="project-img gigabrain">
                 <img class="project-img-main" src="img/gigabrain.png" alt="">
@@ -105,6 +105,68 @@
         
 
     </div>
+</section> -->
+
+<section id="selected-work" class="container-wide">
+    <h3>selected work ↓</h3>
+
+    <div class="work">
+
+        <a class="project shopsmiles" href="shopsmiles.html">
+
+            <div class="project-thumbnail-container">
+                <video class="project-thumbnail" loop muted>
+                    <source src="img/shopsmiles-short.mp4"/></video>
+            </div>
+
+            <p>Redesigning <b>ShopSmiles’</b> product cards to enhance the shopping experience.</p>            
+            <p class="project-description">Intern, 2022</p>
+
+        </a>
+
+        <a class="project goodnotes" href="goodnotes.html">
+
+            <div class="project-thumbnail-container" style="background-color: var(--goodnotes);">
+                <video class="project-thumbnail" loop muted>
+                    <source src="img/goodnotes-short.mp4"/></video>
+            </div>
+            
+            <p>Building tactile tools within <b>GoodNotes</b> to help students feel confident when studying.</p>
+            <p class="project-description">Contract, 2022</p>
+
+
+        </a>
+        
+    </div>
+
+    <div class="work" style="margin-top: 2rem;">
+
+        <a class="project food52" href="food52.html">
+
+            <div class="project-thumbnail-container">
+                <video class="project-thumbnail" loop muted>
+                    <source src="img/food52.mp4"/></video>
+            </div>
+            
+            <p>Engaging more home cooks in a new 0→1 mobile <b>Food52</b> community.</p>
+            <p class="project-description">Contract, 2021 (Redesigned 2024)</p>
+
+        </a>
+
+        <a class="project gigabrain" href="gigabrain.html">
+
+            <div class="project-thumbnail-container">
+                <video class="project-thumbnail" loop muted>
+                    <source src="img/gigabrain.mp4"/></video>
+            </div>
+
+            <p>Decluttering <b>GigaBrain</b>’s search results to be disgestible at a glance.</p>
+            <p class="project-description">Design Challenge, 2023-2024</p>
+
+        </a>
+
+    </div>
+    
 </section>
 
 <!--footer-->
@@ -144,6 +206,18 @@
 
 </body>
 
-<script src="js/script.js">
+<script>
+
+    var video = document.querySelectorAll('.project-thumbnail');
+    for (let i = 0; i<video.length; i++){
+        video[i].addEventListener('mouseover',
+        function(e){
+            video[i].play()
+        })
+        video[i].addEventListener('mouseout',
+        function(e){
+            video[i].pause()
+        })
+    }
 
 </script>

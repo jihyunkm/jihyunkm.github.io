@@ -123,6 +123,7 @@ video{
 
     /* etc */
     --corner-radius: 1rem;
+    --container-wide: 1350px
 }
 
 
@@ -204,7 +205,7 @@ nav{
     display: flex;
     justify-content: end;
 
-    max-width: 1400px;
+    max-width: var(--container-wide);
     width: 95%;
     margin: 2rem auto;
 }
@@ -243,7 +244,7 @@ footer{
     border-top: 1px solid var(--gray);
     padding-top: 1rem;
 
-    max-width: 1300px;
+    max-width: var(--container-wide);
     width: 95%;
     margin: 8rem auto 4rem auto;
 
@@ -368,7 +369,7 @@ h4{
 p{
     margin: 1rem 0;
     line-height: 1.6;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
 }
 
 sup{
@@ -476,7 +477,7 @@ a:focus{
 /***** CONTAINER *****/
 
 .container-wide{
-    max-width: 1300px;
+    max-width: var(--container-wide);
     width: 95%;
     display: block;
     margin: 0 auto;
@@ -559,7 +560,7 @@ HOME PAGE
     display: flex;
     flex-direction: column;
     
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 #hero-main{
@@ -610,7 +611,7 @@ HOME PAGE
 
 
 
-#selected-work{
+/* #selected-work{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem;
@@ -648,21 +649,76 @@ HOME PAGE
 
 .project:hover .project-img-main{
     scale: 1.04;
+} */
+
+
+
+/* testing */
+
+
+.work{
+    display: flex;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    transition: var(--transition-slow);
+}
+
+.project{
+    text-decoration: none; 
+    transition: var(--transition-slow); 
+}
+
+.project-thumbnail-container{
+    height: 34rem;
+    overflow: hidden;
+    border-radius: var(--corner-radius);
+}
+
+.project-thumbnail{
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.project:hover .project-thumbnail{
+    scale: 1.06;
+    transition: var(--transition-slow);
 }
 
 
+/* each project */
+
+.project.shopsmiles{
+    width: 48%;
+}
+
+.project.goodnotes .project-thumbnail-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project.goodnotes .project-thumbnail{
+    width: 80%;
+    object-fit: contain;
+}
+
+.project.gigabrain{
+    width: 45%;
+}
 
 
+/* project description */
 
 .project-description{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 1rem;
+
+    color: var(--darkgray);
+    font-size: var(--small-text);
 }
 
-.project-description >*:last-child{
-    text-align: right;
-    font-size: var(--small-text);
+.project-description{
+    margin-top: -0.5rem;
 }
 
 .project.disabled,
@@ -673,29 +729,20 @@ HOME PAGE
 }
 
 
-
-
-
 @media (max-width: 1000px) {
-    .project-description{
-        grid-template-columns: 1fr;
+    .work{
+        flex-direction: column;
     }
-    .project-description >*:last-child{
-        text-align: left;
-        margin: 0;
-        margin-top: -0.5rem;
+
+    .project.shopsmiles,
+    .project.gigabrain{
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
-    #hero-description{
-        max-width: 100%;
-    }
-    #selected-work{
-        grid-template-columns: 1fr;
-    }
-    .project-img{
-        max-height: 20rem;
+    .project-thumbnail-container{
+        height: 30rem;
     }
 }
 
