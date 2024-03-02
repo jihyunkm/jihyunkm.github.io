@@ -446,6 +446,7 @@ b{
 .black { color: var(--black);}
 .darkgray { color: var(--darkgray);}
 .gray { color: var(--gray);}
+.lightgray { color: var(--lightgray);}
 .white { color: var(--white);}
 
 .turquoise { color: var(--turquoise);}
@@ -611,49 +612,9 @@ HOME PAGE
 
 
 
-/* #selected-work{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 3rem;
-}
-
-.project{
-    text-decoration: none;
-}
-
-.project-img{
-    border-radius: var(--corner-radius);
-    margin: 0;
-    overflow: hidden;
-    transition: var(--transition-slow);
-}
-
-.project-img-main{
-    width: 100%;
-    display: flex;
-    margin: auto;
-}
-
-.project-img.shopsmiles{
-    background-color: var(--shopsmiles);
-}
-
-.project-img.goodnotes{
-    background-color: var(--goodnotes);
-}
-
-.project-img.food52{
-    background-color: var(--food52);
-}
-
-.project:hover .project-img-main{
-    scale: 1.04;
-} */
 
 
-
-/* testing */
+/* selected work */
 
 
 .work{
