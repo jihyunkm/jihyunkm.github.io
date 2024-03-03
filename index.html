@@ -52,7 +52,7 @@
         <a class="project shopsmiles" href="shopsmiles.html">
 
             <div class="project-thumbnail-container">
-                <video class="project-thumbnail" loop muted>
+                <video class="project-thumbnail" autoplay loop muted>
                     <source src="img/shopsmiles-short.mp4"/></video>
             </div>
 
@@ -64,7 +64,7 @@
         <a class="project goodnotes" href="goodnotes.html">
 
             <div class="project-thumbnail-container" style="background-color: var(--goodnotes);">
-                <video class="project-thumbnail" loop muted>
+                <video class="project-thumbnail" autoplay loop muted>
                     <source src="img/goodnotes-short.mp4"/></video>
             </div>
             
@@ -81,7 +81,7 @@
         <a class="project food52" href="food52.html">
 
             <div class="project-thumbnail-container">
-                <video class="project-thumbnail" loop muted>
+                <video class="project-thumbnail" autoplay loop muted>
                     <source src="img/food52.mp4"/></video>
             </div>
             
@@ -93,7 +93,7 @@
         <a class="project gigabrain" href="gigabrain.html">
 
             <div class="project-thumbnail-container">
-                <video class="project-thumbnail" loop muted>
+                <video class="project-thumbnail" autoplay loop muted>
                     <source src="img/gigabrain.mp4"/></video>
             </div>
 
@@ -160,16 +160,18 @@
 
 <script>
 
-    var video = document.querySelectorAll('.project-thumbnail');
-    for (let i = 0; i<video.length; i++){
-        video[i].addEventListener('mouseover',
-        function(e){
-            video[i].play()
-        })
-        video[i].addEventListener('mouseout',
-        function(e){
-            video[i].pause()
-        })
-    }
+
+
+    // var video = document.querySelectorAll('.project-thumbnail');
+    // for (let i = 0; i<video.length; i++){
+    //     video[i].addEventListener('mouseover',
+    //     function(e){
+    //         video[i].play()
+    //     })
+    //     video[i].addEventListener('mouseout',
+    //     function(e){
+    //         video[i].pause()
+    //     })
+    // }
 
 </script>
