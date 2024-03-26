@@ -626,8 +626,8 @@ HOME PAGE
 
 .work{
     display: flex;
-    column-gap: 2rem;
-    row-gap: 2rem;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
     transition: var(--transition-slow);
 }
 
