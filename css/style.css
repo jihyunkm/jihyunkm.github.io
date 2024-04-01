@@ -182,24 +182,14 @@ p .material-symbols-rounded,
 /***** NAVIGATION *****/
 
 header{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: fit-content;
     inset: 0;
     z-index: 99;
 }
 
-nav{
-    /* max-width: 1000px;
-    width: 95%;
-    margin: auto;
-    margin-top: 2.5em;
-
-    display: flex;
-    justify-content: space-between;
-    
-    font-weight: 700; */
-
+nav{ 
     font-size: var(--smallest-text);
     font-weight: 500;
     color: var(--darkgray);
@@ -565,7 +555,7 @@ HOME PAGE
     display: flex;
     flex-direction: column;
     
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #hero-main{
@@ -754,88 +744,77 @@ WORK (CASE STUDY)
 
 /***** PROCESS *****/
 
-#process-bar{
+
+#project-nav{
     position: sticky;
-    top: 1%;
-    width: 95%;
-    max-width: 800px;
-    margin: 0 auto;
+    top: 0;
 
-    display: flex;
-    justify-content: space-evenly;
-
-    padding: 0.2rem 0.1%;
-    align-items: baseline;
-    margin-bottom: 8rem;
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* safari */
-    border: 1px solid var(--gray);
-    border-radius: 50px;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+    
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); /* safari */
+    border-bottom: 1px solid var(--gray);
     
     font-size: var(--small-text);
-    font-weight: 400;
-    color: var(--darkgray);
+    font-weight: 500;
 
     z-index: 99;
     transition: var(--transition);
 }
 
-.process-step{
-    padding: 0.2% 3%;
+#project-nav-container{
+    width: 95%;
+    max-width: var(--container-wide);
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#project-title{
+    color: var(--black);
+    padding-right: 2rem;
+}
+
+#project-title:hover{
+    color: var(--transparent-darkgray);
+}
+
+.project-step{
+    padding-right: 1rem;
     color: var(--darkgray);
-    border-radius: 50px;
     text-decoration: none;
 
     transition: var(--transition);
 }
 
-.process-step:hover{
+.project-step:hover{
     color: var(--black);
 }
+
 
 .active{
     color: var(--black);
-    background-color: rgba(0, 0, 0, 0.16);
     transition: all 150ms;
+    /* text-decoration: underline dotted 2px; */
+    text-underline-offset: 0.25em;
 }
 
-@media (max-width: 600px) {
-    #process-bar{
-        position: relative;
-    }
-}
 
 /***** CONTENT *****/
 
-.cs-img-container{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.cs-img{
+.cs-img{  
+    max-width: var(--container-wide);
+    width: 95%;
     display: block;
-    max-width: 1300px;
-    margin: auto;
+    margin: 0 auto;
+
+    border-radius: var(--corner-radius-extra);
 }
 
-.cs-img-container.shopsmiles{
-    background-color: var(--shopsmiles);
-}
-
-.cs-img-container.goodnotes{
-    background-color: var(--goodnotes);
-}
-
-.cs-img-container.food52 {
-    background-color: var(--food52);
-}
-
-.cs-img-container.gigabrain {
-    background-color: var(--gigabrain);
-}
 
 .overview-logistics{
     display: grid;

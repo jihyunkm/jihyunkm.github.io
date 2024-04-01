@@ -24,19 +24,40 @@
 </header>
 
 <!--content-->
-<div class="cs-img-container goodnotes">
-    <img class="cs-img" src="img/goodnotes/goodnotes.png">
+
+<img class="cs-img" src="img/goodnotes/goodnotes.png">
+
+<div id="project-nav">
+    <div id="project-nav-container">
+
+        <a id="project-title" class="project-step" href="#overview">GoodNotes</a>
+        
+        <div id="project-nav-links">
+        
+            <a class="project-step understand" href="#understand">Understand</a>
+            
+            <a class="project-step research" href="#research">Research</a>
+                
+            <a class="project-step ideation" href="#ideation">Ideation</a>
+                
+            <a class="project-step design-decisions" href="#design-decisions">Design Decisions</a>
+                
+            <a class="project-step final-experience" href="#final-experience">Final Experience</a>
+        </div>
+        
+    </div>
+
 </div>
 
 <!--project overview-->
 <section id="overview" class="container-medium">        
-    <h1>GoodNotes</h1>
+    <h1>Because you should feel confident after studying.</h1>
 
     <h3>overview</h3>
-    <p class="txt-medium">GoodNotes is an iOS app designed for students to streamline their note-taking process. 
+    <p class="txt-medium"><b>GoodNotes</b> is an iOS app designed for students to streamline their note-taking process. 
         They challenged <a href="" class="external-link">Berkeley Innovation</a> to find a way to boost students' <b>confidence levels</b> while studying with the app.</p>
-    <p class="txt-medium">As the <b>Project Mentor</b>, I led and guided four other designers to conceptualize <b>GoodNotes
-        Tags and Reminders</b>, offering students a better way to organize and review their notes.</p>
+    <p class="txt-medium">As the <b>Project Mentor</b>, I led and guided four other designers to conceptualize GoodNotes
+        <b>Tags and Reminders</b>, offering students a better way to organize and review their notes.</p>
 
     <!-- <h3>LOGISTICS</h3> -->
     <div class="overview-logistics">
@@ -60,22 +81,9 @@
         </p>
         
     </div>
-    
-    <h3>process</h3>
-        
+            
 </section>
 
-<div id="process-bar">
-    <a class="process-step understand" href="#understand">Understand</a>
-
-    <a class="process-step research" href="#research">Research</a>
-
-    <a class="process-step ideation" href="#ideation">Ideation</a>
-
-    <a class="process-step design-decisions" href="#design-decisions">Design Decisions</a>
-
-    <a class="process-step final-experience" href="#final-experience">Final Experience</a>
-</div>
 
 <!-- project content -->
 <section id="understand" class="container-medium">
@@ -385,7 +393,7 @@
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
         </p>
-        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
+        <p id="copyright">© 2024 Jihyun Kim. Built with dry eyes during ungodly hours...</p>
     </div>
 
     <div class="footer-nav">
@@ -416,7 +424,7 @@
 
 // credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
     const sections = document.querySelectorAll('section');
-    const processLi = document.querySelectorAll('.process-step');
+    const processLi = document.querySelectorAll('.project-step');
 
     window.addEventListener('scroll', ()=> {
         let current = '';

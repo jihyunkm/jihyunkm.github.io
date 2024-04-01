@@ -25,18 +25,40 @@
 </header>
 
 <!--content-->
-<div class="cs-img-container food52">
-    <img class="cs-img" src="img/food52/food52.png">
+<img class="cs-img" src="img/food52/food52.png">
+
+
+<div id="project-nav">
+    <div id="project-nav-container">
+
+        <a id="project-title" class="project-step" href="#overview">Food52</a>
+        <div id="project-nav-links">
+        
+            <a class="project-step problem" href="#problem">Problem</a>
+            
+            <a class="project-step rescoping" href="#rescoping">Rescoping</a>
+                
+            <a class="project-step flow" href="#flow">Updating Flow</a>
+                
+            <a class="project-step user-testing" href="#user-testing">User Testing</a>
+                
+            <a class="project-step final-experience" href="#final-experience">Final Experience</a>
+
+            <a class="project-step design-system" href="#design-system">Design System</a>
+        </div>
+        
+    </div>
+
 </div>
 
 <!--project overview-->
 <section id="overview">
     <div class="container-medium">
         
-        <h1>Food52</h1>
+        <h1>Connecting others via food.</h1>
 
         <h3>overview</h3>
-        <p class="txt-medium">Food52 is an online platform that offers a space for home cooks to share their own recipes and stories
+        <p class="txt-medium"><b>Food52</b> is an online platform that offers a space for home cooks to share their own recipes and stories
             to connect with others. 
             The team approached <a href="https://berkeleyinnovation.org" class="external-link" target="_blank">Berkeley Innovation</a> 
             to help enliven their community and increase engagement among its members. 
@@ -74,24 +96,9 @@
             </p>
             
         </div>
-        
-        <h3>process</h3>
-        
+                
     </div>
 </section>
-
-
-<div id="process-bar">        
-    <a class="process-step problem" href="#problem">Problem</a>
-
-    <a class="process-step rescoping" href="#rescoping">Rescoping</a>
-        
-    <a class="process-step updating-flow" href="#updating-flow">Updating Flow</a>
-        
-    <a class="process-step final-experience" href="#final-experience">Final Experience</a>
-        
-    <a class="process-step design-system" href="#design-system">Design System</a>
-</div>
 
 
 <!-- preview of final experience -->
@@ -227,7 +234,7 @@
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
         </p>
-        <p id="copyright">© 2024 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
+        <p id="copyright">© 2024 Jihyun Kim. Built with dry eyes during ungodly hours...</p>
     </div>
 
     <div class="footer-nav">
@@ -255,7 +262,7 @@
 
     // credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
         const sections = document.querySelectorAll('section');
-        const processLi = document.querySelectorAll('.process-step');
+        const processLi = document.querySelectorAll('.project-step');
     
         window.addEventListener('scroll', ()=> {
             let current = '';

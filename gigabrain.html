@@ -25,8 +25,20 @@
 </header>
 
 <!--content-->
-<div class="cs-img-container gigabrain">
-    <img class="cs-img" src="img/gigabrain/gigabrain.png">
+<img class="cs-img" src="img/gigabrain/gigabrain.png">
+
+<div id="project-nav">
+    <div id="project-nav-container">
+
+        <a id="project-title" class="project-step" href="#overview">GigaBrain</a>
+        <div id="project-nav-links"> 
+
+            <a class="project-step final-presentation" href="#final-presentation">Final Presentation</a>
+        
+        </div>
+        
+    </div>
+
 </div>
 
 <!--project overview-->
@@ -66,7 +78,7 @@
 </section>
 
 
-<section class="padding container-medium">
+<section id="final-presentation" class="padding container-medium">
     <h3>Final Presentation</h3>
     <p>Redesigning the Chrome Extension Search Page</p>
     <!-- <a href="" target="_blank"><img class="next-project" src="img/gigabrain/extension.png" alt=""></a> -->
@@ -93,7 +105,7 @@
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
         </p>
-        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
+        <p id="copyright">© 2024 Jihyun Kim. Built with dry eyes during ungodly hours...</p>
     </div>
 
     <div class="footer-nav">
@@ -114,6 +126,39 @@
 </footer>
 
 </body>
+
+
+<!-- js -->
+
+<script>
+
+    // credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
+        const sections = document.querySelectorAll('section');
+        const processLi = document.querySelectorAll('.project-step');
+    
+        window.addEventListener('scroll', ()=> {
+            let current = '';
+            sections.forEach( section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if(pageYOffset >= (sectionTop - ( 2 * window.innerHeight / 5))) {
+                    current = section.getAttribute('id');
+                }
+    
+                // if(pageYOffset >= (sectionTop - sectionHeight / 6)){
+                //     current = section.getAttribute('id');
+                // }
+            })
+    
+            processLi.forEach( li => {
+                li.classList.remove('active')
+                if(li.classList.contains(current)){
+                    li.classList.add('active')
+                }
+            })
+        })
+    
+    </script>
 
 
 <!-- 
@@ -160,24 +205,9 @@
             </div>
 
         </div>
-
-
-        <h3>process</h3>
         
     </div>
 </section>
-
-
-<div id="process-bar">
-    <a class="process-step understand" href="#understand">Understand</a>
-        ->
-    <a class="process-step research" href="#research">Research</a>
-        ->
-    <a class="process-step design" href="#design">Design</a>
-        ->
-    <a class="process-step final-experience" href="#final-experience">Final Experience</a>
-</div>
-
 
 
 <section>

@@ -14,30 +14,50 @@
 <body>
 
 <!--header-->
-        <!-- <a href="javascript: history.go(-1)"><span class="material-symbols-rounded nav-back">arrow_back</span></a> -->
-
 <header id="top">
     <nav>
-        <a class="nav-link" href="index.html">Work</a>
+        <a aria-current="page" class="nav-link" href="index.html">Work</a>
         <a class="nav-link" href="not-work.html">Not Work</a>
         <a class="nav-link" href="about.html">About</a>
     </nav>
-</header>
+</header>    
+<!-- <a href="javascript: history.go(-1)"><span class="material-symbols-rounded nav-back">arrow_back</span></a> -->
 
 <!--content-->
-<div class="cs-img-container shopsmiles">
-    <img class="cs-img" src="img/shopsmiles/shopsmiles.png">
+
+<img class="cs-img" src="img/shopsmiles/shopsmiles.png">
+
+<div id="project-nav">
+    <div id="project-nav-container">
+
+        <a id="project-title" class="project-step" href="#overview">ShopSmiles</a>
+        <div id="project-nav-links">
+        
+            <a class="project-step scope" href="#scope">Scope</a>
+            
+            <a class="project-step breakdown" href="#breakdown">Card Breakdown</a>
+                
+            <a class="project-step exploration" href="#exploration">Exploration</a>
+                
+            <a class="project-step final-design" href="#final-design">Final Design</a>
+                
+            <a class="project-step implementation" href="#implementation">Implementation</a>
+        </div>
+        
+    </div>
+
 </div>
+
 
 <!--project overview-->
 <section id="overview">
     <div class="container-medium">
         
-        <h1>ShopSmiles</h1>
+        <h1>Product browsing, made easy.</h1>
 
         <h3>overview</h3>
         <p class="txt-medium">As a global oral care company, Colgate-Palmolive offers its products on its eCommerce 
-            shop ShopSmiles—yet the site struggles to maintain its visiting users.</p>
+            shop <b>ShopSmiles</b>—yet the site struggles to maintain its visiting users.</p>
         <p class="txt-medium">As a <b>UX Intern</b>, I redesigned the product cards within ShopSmiles’ design system to 
             streamline the product browsing experience, <b>decreasing bounce rates by 20% and increasing
             pages per visit by 0.5</b>*.</p>
@@ -66,28 +86,15 @@
             </p>
             
         </div>
-        
-        <h3>process</h3>
-        
+    
     </div>
 </section>
 
-<div id="process-bar">
-    <a class="process-step scope" href="#scope">Scope</a>
-        
-    <a class="process-step breakdown" href="#breakdown">Breakdown</a>
-        
-    <a class="process-step exploration" href="#exploration">Exploration</a>
-        
-    <a class="process-step final-design" href="#final-design">Final Design</a>
-        
-    <a class="process-step implementation" href="#implementation">Implementation</a>
-</div>
 
 <!--project content-->
 
 <section id="scope">
-    <div class="container-medium">
+    <div class="padding container-medium">
         <h3>Scope</h3>
         <h2>While ShopSmiles has high user traffic, these visits rarely translated to actual purchases.</h2>
         <p>Meaning, many users visited the site but <b>decided to leave</b> without exploring any other parts of the site or committing to their purchase.
@@ -201,7 +208,7 @@
 <section id="breakdown">
 
     <div class="padding container-medium">
-        <h3>Breakdown</h3>
+        <h3>Card Breakdown</h3>
 
         <h2>Before diving into designs, I first took time to understand what makes an ideal product card.</h2>
         <div class="bubble-icon">
@@ -498,7 +505,7 @@
             <a href="https://read.cv/jihyun" target="_blank" class="external-link">Read.cv</a>.
             I would love to keep in touch<i>!</i>
         </p>
-        <p id="copyright">© 2023 Jihyun Kim. Built with many cups of <a href="https://www.starbucks.com/menu/product/2121859/iced" target="_blank">vanilla cream cold brews</a>.</p>
+        <p id="copyright">© 2024 Jihyun Kim. Built with dry eyes during ungodly hours...</p>
     </div>
 
     <div class="footer-nav">
@@ -526,7 +533,7 @@
 
 // credits https://youtu.be/RsPWEmfOQdU?si=g6pnc18EVkDCPZVD
     const sections = document.querySelectorAll('section');
-    const processLi = document.querySelectorAll('.process-step');
+    const processLi = document.querySelectorAll('.project-step');
 
     window.addEventListener('scroll', ()=> {
         let current = '';
