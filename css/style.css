@@ -192,7 +192,6 @@ header{
 nav{ 
     font-size: var(--smallest-text);
     font-weight: 500;
-    color: var(--darkgray);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     
@@ -208,6 +207,7 @@ nav{
     margin-left: 1rem;
     text-decoration: none;
     padding: 0.5rem;
+    color: var(--transparent-darkgray);
 }
 
 .nav-link:last-child{
@@ -215,7 +215,11 @@ nav{
 }
 
 .nav-link[aria-current="page"]{
-    color: var(--transparent-darkgray);
+    color: var(--black);
+}
+
+.nav-link:hover{
+    color: var(--black);
 }
 
 /* .nav-back{
@@ -1214,6 +1218,10 @@ WORK (CASE STUDY)
     border-radius: var(--corner-radius);
 }
 
+
+
+/* dark-mode */
+
 .dark-mode,
 .dark-mode .darkgray{
     background-color: var(--black);
@@ -1229,12 +1237,15 @@ WORK (CASE STUDY)
     color: var(--white);
 }
 
+.dark-mode .nav-link{
+    color: var(--darkgray);
+}
 
 
 .dark-mode .nav-link[aria-current="page"],
 .dark-mode .nav-link:hover,
 .dark-mode a:hover{
-    color: var(--darkgray);
+    color: var(--white);
 }
 
 
